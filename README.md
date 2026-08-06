@@ -1,421 +1,257 @@
-# NexUpTech 3D Glassmorphic Transformation
+# NexUpTech
 
-## Overview
-landing page has been upgraded from flat 2D to **ultra-modern 3D glassmorphic design** with mouse-tracking parallax effects, all running at 60fps with zero dependencies.
+**Uganda's local compliance and security expert.**
 
----
+NexUpTech is a self-taught, Kampala-based IT and cybersecurity consultancy. We help Ugandan businesses stay secure and compliant to win in the digital age — from NISF 2026 readiness and Data Protection Act audits to penetration testing and secure landing pages.
 
-## Key Transformations
+**Live site:** https://m0ze.github.io/nexuptech/
 
-### 1. **CSS 3D Transforms & Perspective Depth**
+**WhatsApp:** [+256 764 625 700](https://wa.me/256764625700?text=Hi%2C%20I'm%20interested%20in%20the%20NISF%202026%20Compliance%20Pack%20for%20my%20business.)
 
-#### Before:
-```css
-/* Flat card with basic shadow */
-.card {
-  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
-}
-```
+**Launch on X:** See [`docs/x-launch-kit.md`](docs/x-launch-kit.md) for ready-to-post copy and thread templates.
 
-#### After:
-```css
-/* 3D card with layered depth, perspective, and hyper-realistic shadows */
-.card {
-  transform-style: preserve-3d;
-  transform: translateZ(0) rotateX(0) rotateY(0);
-  box-shadow: 
-    0 10px 30px rgba(0, 0, 0, 0.2),
-    0 20px 50px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
-.card:hover {
-  transform: translateZ(15px) rotateX(5deg) rotateY(-5deg);
-  box-shadow: /* enhanced glow and depth shadows */
-}
-
-/* Depth layer behind content */
-.card-depth-layer {
-  transform: translateZ(-30px);
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, transparent 100%);
-}
-```
-
-**What This Does:**
-- `preserve-3d`: Enables 3D space for child elements
-- `translateZ()`: Pushes elements forward/backward in 3D space
-- `rotateX/rotateY`: Creates tilting effect on hover
-- Layered shadows simulate realistic lighting and depth
-- Depth layers (translateZ -30px) create appearance of thickness
+**Beta testing:** See [`docs/testing-playbook.md`](docs/testing-playbook.md) — 5 beta Instant Scans at 50% off.
 
 ---
 
-### 2. **Glassmorphism Effect**
+## Business model
 
-#### Added New CSS:
-```css
-.glass-header,
-.glass-card,
-.glass-button {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);  /* Safari support */
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
+NexUpTech operates as a **productized services** consultancy — we sell clear outcomes, not vague hourly blocks. Think of it as SaaS-style packaging applied to professional cybersecurity and compliance work.
 
-[data-theme="dark"] .glass-card {
-  background: rgba(15, 23, 42, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-```
+### Revenue streams
 
-**What This Does:**
-- `backdrop-filter: blur(10px)`: Blurs content behind element (glassmorphic effect)
-- Translucent backgrounds allow content to show through
-- Adjusts glass opacity/borders for dark mode
-- Creates premium, modern aesthetic
+| Stream | Description |
+|--------|-------------|
+| **Compliance audits** | NISF 2026, DPPA, BoU, and UCC gap analyses with remediation roadmaps |
+| **Security assessments** | VAPT, IT audits, cloud security reviews |
+| **Incident response** | Forensics and breach recovery on retainer or per incident |
+| **Secure web delivery** | Hardened landing pages and brochure sites with WhatsApp lead capture |
+| **Lead magnets → upsell** | Free compliance checklists (`compliance-checklists/`) that convert to paid audits |
+| **Instant Security Scan** | Automated external scan + PDF report (UGX 1M) via [`scanner/scan.py`](scanner/scan.py) |
+
+### Target customers
+
+1. **Banks and financial institutions** — BoU cyber risk guidelines (primary target)
+2. **Government MDAs and their vendors** — mandatory NISF 2026 adoption
+3. **Telecom and ISP operators** — UCC cybersecurity guidelines
+4. **SMEs and NGOs** — Data Protection Act compliance and affordable security assessments
+
+### Pricing tiers (UGX)
+
+| Tier | Target | Price | Example |
+|------|--------|-------|---------|
+| Starter | SMEs, startups | 1,000,000 / session | Vulnerability scan, basic assessment |
+| Professional | Mid-size, NGOs | 3,000,000 – 5,000,000 / session | Full IT audit, pentest, compliance gap analysis |
+| Enterprise | Banks, telcos | Custom (> 10,000,000) | Full compliance audit, red/blue team, retainer |
+
+Full rate card: [`pricing.md`](pricing.md)
 
 ---
 
-### 3. **Mouse-Tracking 3D Tilt (JavaScript)**
+## Market positioning
 
-#### New Tilt3D Class:
-```javascript
-class Tilt3D {
-  onMouseMove(event) {
-    // Calculate mouse position relative to card center
-    const offsetX = (event.clientX - centerX) / (rect.width / 2);
-    const offsetY = (event.clientY - centerY) / (rect.height / 2);
-    
-    // Set target rotation based on mouse
-    this.targetRotateY = offsetX * 15;  // Max 15° rotation
-    this.targetRotateX = -offsetY * 15;
-  }
-  
-  animate = () => {
-    // Smooth interpolation (not snappy)
-    this.rotateX += (this.targetRotateX - this.rotateX) * 0.1;
-    this.rotateY += (this.targetRotateY - this.rotateY) * 0.1;
-    
-    // Apply transform
-    this.element.style.transform = `
-      perspective(1000px)
-      rotateX(${this.rotateX}deg)
-      rotateY(${this.rotateY}deg)
-      translateZ(15px)
-    `;
-    
-    // 60fps via requestAnimationFrame
-    requestAnimationFrame(this.animate);
-  }
-}
+Uganda's cybersecurity services market is in a growth phase. Regulatory pressure is creating a **must-have** trend — not a nice-to-have.
+
+### Government and regulatory drivers
+
+- The **National Information Security Framework (NISF) 2026** is mandatory for government ministries, departments, and agencies.
+- The **Uganda Communications Commission (UCC)** has issued strict cybersecurity guidelines for telecom operators.
+- Many institutions now need professional compliance consulting to meet these requirements.
+
+### Financial sector leadership
+
+- The **Bank of Uganda (BoU)** has issued Cyber and Technology Risk Management Guidelines, mandating compliance for regulated financial institutions — our primary target customer base.
+
+### Data protection awareness
+
+- The **Data Protection and Privacy Act (2019)** is being actively enforced. Companies handling personal data face rising demand for compliance audits.
+
+### Market opportunity
+
+The cybersecurity services market in Uganda covers vulnerability assessments, penetration testing, compliance consulting, and more — with relatively few local specialists who combine technical skill and regulatory knowledge.
+
+**Our positioning:** NexUpTech as Uganda's local compliance and security expert. Core value: helping clients meet NISF, UCC, and BoU regulations while aligning with international standards like ISO/IEC 27001.
+
+---
+
+## Service packs
+
+Detailed catalog: [`services.md`](services.md)
+
+### Core compliance packs
+- NISF 2026 compliance audit
+- Data protection compliance (PDPO, DPIA)
+- Industry-specific: BoU (banks), UCC (telecom)
+
+### Security assessment packs
+- Vulnerability assessment and penetration testing (VAPT)
+- IT audit services
+
+### Advanced defense packs
+- Digital forensics and incident response
+- Cloud security assessment (AWS, Azure)
+- Secure landing pages (original NexUpTech craft)
+
+---
+
+## Repository structure
+
 ```
-
-**What This Does:**
-- Tracks mouse position in real-time
-- Calculates tilt angle based on distance from card center
-- Smoothly interpolates (not jerky) rotation with 0.1 smoothing factor
-- Uses `requestAnimationFrame` for 60fps (not CPU-intensive setInterval)
-- Automatically resets on mouse leave
-
-**How to Use:**
-```html
-<!-- Add data-tilt attribute to any element -->
-<div class="card glass-card" data-tilt>
-  <!-- Content -->
-</div>
+nexuptech/
+├── index.html              # Main landing page (GitHub Pages)
+├── style.css               # 3D glassmorphic design system
+├── script.js               # Interactions, WhatsApp form, parallax
+├── assets/
+│   └── og-image.png        # Twitter/X and Open Graph preview card
+├── scanner/
+│   ├── scan.py             # Instant Security Scan tool
+│   ├── requirements.txt
+│   └── README.md
+├── docs/
+│   ├── testing-playbook.md # Beta testing & QA guide
+│   └── x-launch-kit.md     # Twitter/X launch copy & thread
+├── services.md             # Full service catalog
+├── pricing.md              # Transparent UGX pricing
+├── certifications.md       # Team credentials and milestones
+├── compliance-checklists/
+│   ├── nisf-2026-sme-readiness.md
+│   ├── bou-cyber-risk-self-assessment.md
+│   └── dpo-starter-kit.md
+├── .github/workflows/
+│   └── pages.yml           # Auto-deploy to GitHub Pages on push
+└── README.md               # This file
 ```
 
 ---
 
-### 4. **Parallax Scroll Effects**
+## Website sections
 
-#### New ParallaxController:
-```javascript
-class ParallaxController {
-  updateParallax() {
-    // Move orbs at different speeds based on scroll
-    this.orbs.forEach((orb, index) => {
-      const speed = 0.3 + index * 0.15;  // Each orb moves differently
-      const offset = this.scrollY * speed;
-      orb.style.transform = `translateY(${offset}px) translateZ(${index * 20}px)`;
-    });
-  }
-}
-```
+The landing page mirrors a professional consultancy site:
 
-**What This Does:**
-- Background orbs move at different rates as user scrolls
-- Creates depth illusion (foreground moves faster than background)
-- IntersectionObserver triggers demo section fade-in animations
-- Runs at scroll event speed (optimized)
+| Section | Purpose |
+|---------|---------|
+| **Home** | Value proposition — secure and compliant in the digital age |
+| **Services** | Card-style service packs (compliance, VAPT, forensics, web) |
+| **About** | Self-taught team, local expertise, certification path |
+| **Pricing** | Starter / Professional / Enterprise in UGX |
+| **Resources** | Free compliance checklists for lead generation |
+| **Contact** | Form → WhatsApp, direct phone link, floating chat button |
 
 ---
 
-### 5. **Animated Background Orbs (3D Depth)**
+## Immediate action plan
 
-```css
-/* Floating gradient orbs in background */
-.bg-orb {
-  position: fixed;
-  border-radius: 50%;
-  opacity: 0.1;
-  filter: blur(80px);
-  animation: float 20s ease-in-out infinite;
-  z-index: 0;  /* Behind everything */
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px) translateZ(0); }
-  50% { transform: translateY(-50px) translateZ(20px); }  /* 3D depth */
-}
-```
-
-**What This Does:**
-- Subtle animated orbs create visual depth
-- Parallax scroll moves them at different speeds
-- Very low opacity (0.1) keeps them subtle, not distracting
-- Uses `translateZ()` for 3D floating effect
+- [ ] **NITA-U authorization** — mandatory threshold for bidding on government projects
+- [ ] **Master NISF 2026** — make it the core service product
+- [ ] **Industry connections** — attend UCC and banking sector events
+- [ ] **Content marketing** — publish articles on new regulations (Resources section + blog)
+- [ ] **Automated scanning tool** — Instant Scan live in [`scanner/scan.py`](scanner/scan.py) (1M UGX upsell)
+- [ ] **X launch** — use [`docs/x-launch-kit.md`](docs/x-launch-kit.md) and recruit 5 beta testers
 
 ---
 
-### 6. **Layered Box Shadows (Hyper-Realistic Lighting)**
+## Local development
 
-```css
-/* Multi-layer shadow system */
---shadow-3d: 
-  0 10px 30px rgba(0, 0, 0, 0.2),    /* Main shadow */
-  0 20px 50px rgba(0, 0, 0, 0.1),    /* Soft shadow */
-  inset 0 1px 0 rgba(255, 255, 255, 0.2);  /* Inner light */
-
---glow: 0 0 30px rgba(37, 99, 235, 0.3);  /* Color glow */
-```
-
-**What This Does:**
-- First shadow: Sharp edge shadow
-- Second shadow: Soft diffuse shadow
-- Inset shadow: Inner light reflection (glass effect)
-- Glow: Colored halo around interactive elements
-- Creates depth and dimensionality
-
----
-
-## Performance Optimizations
-
-### 1. **RequestAnimationFrame (60fps)**
-```javascript
-// GOOD: Synced with display refresh rate
-animate = () => {
-  // Update logic
-  requestAnimationFrame(this.animate);  // 60fps on 60Hz monitors
-}
-
-// BAD: CPU intensive, jittery
-setInterval(() => {}, 16);  // Doesn't sync with display
-```
-
-### 2. **Smooth Interpolation (Not Jittery)**
-```javascript
-// Smooth easing
-this.rotateX += (this.targetRotateX - this.rotateX) * 0.1;
-// Multiplier = smoothing factor (lower = smoother)
-```
-
-### 3. **Mobile Optimization**
-```javascript
-// Detect mobile and disable heavy effects
-const isMobile = /iPhone|iPad|Android/.test(navigator.userAgent);
-if (isMobile) {
-  // Reduce parallax, disable some animations
-}
-```
-
-### 4. **CSS Containment**
-```css
-/* Tells browser to optimize this element */
-.card {
-  contain: layout style paint;
-}
-```
-
----
-
-## Browser Support
-
-| Feature | Chrome | Firefox | Safari | Edge |
-|---------|--------|---------|--------|------|
-| CSS 3D Transforms | ✅ | ✅ | ✅ | ✅ |
-| Backdrop Filter | ✅ | ❌* | ✅ | ✅ |
-| RequestAnimationFrame | ✅ | ✅ | ✅ | ✅ |
-| IntersectionObserver | ✅ | ✅ | ✅ | ✅ |
-
-*Firefox supports backdrop-filter with flag enabled (default off). Graceful fallback to solid color.
-
----
-
-## How to Implement
-
-### Step 1: Replace Files
 ```bash
-# Backup originals
-cp index.html index-original.html
-cp style.css style-original.css
-cp script.js script-original.js
-
-# Use new versions
-cp index-3d.html index.html
-cp style-3d.css style.css
-cp script-3d.js script.js
-```
-
-### Step 2: Test Locally
-```bash
-# Open in browser
-open index.html
-
-# Or use live server
+# Clone and serve locally
+git clone https://github.com/your-org/nexuptech.git
+cd nexuptech
 python3 -m http.server 8000
 # Visit http://localhost:8000
 ```
 
-### Step 3: Deploy to GitHub Pages
+No build step, no dependencies — pure HTML, CSS, and vanilla JavaScript.
+
+### Deploy to GitHub Pages
+
+Pages deploys automatically on every push to `main` via GitHub Actions.
+
+1. Push this repo to GitHub
+2. **Settings → Pages → Build and deployment → Source: GitHub Actions**
+3. Site live at **https://m0ze.github.io/nexuptech/**
+
+Social preview: `assets/og-image.png` (1200×630) is referenced in Open Graph and Twitter meta tags.
+
+---
+
+## Instant Security Scan
+
 ```bash
-git add .
-git commit -m "🚀 Upgrade: Ultra-modern 3D glassmorphic design"
-git push origin main
+cd scanner
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+python scan.py --target scanme.nmap.org --client "Beta Test" --authorized
 ```
+
+Generates JSON, HTML, and PDF reports in `scanner/reports/`. Requires `nmap` and written authorization (`--authorized` flag).
+
+Full docs: [`scanner/README.md`](scanner/README.md)
 
 ---
 
-## Customization Guide
+## Launch on X (Twitter)
 
-### Adjust Tilt Sensitivity
-```javascript
-// In script-3d.js, Tilt3D class
-this.targetRotateY = offsetX * 15;  // Change 15 to 10 (less tilt) or 25 (more tilt)
-```
+| Resource | Purpose |
+|----------|---------|
+| [`docs/x-launch-kit.md`](docs/x-launch-kit.md) | Launch post, 5-part thread, DM templates |
+| [`docs/testing-playbook.md`](docs/testing-playbook.md) | Beta program, QA checklist, safe test targets |
+| `assets/og-image.png` | Link preview image when you share the site |
 
-### Change Glass Blur Amount
-```css
-/* In style-3d.css */
-.glass-header {
-  backdrop-filter: blur(10px);  /* Change to blur(5px) or blur(20px) */
-}
-```
-
-### Adjust Parallax Speed
-```javascript
-// In script-3d.js, ParallaxController.updateParallax()
-const speed = 0.3 + index * 0.15;  // Change 0.3 and 0.15 for more/less parallax
-```
-
-### Modify Depth Values
-```css
-/* In style-3d.css */
---card-depth: 50px;    /* How far cards protrude */
---hero-depth: 100px;   /* Hero section depth */
-```
+**Quick launch:** Post the site URL with the og-image, pin it, and offer 5 beta Instant Scans at 50% off. Reply template: ask prospects to DM "BETA" or WhatsApp you directly.
 
 ---
 
-## Accessibility
+## Technical notes
 
-### Reduced Motion Support
-Already included! Users with `prefers-reduced-motion` will see:
-- No animations
-- No 3D transforms
-- Instant transitions
-- Better for motion sickness concerns
+### Design system
+- 3D glassmorphic UI with CSS transforms and backdrop blur
+- Mouse-tracking card tilt via `data-tilt` attributes
+- Parallax background orbs (RAF-throttled)
+- Dark mode with `localStorage` persistence
+- Reduced-motion and mobile optimizations disable heavy 3D effects
 
-### Keyboard Navigation
-- All links and buttons are keyboard accessible
-- Tab order preserved
-- Focus states visible
+### Bug fixes applied
+- WhatsApp links use digits-only format (`256764625700`, not `+256...`)
+- Tilt animation runs only while hovering (no idle RAF loops)
+- Parallax scroll throttled with `requestAnimationFrame`
+- Theme toggle guarded against missing DOM elements
+- IntersectionObserver fallback when unsupported
+- Form labels for accessibility (`sr-only`)
+- Mobile navigation menu
 
-### Dark Mode
-- Automatic detection based on system preference
-- Manual toggle with localStorage persistence
-- WCAG AA compliant contrast ratios
+### Browser support
 
----
+| Feature | Chrome | Firefox | Safari | Edge |
+|---------|--------|---------|--------|------|
+| CSS 3D transforms | Yes | Yes | Yes | Yes |
+| Backdrop filter | Yes | Partial* | Yes | Yes |
+| IntersectionObserver | Yes | Yes | Yes | Yes |
 
-## Performance Metrics
-
-### Lighthouse Score Expected
-- **Performance**: 90-95+ (lightweight, no dependencies)
-- **Accessibility**: 95+
-- **Best Practices**: 95+
-- **SEO**: 95+
-
-### Load Time
-- CSS: ~15KB (after gzip)
-- JS: ~8KB (after gzip)
-- Total: ~23KB (very fast)
-
-### Memory Usage
-- ~3-5MB (minimal overhead)
-- No memory leaks (event cleanup built-in)
-- Mobile friendly (low-end device support)
+*Firefox: backdrop-filter may require flag; solid fallback applies.
 
 ---
 
-## Troubleshooting
+## Go-to-market
 
-### Cards Not Tilting?
-1. Check element has `data-tilt` attribute
-2. Ensure `script-3d.js` is loaded
-3. Check browser console for errors
-4. Verify CSS is `style-3d.css`
+**Website = brochure. WhatsApp = sales channel.**
 
-### Parallax Not Working?
-1. Check `style-3d.css` is loaded
-2. Ensure demo pages have `.demo-page` class
-3. Verify `requestAnimationFrame` is supported (all modern browsers)
+Default WhatsApp opener:
+> Hi, I'm interested in the NISF 2026 Compliance Pack for my business.
 
-### Dark Mode Not Persisting?
-1. Check localStorage is enabled
-2. Clear browser cache
-3. Check DevTools > Application > Local Storage
-
-### Performance Issues?
-1. Enable performance monitor: Uncomment `PerformanceMonitor` in script
-2. Check FPS in console
-3. Disable parallax on mobile: Already built-in
-
----
-
-## File Structure
-
-```
-/
-├── index-3d.html           # Main HTML (updated)
-├── style-3d.css            # All CSS (updated)
-├── script-3d.js            # All JS (updated)
-├── TRANSFORMATION-GUIDE.md # This file
-└── [optional]
-    ├── index-original.html # Backup
-    ├── style-original.css  # Backup
-    └── script-original.js  # Backup
-```
-
----
-
-## Next Steps for NexUpTech
-
-1. **Deploy & Test**: Push to GitHub Pages, test on real devices
-2. **Gather Feedback**: Show clients the new design
-3. **Monitor Performance**: Use Lighthouse and real user monitoring
-4. **Iterate**: Adjust tilt sensitivity, parallax speed, etc. based on feedback
-5. **Add More Effects**: Consider adding scroll-triggered animations for CTAs
+Free checklists in `compliance-checklists/` capture leads; full audits are the upsell.
 
 ---
 
 ## Credits
 
-**Designed & Built by**: Elite Creative Technologist & UX/UI Engineer Mugagga Moses
-**Technology Stack**: HTML5, CSS3 (3D Transforms, Backdrop Filter), Vanilla JavaScript (requestAnimationFrame)  
-**Performance**: 60fps on all modern browsers  
-**Accessibility**: WCAG AA Compliant with Reduced Motion Support  
+Built by **Mugagga Moses** — self-taught IT and cybersecurity consultant, Kampala, Uganda.
 
-🚀 MML
+Stack: HTML5, CSS3 (3D transforms, glassmorphism), vanilla JavaScript. No frameworks. ~25KB total.
+
+Team credentials and milestones: [`certifications.md`](certifications.md)
+
+---
+
+## License
+
+Content and code © 2026 NexUpTech. Compliance checklists may be shared with attribution. Contact us before commercial redistribution.

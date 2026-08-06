@@ -3,188 +3,356 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NexUpTech | Secure SaaS Landing Pages for SMEs & Creators</title>
+<meta name="description" content="NexUpTech helps Ugandan businesses stay secure and compliant. NISF 2026, Data Protection Act, BoU and UCC compliance audits, VAPT, and IT security consulting.">
+<meta name="author" content="NexUpTech">
+<meta name="theme-color" content="#2563eb">
+<link rel="canonical" href="https://m0ze.github.io/nexuptech/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://m0ze.github.io/nexuptech/">
+<meta property="og:title" content="NexUpTech | Uganda's Local Compliance &amp; Security Expert">
+<meta property="og:description" content="NISF 2026 audits, VAPT, Data Protection compliance, and instant security scans for Ugandan SMEs, banks, and government vendors.">
+<meta property="og:image" content="https://m0ze.github.io/nexuptech/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_UG">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NexUpTech | Uganda's Local Compliance &amp; Security Expert">
+<meta name="twitter:description" content="New: Instant Security Scan + NISF 2026 compliance packs for Ugandan businesses. Free checklists. WhatsApp-first support.">
+<meta name="twitter:image" content="https://m0ze.github.io/nexuptech/assets/og-image.png">
+<meta name="twitter:creator" content="@M0ze">
+
+<title>NexUpTech | Uganda's Local Compliance &amp; Security Expert</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Animated background gradient orbs (subtle, deep parallax) -->
-  <div class="bg-orb bg-orb-1"></div>
-  <div class="bg-orb bg-orb-2"></div>
-  <div class="bg-orb bg-orb-3"></div>
+  <div class="bg-orb bg-orb-1" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-2" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-3" aria-hidden="true"></div>
 
   <header class="glass-header">
     <div class="container nav">
-      <div class="logo glass-text">Nex<span>Up</span>Tech</div>
+      <a href="#home" class="logo glass-text">Nex<span>Up</span>Tech</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav id="nav-links" class="nav-links">
+        <a href="#instant-scan">Instant Scan</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+      </nav>
       <div class="nav-right">
         <button id="theme-toggle" class="theme-btn glass-button" aria-label="Toggle dark mode">🌙</button>
-        <a href="#contact" class="cta-btn glass-button">Get Quote</a>
+        <a href="#contact" class="cta-btn glass-button">Get a Quote</a>
       </div>
     </div>
   </header>
 
-  <section class="hero perspective-container">
-    <div class="hero-depth-layer"></div>
-    <div class="container hero-content">
-      <h1 class="hero-title glass-text">Secure SaaS Landing Pages <span>Built for Growth</span></h1>
-      <p class="hero-subtitle">We're an IT & cybersecurity consultancy helping SMEs, artists, and entrepreneurs launch fast, secure landing pages that convert. No tech headaches.</p>
-      <div class="hero-btns">
-        <a href="#pricing" class="cta-btn glass-button hero-btn-1">View Packages</a>
-        <a href="#demos" class="btn-secondary glass-button hero-btn-2">See Demo Pages</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="features" id="features">
-    <div class="container">
-      <h2 class="section-title glass-text">Why NexUpTech?</h2>
-      <div class="grid">
-        <!-- Each card gets 3D tilt tracking via JS -->
-        <div class="card glass-card" data-tilt>
-          <div class="card-depth-layer"></div>
-          <div class="icon">🛡️</div>
-          <h3>Security-First Build</h3>
-          <p>Every page is hardened against common attacks. SSL, headers, and monitoring included. We're cyber security experts first.</p>
-        </div>
-        <div class="card glass-card" data-tilt>
-          <div class="card-depth-layer"></div>
-          <div class="icon">⚡</div>
-          <h3>Launch in 72 Hours</h3>
-          <p>Modern Interactive Website design, LaSaaS page templates mean you go live in days, not months. Perfect for campaigns and product launches.</p>
-        </div>
-        <div class="card glass-card" data-tilt>
-          <div class="card-depth-layer"></div>
-          <div class="icon">🎯</div>
-          <h3>Built to Convert</h3>
-          <p>Landing pages for SMEs, artists, enterprises. Clear CTAs, fast load times, mobile-first. Designed to turn visitors into clients.</p>
-        </div>
-        <div class="card glass-card" data-tilt>
-          <div class="card-depth-layer"></div>
-          <div class="icon">🔒</div>
-          <h3>Compliance Ready</h3>
-          <p>GDPR, data protection, and Uganda Data Protection Act aligned. Client data stays secure from day one.</p>
-        </div>
-        <div class="card glass-card" data-tilt>
-          <div class="card-depth-layer"></div>
-          <div class="icon">🤖</div>
-          <h3>Content Engine</h3>
-          <p>We draft headlines, features, and FAQs tailored to your industry. You approve, we ship.</p>
-        </div>
-        <div class="card glass-card" data-tilt>
-          <div class="card-depth-layer"></div>
-          <div class="icon">📱</div>
-          <h3>WhatsApp Integration</h3>
-          <p>Capture leads straight to WhatsApp. No lost emails. Perfect for Kampala SMEs and creators.</p>
+  <main>
+    <section class="hero perspective-container" id="home">
+      <div class="hero-depth-layer" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <h1 class="hero-title glass-text">Helping Ugandan businesses stay <span>secure and compliant</span> to win in the digital age</h1>
+        <p class="hero-subtitle">We are a self-taught, Kampala-based IT and cybersecurity consultancy. From NISF 2026 readiness to penetration testing and secure landing pages — we help SMEs, banks, telcos, and government-adjacent teams meet local regulations and international standards like ISO/IEC 27001.</p>
+        <div class="hero-btns">
+          <a href="#pricing" class="cta-btn glass-button hero-btn-1">View Service Packs</a>
+          <a href="https://wa.me/256764625700?text=Hi%2C%20I'm%20interested%20in%20the%20NISF%202026%20Compliance%20Pack%20for%20my%20business." class="btn-secondary glass-button hero-btn-2" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Demo Landing Page Sections with 3D depth -->
-  <section class="demo-section" id="demos">
-    <div class="container">
-      <h2 class="section-title glass-text">Page Styles We Build</h2>
-      <p class="section-subtitle">Scroll to see different vibes for different brands</p>
-    </div>
-    
-    <div class="demo-page demo-1 perspective-demo">
-      <div class="demo-depth-layer"></div>
-      <div class="container demo-content">
-        <h3>For Tech Startups</h3>
-        <p>Clean, bold, developer-friendly. Dark UI with neon accents.</p>
-        <a href="#contact" class="demo-btn glass-button">Get This Style</a>
-      </div>
-    </div>
-
-    <div class="demo-page demo-2 perspective-demo">
-      <div class="demo-depth-layer"></div>
-      <div class="container demo-content">
-        <h3>For Artists & Creators</h3>
-        <p>Visual-first, vibrant gradients, portfolio-driven layouts.</p>
-        <a href="#contact" class="demo-btn glass-button">Get This Style</a>
-      </div>
-    </div>
-
-    <div class="demo-page demo-3 perspective-demo">
-      <div class="demo-depth-layer"></div>
-      <div class="container demo-content">
-        <h3>For Enterprises</h3>
-        <p>Corporate, trustworthy, data-driven. Built for B2B credibility.</p>
-        <a href="#contact" class="demo-btn glass-button">Get This Style</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="pricing" id="pricing">
-    <div class="container">
-      <h2 class="section-title glass-text">Simple Pricing</h2>
-      <div class="grid">
-        <div class="price-card glass-card" data-tilt>
-          <div class="card-depth-layer"></div>
-          <h3>Starter</h3>
-          <div class="price">$199 <span>/one-time</span></div>
-          <ul class="price-features">
-            <li>✓ 1-page secure landing</li>
-            <li>✓ Mobile responsive</li>
-            <li>✓ Basic SEO setup</li>
-            <li>✓ SSL + Security headers</li>
-            <li>✓ Dark mode included</li>
-            <li>✓ 7-day support</li>
-          </ul>
-          <a href="#contact" class="btn-secondary glass-button">Choose Starter</a>
-        </div>
-        <div class="price-card glass-card popular" data-tilt>
-          <div class="popular-tag glass-label">Most Popular</div>
-          <div class="card-depth-layer"></div>
-          <h3>Business</h3>
-          <div class="price">$299 <span>/one-time</span></div>
-          <ul class="price-features">
-            <li>✓ 3-page SaaS site</li>
-            <li>✓ AI copywriting included</li>
-            <li>✓ 3 demo style options</li>
-            <li>✓ Contact form + CRM hook</li>
-            <li>✓ Security audit report</li>
-            <li>✓ 30-day support</li>
-          </ul>
-          <a href="#contact" class="cta-btn glass-button">Choose Business</a>
-        </div>
-        <div class="price-card glass-card" data-tilt>
-          <div class="card-depth-layer"></div>
-          <h3>Enterprise</h3>
-          <div class="price">Custom</div>
-          <ul class="price-features">
-            <li>✓ Multi-page web apps</li>
-            <li>✓ API integrations</li>
-            <li>✓ Penetration testing</li>
-            <li>✓ Dedicated consultant</li>
-            <li>✓ Custom animations</li>
-            <li>✓ 90-day support</li>
-          </ul>
-          <a href="#contact" class="btn-secondary glass-button">Contact Sales</a>
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section-title glass-text">Why NexUpTech?</h2>
+        <p class="section-subtitle">Local expertise, productized outcomes, and a security-first mindset built for Uganda's regulatory landscape</p>
+        <div class="grid">
+          <div class="card glass-card" data-tilt>
+            <div class="card-depth-layer" aria-hidden="true"></div>
+            <div class="icon">🛡️</div>
+            <h3>Compliance-first consulting</h3>
+            <p>Gap analysis and remediation guidance for NISF 2026, the Data Protection and Privacy Act, BoU cyber risk guidelines, and UCC telecom security rules.</p>
+          </div>
+          <div class="card glass-card" data-tilt>
+            <div class="card-depth-layer" aria-hidden="true"></div>
+            <div class="icon">🔍</div>
+            <h3>Security assessments</h3>
+            <p>Vulnerability assessments, penetration testing, IT audits, and cloud security reviews for AWS and Azure environments used by Ugandan businesses.</p>
+          </div>
+          <div class="card glass-card" data-tilt>
+            <div class="card-depth-layer" aria-hidden="true"></div>
+            <div class="icon">⚡</div>
+            <h3>Fast, secure web delivery</h3>
+            <p>Modern landing pages and brochure sites hardened with SSL, security headers, and monitoring — live in days, not months.</p>
+          </div>
+          <div class="card glass-card" data-tilt>
+            <div class="card-depth-layer" aria-hidden="true"></div>
+            <div class="icon">📋</div>
+            <h3>Productized service packs</h3>
+            <p>Clear, selectable modules with transparent pricing. You buy outcomes — compliance audits, VAPT reports, DPO starter kits — not vague hourly blocks.</p>
+          </div>
+          <div class="card glass-card" data-tilt>
+            <div class="card-depth-layer" aria-hidden="true"></div>
+            <div class="icon">🚨</div>
+            <h3>Incident response</h3>
+            <p>Digital forensics and breach recovery when something goes wrong. Professional investigation, tracing, and recovery guidance when you need it most.</p>
+          </div>
+          <div class="card glass-card" data-tilt>
+            <div class="card-depth-layer" aria-hidden="true"></div>
+            <div class="icon">📱</div>
+            <h3>WhatsApp-first support</h3>
+            <p>Reach us on WhatsApp — Uganda's primary business channel. Quick quotes, scoping calls, and follow-ups without lost emails.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="contact glass-section" id="contact">
-    <div class="contact-depth-layer"></div>
-    <div class="container contact-content">
-      <h2 class="glass-text">Get Your Secure Landing Page</h2>
-      <p>SME, artist, or enterprise — tell us what you're launching. We'll reply in 24hrs.</p>
-      <form class="form glass-form" id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Email Address" required>
-        <textarea id="message" rows="4" placeholder="What are you building? Ex: Landing page for my music studio" required></textarea>
-        <button type="submit" class="cta-btn glass-button">Send Message</button>
-      </form>
-    </div>
-  </section>
+    <section class="instant-scan" id="instant-scan">
+      <div class="container">
+        <div class="instant-scan-banner glass-card">
+          <div class="instant-scan-content">
+            <span class="launch-badge">New service</span>
+            <h2 class="section-title glass-text">Instant Security Scan</h2>
+            <p class="section-subtitle">Automated external vulnerability assessment with a client-ready PDF report — delivered within 24 hours. UGX 1,000,000 per scan.</p>
+            <ul class="instant-scan-list">
+              <li>Top-port external scan via industry-standard tooling</li>
+              <li>HTTP security header and TLS checks</li>
+              <li>PDF, HTML, and JSON reports you can share with leadership</li>
+              <li>Ideal first step before a full Professional VAPT engagement</li>
+            </ul>
+            <div class="hero-btns">
+              <a href="https://wa.me/256764625700?text=Hi%2C%20I%20want%20to%20book%20an%20Instant%20Security%20Scan%20for%20my%20business." class="cta-btn glass-button" target="_blank" rel="noopener noreferrer">Book Instant Scan</a>
+              <a href="scanner/README.md" class="btn-secondary glass-button">View scanner docs</a>
+            </div>
+            <p class="beta-note">Beta testers wanted — first 5 scans at 50% off. See our <a href="docs/testing-playbook.md">testing playbook</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title glass-text">Service Packs</h2>
+        <p class="section-subtitle">Modular services designed like a SaaS product catalog — pick what you need, scale when you grow</p>
+
+        <h3 class="pack-heading">Core compliance packs</h3>
+        <div class="grid">
+          <div class="card glass-card service-card" data-tilt>
+            <div class="card-depth-layer" aria-hidden="true"></div>
+            <h3>NISF 2026 compliance audit</h3>
+            <p>Gap analysis and compliance assessment for government entities and suppliers against the National Information Security Framework 2026.</p>
+          </div>
+          <div class="card glass-card service-card" data-tilt>
+            <div class="card-depth-layer" aria-hidden="true"></div>
+            <h3>Data protection compliance</h3>
+            <p>Support for the Data Protection and Privacy Act (2019) — PDPO registration consulting, DPIAs, and privacy policy reviews.</p>
+          </div>
+          <div class="card glass-card service-card" data-tilt>
+            <div class="card-depth-layer" aria-hidden="true"></div>
+            <h3>Industry-specific compliance</h3>
+            <p>BoU cyber and technology risk management for banks; UCC cybersecurity guidelines for telecom operators and ISPs.</p>
+          </div>
+        </div>
+
+        <h3 class="pack-heading">Security assessment packs</h3>
+        <div class="grid">
+          <div class="card glass-card service-card" data-tilt>
+            <div class="card-depth-layer" aria-hidden="true"></div>
+            <h3>Vulnerability assessment &amp; penetration testing</h3>
+            <p>Network, web application, and mobile app testing — the highest-demand service in Uganda's growing cybersecurity market.</p>
+          </div>
+          <div class="card glass-card service-card" data-tilt>
+            <div class="card-depth-layer" aria-hidden="true"></div>
+            <h3>IT audit services</h3>
+            <p>Comprehensive audits of IT infrastructure, systems, and data to validate internal controls and data integrity.</p>
+          </div>
+        </div>
+
+        <h3 class="pack-heading">Advanced defense packs</h3>
+        <div class="grid">
+          <div class="card glass-card service-card" data-tilt>
+            <div class="card-depth-layer" aria-hidden="true"></div>
+            <h3>Digital forensics &amp; incident response</h3>
+            <p>Professional investigation and recovery when a breach or security incident occurs.</p>
+          </div>
+          <div class="card glass-card service-card" data-tilt>
+            <div class="card-depth-layer" aria-hidden="true"></div>
+            <h3>Cloud security assessment</h3>
+            <p>Configuration reviews for AWS, Azure, and hybrid setups as more Ugandan firms move workloads to the cloud.</p>
+          </div>
+          <div class="card glass-card service-card" data-tilt>
+            <div class="card-depth-layer" aria-hidden="true"></div>
+            <h3>Secure landing pages</h3>
+            <p>Conversion-focused, mobile-first pages with SSL, headers, dark mode, and WhatsApp lead capture — our original craft, now part of the stack.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-section" id="demos">
+      <div class="container">
+        <h2 class="section-title glass-text">Who we serve</h2>
+        <p class="section-subtitle">Tailored approaches for Uganda's highest-compliance sectors</p>
+      </div>
+
+      <div class="demo-page demo-1 perspective-demo">
+        <div class="demo-depth-layer" aria-hidden="true"></div>
+        <div class="container demo-content">
+          <h3>Banks &amp; financial institutions</h3>
+          <p>BoU cyber risk guidelines, penetration testing, and ongoing compliance support for regulated financial services.</p>
+          <a href="#contact" class="demo-btn glass-button">Request BoU Assessment</a>
+        </div>
+      </div>
+
+      <div class="demo-page demo-2 perspective-demo">
+        <div class="demo-depth-layer" aria-hidden="true"></div>
+        <div class="container demo-content">
+          <h3>Government &amp; public sector</h3>
+          <p>NISF 2026 readiness, security audits, and digitalization support for ministries, agencies, and their vendors.</p>
+          <a href="#contact" class="demo-btn glass-button">Start NISF Gap Analysis</a>
+        </div>
+      </div>
+
+      <div class="demo-page demo-3 perspective-demo">
+        <div class="demo-depth-layer" aria-hidden="true"></div>
+        <div class="container demo-content">
+          <h3>SMEs, NGOs &amp; startups</h3>
+          <p>Data protection compliance, basic security assessments, and affordable secure web presence to build trust with customers.</p>
+          <a href="#contact" class="demo-btn glass-button">Get Starter Pack</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title glass-text">About NexUpTech</h2>
+        <div class="about-content">
+          <p>NexUpTech is a self-taught IT and cybersecurity consultancy based in Kampala, Uganda. We combine hands-on technical skills with deep understanding of local regulations — NISF, UCC, BoU, and the Data Protection and Privacy Act — to help organizations stay audit-ready without enterprise-level budgets.</p>
+          <p>Our team pursues industry credentials including CEH, CompTIA Security+, CISA, and ISO/IEC 27001 Lead Auditor training. We are working toward NITA-U authorization to bid on government projects — a key milestone for serving public-sector clients.</p>
+          <p><strong>Our positioning:</strong> Uganda's local compliance and security expert. We align local regulatory requirements with international best practices so you can compete confidently in the digital economy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <h2 class="section-title glass-text">Transparent Pricing</h2>
+        <p class="section-subtitle">Productized tiers based on Ugandan market rates — no hidden fees</p>
+        <div class="grid">
+          <div class="price-card glass-card" data-tilt>
+            <div class="card-depth-layer" aria-hidden="true"></div>
+            <h3>Starter</h3>
+            <p class="price-tier">Small businesses &amp; startups</p>
+            <div class="price">UGX 1M <span>/ session</span></div>
+            <ul class="price-features">
+              <li>✓ Basic security assessment</li>
+              <li>✓ Vulnerability scan report</li>
+              <li>✓ Data protection checklist review</li>
+              <li>✓ 1-page secure landing page option</li>
+              <li>✓ WhatsApp support for 7 days</li>
+            </ul>
+            <a href="#contact" class="btn-secondary glass-button">Choose Starter</a>
+          </div>
+          <div class="price-card glass-card popular" data-tilt>
+            <div class="popular-tag glass-label">Most popular</div>
+            <div class="card-depth-layer" aria-hidden="true"></div>
+            <h3>Professional</h3>
+            <p class="price-tier">Mid-sized enterprises &amp; NGOs</p>
+            <div class="price">UGX 3–5M <span>/ session</span></div>
+            <ul class="price-features">
+              <li>✓ Full IT audit</li>
+              <li>✓ Penetration testing</li>
+              <li>✓ Compliance gap analysis (NISF / DPPA)</li>
+              <li>✓ Multi-page secure website</li>
+              <li>✓ 30-day post-delivery support</li>
+            </ul>
+            <a href="#contact" class="cta-btn glass-button">Choose Professional</a>
+          </div>
+          <div class="price-card glass-card" data-tilt>
+            <div class="card-depth-layer" aria-hidden="true"></div>
+            <h3>Enterprise</h3>
+            <p class="price-tier">Banks, telcos &amp; large groups</p>
+            <div class="price">Custom <span>&gt; UGX 10M</span></div>
+            <ul class="price-features">
+              <li>✓ Full compliance audit (BoU / UCC / NISF)</li>
+              <li>✓ Red / blue team exercises</li>
+              <li>✓ Retainer security consulting</li>
+              <li>✓ Incident response on-call</li>
+              <li>✓ Dedicated consultant</li>
+            </ul>
+            <a href="#contact" class="btn-secondary glass-button">Contact Sales</a>
+          </div>
+        </div>
+        <p class="pricing-note">See <a href="pricing.md">pricing.md</a> in this repo for the full rate card and add-on services.</p>
+      </div>
+    </section>
+
+    <section class="resources" id="resources">
+      <div class="container">
+        <h2 class="section-title glass-text">Resources &amp; Thought Leadership</h2>
+        <p class="section-subtitle">Free compliance checklists to get started — full audits available on request</p>
+        <div class="grid">
+          <div class="card glass-card resource-card">
+            <h3>NISF 2026 readiness (SMEs)</h3>
+            <p>Self-assessment checklist for small and medium organizations preparing for NISF alignment.</p>
+            <a href="compliance-checklists/nisf-2026-sme-readiness.md" class="resource-link">Download checklist →</a>
+          </div>
+          <div class="card glass-card resource-card">
+            <h3>BoU cyber risk self-assessment</h3>
+            <p>Starter framework for financial institutions mapping controls to Bank of Uganda guidelines.</p>
+            <a href="compliance-checklists/bou-cyber-risk-self-assessment.md" class="resource-link">Download checklist →</a>
+          </div>
+          <div class="card glass-card resource-card">
+            <h3>Data protection officer starter kit</h3>
+            <p>Templates and steps for PDPO registration, DPIA basics, and privacy policy essentials under the DPPA.</p>
+            <a href="compliance-checklists/dpo-starter-kit.md" class="resource-link">Download kit →</a>
+          </div>
+        </div>
+        <p class="resources-note">Want a deeper dive? Read our <a href="services.md">services catalog</a> and <a href="certifications.md">team credentials</a>, or reach out for a custom whitepaper on NISF 2026 or UCC rule changes.</p>
+      </div>
+    </section>
+
+    <section class="contact glass-section" id="contact">
+      <div class="contact-depth-layer" aria-hidden="true"></div>
+      <div class="container contact-content">
+        <h2 class="glass-text">Let's talk security &amp; compliance</h2>
+        <p>Tell us about your organization and which service pack you need. We reply within 24 hours — faster on WhatsApp.</p>
+        <form class="form glass-form" id="contactForm">
+          <label for="name" class="sr-only">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
+          <label for="email" class="sr-only">Email address</label>
+          <input type="email" id="email" name="email" placeholder="Email address" required autocomplete="email">
+          <label for="service" class="sr-only">Service interest</label>
+          <select id="service" name="service" class="form-select">
+            <option value="NISF 2026 Compliance Pack">NISF 2026 compliance pack</option>
+            <option value="Data Protection Compliance">Data protection compliance</option>
+            <option value="VAPT / Security Assessment">VAPT / security assessment</option>
+            <option value="BoU / UCC Compliance">BoU / UCC industry compliance</option>
+            <option value="Secure Landing Page">Secure landing page</option>
+            <option value="Enterprise / Custom">Enterprise / custom engagement</option>
+          </select>
+          <label for="message" class="sr-only">Your message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your organization and what you need..." required></textarea>
+          <button type="submit" class="cta-btn glass-button">Send via WhatsApp</button>
+        </form>
+        <p class="contact-alt">Prefer WhatsApp directly? <a href="https://wa.me/256764625700" target="_blank" rel="noopener noreferrer">+256 764 625 700</a></p>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="container">
-      <p>© 2026 NexUpTech. IT & Cybersecurity Consultancy based in  Uganda, EA.</p>
-      <p>Built by MugaggaMozes with security and ultra-modern design in mind.</p>
+      <p>© 2026 NexUpTech. IT &amp; cybersecurity consultancy — Kampala, Uganda.</p>
+      <p>Built by Mugagga Moses with security, compliance, and modern design in mind.</p>
     </div>
   </footer>
+
+  <a id="whatsapp-float" class="whatsapp-float" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <span aria-hidden="true">💬</span>
+  </a>
 
   <script src="script.js"></script>
 </body>
