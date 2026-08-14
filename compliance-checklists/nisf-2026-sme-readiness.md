@@ -2,7 +2,7 @@
 
 A practical self-assessment for small and medium organizations preparing to align with Uganda's National Information Security Framework (NISF) 2026 — especially those supplying or partnering with government entities.
 
-> **Disclaimer:** This checklist is for educational purposes. It does not constitute legal advice or a formal audit. Contact NexUpTech for a full NISF gap analysis.
+> **Disclaimer:** This checklist is for educational purposes. It does not constitute legal advice or a formal audit. Contact dotyoujee for a full NISF gap analysis.
 
 ---
 
@@ -76,4 +76,4 @@ A practical self-assessment for small and medium organizations preparing to alig
 
 Need a formal NISF 2026 gap analysis with a remediation roadmap?
 
-**[Contact NexUpTech on WhatsApp](https://wa.me/256764625700?text=Hi%2C%20I%20completed%20the%20NISF%202026%20SME%20checklist%20and%20need%20a%20formal%20gap%20analysis.)**
+**[Contact dotyoujee on WhatsApp](https://wa.me/256764625700?text=Hi%2C%20I%20completed%20the%20NISF%202026%20SME%20checklist%20and%20need%20a%20formal%20gap%20analysis.)**

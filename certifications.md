@@ -1,4 +1,4 @@
-# NexUpTech Team Credentials
+# dotyoujee Team Credentials
 
 Trust is the currency in Uganda's cybersecurity market. We invest continuously in skills, certifications, and local regulatory knowledge.
 
@@ -33,7 +33,7 @@ Our core differentiator is understanding **Uganda-specific** requirements alongs
 
 | Milestone | Status |
 |-----------|--------|
-| NexUpTech registered and operating in Kampala | Active |
+| dotyoujee registered and operating in Kampala | Active |
 | GitHub portfolio and service catalog | Active (this repo) |
 | NITA-U authorization for government bidding | **In progress — key target** |
 | Published compliance checklists (lead magnets) | Active — see `compliance-checklists/` |

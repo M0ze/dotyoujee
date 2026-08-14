@@ -1,8 +1,8 @@
-# NexUpTech X (Twitter) Launch Kit
+# dotyoujee X (Twitter) Launch Kit
 
-Everything you need to announce NexUpTech as a new service on X, drive traffic to the site, and start beta testing.
+Everything you need to announce dotyoujee as a new service on X, drive traffic to the site, and start beta testing.
 
-**Live site:** https://m0ze.github.io/nexuptech/  
+**Live site:** https://m0ze.github.io/dotyoujee/  
 **WhatsApp:** +256 764 625 700  
 **Suggested hashtag mix:** `#CyberSecurity #Uganda #InfoSec #NISF2026 #DataProtection #VAPT`
 
@@ -17,7 +17,7 @@ Everything you need to announce NexUpTech as a new service on X, drive traffic t
 
    ```
    IT & cybersecurity consultant | NISF 2026 • VAPT • Data Protection | Kampala 🇺🇬
-   🔗 m0ze.github.io/nexuptech
+   🔗 m0ze.github.io/dotyoujee
    ```
 
 5. Add the site link to your X profile website field.
@@ -29,7 +29,7 @@ Everything you need to announce NexUpTech as a new service on X, drive traffic t
 Copy-paste and adjust:
 
 ```
-🚀 Launching NexUpTech — Uganda's local compliance & security expert.
+🚀 Launching dotyoujee — Uganda's local compliance & security expert.
 
 We help SMEs, banks, and government vendors meet:
 • NISF 2026
@@ -39,7 +39,7 @@ We help SMEs, banks, and government vendors meet:
 NEW: Instant Security Scan — external vuln assessment + PDF report in 24hrs.
 
 Free compliance checklists 👇
-🔗 https://m0ze.github.io/nexuptech/
+🔗 https://m0ze.github.io/dotyoujee/
 
 DM or WhatsApp to book a beta scan (50% off for first 5 clients).
 
@@ -55,7 +55,7 @@ DM or WhatsApp to book a beta scan (50% off for first 5 clients).
 ```
 Uganda's digital compliance window is open — and most SMEs aren't ready.
 
-I'm launching NexUpTech to fix that.
+I'm launching dotyoujee to fix that.
 
 Thread 🧵 — what we do, who we serve, and how to get a beta scan at 50% off ↓
 ```
@@ -75,7 +75,7 @@ The gap? Affordable, local experts who speak both regulation and real-world IT.
 ### Post 3 — Solution
 
 ```
-NexUpTech = productized cybersecurity & compliance for Uganda.
+dotyoujee = productized cybersecurity & compliance for Uganda.
 
 📋 NISF 2026 gap analysis
 🔍 VAPT & IT audits
@@ -84,7 +84,7 @@ NexUpTech = productized cybersecurity & compliance for Uganda.
 
 Transparent pricing from UGX 1M.
 
-Site: https://m0ze.github.io/nexuptech/
+Site: https://m0ze.github.io/dotyoujee/
 ```
 
 ### Post 4 — Proof / demo
@@ -114,7 +114,7 @@ Requirements: you own the domain & authorize the scan via WhatsApp.
 
 Reply or DM "BETA" — or WhatsApp +256 764 625 700
 
-Free NISF checklist (no signup): https://m0ze.github.io/nexuptech/compliance-checklists/nisf-2026-sme-readiness.md
+Free NISF checklist (no signup): https://m0ze.github.io/dotyoujee/compliance-checklists/nisf-2026-sme-readiness.md
 ```
 
 ---
@@ -158,7 +158,7 @@ NISF 2026 is now mandatory for government MDAs — and their vendors are feeling
 We offer a gap analysis + remediation roadmap starting from our Professional tier (UGX 3–5M).
 
 Free starting point: our SME checklist →
-https://m0ze.github.io/nexuptech/compliance-checklists/nisf-2026-sme-readiness.md
+https://m0ze.github.io/dotyoujee/compliance-checklists/nisf-2026-sme-readiness.md
 
 Happy to do a free 15-min scoping call on WhatsApp: +256 764 625 700
 ```

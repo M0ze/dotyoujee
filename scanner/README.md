@@ -1,4 +1,4 @@
-# NexUpTech Instant Scan
+# dotyoujee Instant Scan
 
 Lightweight external vulnerability scanner for authorized targets. Generates JSON, HTML, and PDF reports suitable for client delivery or internal beta testing.
 
@@ -21,7 +21,7 @@ pip install -r requirements.txt
 Nmap maintains an official test server:
 
 ```bash
-python scan.py --target scanme.nmap.org --client "NexUpTech Beta" --authorized
+python scan.py --target scanme.nmap.org --client "dotyoujee Beta" --authorized
 ```
 
 Reports are written to `reports/`:

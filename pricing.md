@@ -1,4 +1,4 @@
-# NexUpTech Pricing
+# dotyoujee Pricing
 
 Transparent, productized pricing aligned with the Ugandan market. All prices in Ugandan Shillings (UGX) unless noted.
 
@@ -49,4 +49,4 @@ Every organization is different. Use the [contact form on the website](index.htm
 
 > Hi, I'm interested in the **[Starter / Professional / Enterprise]** pack for my business.
 
-[Chat on WhatsApp](https://wa.me/256764625700?text=Hi%2C%20I'm%20interested%20in%20getting%20a%20quote%20for%20NexUpTech%20services.)
+[Chat on WhatsApp](https://wa.me/256764625700?text=Hi%2C%20I'm%20interested%20in%20getting%20a%20quote%20for%20dotyoujee%20services.)

@@ -65,7 +65,7 @@ A starter checklist for financial institutions mapping their controls to the Ban
 
 ## Priority actions by maturity
 
-| Maturity | Recommended NexUpTech engagement |
+| Maturity | Recommended dotyoujee engagement |
 |----------|-----------------------------------|
 | Early stage (< 50% complete) | Starter assessment + remediation roadmap |
 | Developing (50–75%) | Professional VAPT + IT audit |
@@ -75,4 +75,4 @@ A starter checklist for financial institutions mapping their controls to the Ban
 
 ## Request a BoU compliance assessment
 
-**[WhatsApp NexUpTech](https://wa.me/256764625700?text=Hi%2C%20I%20need%20a%20BoU%20cyber%20risk%20compliance%20assessment%20for%20my%20financial%20institution.)**
+**[WhatsApp dotyoujee](https://wa.me/256764625700?text=Hi%2C%20I%20need%20a%20BoU%20cyber%20risk%20compliance%20assessment%20for%20my%20financial%20institution.)**

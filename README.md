@@ -1,10 +1,10 @@
-# NexUpTech
+# dotyoujee
 
 **Uganda's local compliance and security expert.**
 
-NexUpTech is a self-taught, Kampala-based IT and cybersecurity consultancy. We help Ugandan businesses stay secure and compliant to win in the digital age — from NISF 2026 readiness and Data Protection Act audits to penetration testing and secure landing pages.
+dotyoujee is a self-taught, Kampala-based IT and cybersecurity consultancy. We help Ugandan businesses stay secure and compliant to win in the digital age — from NISF 2026 readiness and Data Protection Act audits to penetration testing and secure landing pages.
 
-**Live site:** https://m0ze.github.io/nexuptech/
+**Live site:** https://m0ze.github.io/dotyoujee/
 
 **WhatsApp:** [+256 764 625 700](https://wa.me/256764625700?text=Hi%2C%20I'm%20interested%20in%20the%20NISF%202026%20Compliance%20Pack%20for%20my%20business.)
 
@@ -16,7 +16,7 @@ NexUpTech is a self-taught, Kampala-based IT and cybersecurity consultancy. We h
 
 ## Business model
 
-NexUpTech operates as a **productized services** consultancy — we sell clear outcomes, not vague hourly blocks. Think of it as SaaS-style packaging applied to professional cybersecurity and compliance work.
+dotyoujee operates as a **productized services** consultancy — we sell clear outcomes, not vague hourly blocks. Think of it as SaaS-style packaging applied to professional cybersecurity and compliance work.
 
 ### Revenue streams
 
@@ -70,7 +70,7 @@ Uganda's cybersecurity services market is in a growth phase. Regulatory pressure
 
 The cybersecurity services market in Uganda covers vulnerability assessments, penetration testing, compliance consulting, and more — with relatively few local specialists who combine technical skill and regulatory knowledge.
 
-**Our positioning:** NexUpTech as Uganda's local compliance and security expert. Core value: helping clients meet NISF, UCC, and BoU regulations while aligning with international standards like ISO/IEC 27001.
+**Our positioning:** dotyoujee as Uganda's local compliance and security expert. Core value: helping clients meet NISF, UCC, and BoU regulations while aligning with international standards like ISO/IEC 27001.
 
 ---
 
@@ -90,14 +90,14 @@ Detailed catalog: [`services.md`](services.md)
 ### Advanced defense packs
 - Digital forensics and incident response
 - Cloud security assessment (AWS, Azure)
-- Secure landing pages (original NexUpTech craft)
+- Secure landing pages (original dotyoujee craft)
 
 ---
 
 ## Repository structure
 
 ```
-nexuptech/
+dotyoujee/
 ├── index.html              # Main landing page (GitHub Pages)
 ├── style.css               # 3D glassmorphic design system
 ├── script.js               # Interactions, WhatsApp form, parallax
@@ -154,8 +154,8 @@ The landing page mirrors a professional consultancy site:
 
 ```bash
 # Clone and serve locally
-git clone https://github.com/your-org/nexuptech.git
-cd nexuptech
+git clone https://github.com/your-org/dotyoujee.git
+cd dotyoujee
 python3 -m http.server 8000
 # Visit http://localhost:8000
 ```
@@ -168,7 +168,7 @@ Pages deploys automatically on every push to `main` via GitHub Actions.
 
 1. Push this repo to GitHub
 2. **Settings → Pages → Build and deployment → Source: GitHub Actions**
-3. Site live at **https://m0ze.github.io/nexuptech/**
+3. Site live at **https://m0ze.github.io/dotyoujee/**
 
 Social preview: `assets/og-image.png` (1200×630) is referenced in Open Graph and Twitter meta tags.
 
@@ -254,4 +254,4 @@ Team credentials and milestones: [`certifications.md`](certifications.md)
 
 ## License
 
-Content and code © 2026 NexUpTech. Compliance checklists may be shared with attribution. Contact us before commercial redistribution.
+Content and code © 2026 dotyoujee. Compliance checklists may be shared with attribution. Contact us before commercial redistribution.

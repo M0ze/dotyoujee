@@ -108,6 +108,6 @@ Conduct a DPIA when processing is likely to result in high risk, such as:
 
 ## Need hands-on help?
 
-NexUpTech offers Data Protection Compliance packs including PDPO registration support, DPIA reviews, and full DPPA gap analysis.
+dotyoujee offers Data Protection Compliance packs including PDPO registration support, DPIA reviews, and full DPPA gap analysis.
 
 **[Get started on WhatsApp](https://wa.me/256764625700?text=Hi%2C%20I%20need%20help%20with%20Data%20Protection%20compliance%20and%20PDPO%20registration.)**

@@ -1,4 +1,4 @@
-# NexUpTech Service Catalog
+# dotyoujee Service Catalog
 
 Productized cybersecurity and compliance services for the Ugandan market. Each pack delivers a clear outcome — not open-ended consulting hours.
 
@@ -93,4 +93,4 @@ Productized cybersecurity and compliance services for the Ugandan market. Each p
 3. You receive a fixed quote before work begins.
 4. Delivery timelines vary by pack — typically 5–15 business days for assessments.
 
-**Contact:** [WhatsApp +256 764 625 700](https://wa.me/256764625700?text=Hi%2C%20I'm%20interested%20in%20a%20NexUpTech%20service%20pack.)
+**Contact:** [WhatsApp +256 764 625 700](https://wa.me/256764625700?text=Hi%2C%20I'm%20interested%20in%20a%20dotyoujee%20service%20pack.)

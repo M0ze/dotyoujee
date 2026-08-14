@@ -1,4 +1,4 @@
-# NexUpTech Testing Playbook
+# dotyoujee Testing Playbook
 
 How to validate the website, scanner, and service delivery before and during your public launch on X (Twitter).
 
@@ -9,7 +9,7 @@ How to validate the website, scanner, and service delivery before and during you
 ### Website
 
 ```bash
-cd nexuptech
+cd dotyoujee
 python3 -m http.server 8000
 # Open http://localhost:8000
 ```
@@ -29,7 +29,7 @@ python3 -m http.server 8000
 cd scanner
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-python scan.py --target scanme.nmap.org --client "NexUpTech Beta" --authorized
+python scan.py --target scanme.nmap.org --client "dotyoujee Beta" --authorized
 ```
 
 | Test | Pass criteria |
@@ -53,7 +53,7 @@ Use the HTML/PDF output as a sample deliverable in your X launch thread.
 
 1. Push to `main` (GitHub Actions deploys automatically).
 2. Enable Pages if needed: **Repo → Settings → Pages → Source: GitHub Actions**.
-3. Confirm live URL: **https://m0ze.github.io/nexuptech/**
+3. Confirm live URL: **https://m0ze.github.io/dotyoujee/**
 4. Validate social preview:
    - [Twitter Card Validator](https://cards-dev.twitter.com/validator) (or post draft on X — image should show)
    - [Meta Tags Debugger](https://developers.facebook.com/tools/debug/) for Open Graph
@@ -79,7 +79,7 @@ Offer **5 beta slots at 50% off** (UGX 500,000 per Instant Scan) to build case s
 1. **Outreach** — WhatsApp or X DM using templates in [`x-launch-kit.md`](x-launch-kit.md).
 2. **Authorization** — Send this message and save their reply:
 
-   > I authorize NexUpTech to perform an external security scan on `[domain/IP]` on `[date]`. I understand this is a surface-level assessment, not a full penetration test.
+   > I authorize dotyoujee to perform an external security scan on `[domain/IP]` on `[date]`. I understand this is a surface-level assessment, not a full penetration test.
 
 3. **Run scan** — `python scan.py --target THEIR_DOMAIN --client "Beta - Company Name" --authorized`
 4. **Deliver** — Send PDF + HTML via WhatsApp/email within 24 hours.

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-NexUpTech Instant Security Scan
+dotyoujee Instant Security Scan
 Lightweight external vulnerability assessment for authorized targets only.
 
 Usage:
@@ -134,7 +134,7 @@ def fetch_http_headers(target: str, use_https: bool) -> dict[str, Any]:
     }
 
     try:
-        request = urllib.request.Request(url, headers={"User-Agent": "NexUpTech-Scanner/1.0"})
+        request = urllib.request.Request(url, headers={"User-Agent": "dotyoujee-Scanner/1.0"})
         with urllib.request.urlopen(request, timeout=12) as response:
             result["reachable"] = True
             result["status_code"] = response.status
@@ -282,7 +282,7 @@ def run_scan(target: str, client: str) -> dict[str, Any]:
 
     scan = {
         "meta": {
-            "scanner": "NexUpTech Instant Scan v1.0",
+            "scanner": "dotyoujee Instant Scan v1.0",
             "client": client,
             "target": target,
             "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -321,7 +321,7 @@ def write_html(report: dict[str, Any], path: Path) -> None:
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>NexUpTech Scan Report — {report['meta']['target']}</title>
+  <title>dotyoujee Scan Report — {report['meta']['target']}</title>
   <style>
     body {{ font-family: system-ui, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; color: #0f172a; }}
     h1 {{ color: #2563eb; }}
@@ -333,7 +333,7 @@ def write_html(report: dict[str, Any], path: Path) -> None:
   </style>
 </head>
 <body>
-  <h1>NexUpTech Instant Security Scan</h1>
+  <h1>dotyoujee Instant Security Scan</h1>
   <p><span class="badge">Client: {report['meta']['client']}</span></p>
   <p><strong>Target:</strong> {report['meta']['target']}<br>
      <strong>Scan time (UTC):</strong> {report['meta']['timestamp']}<br>
@@ -348,7 +348,7 @@ def write_html(report: dict[str, Any], path: Path) -> None:
 
   <footer>
     {report['meta']['disclaimer']}<br>
-    NexUpTech — Uganda's local compliance and security expert.
+    dotyoujee — Uganda's local compliance and security expert.
   </footer>
 </body>
 </html>"""
@@ -363,7 +363,7 @@ def write_pdf(report: dict[str, Any], path: Path) -> None:
     pdf.set_auto_page_break(auto=True, margin=15)
     pdf.add_page()
     pdf.set_font("Helvetica", "B", 16)
-    pdf.cell(0, 10, "NexUpTech Instant Security Scan", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+    pdf.cell(0, 10, "dotyoujee Instant Security Scan", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
     pdf.set_font("Helvetica", size=11)
     pdf.cell(0, 8, f"Client: {report['meta']['client']}", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
     pdf.cell(0, 8, f"Target: {report['meta']['target']}", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
@@ -388,7 +388,7 @@ def write_pdf(report: dict[str, Any], path: Path) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="NexUpTech authorized external security scan")
+    parser = argparse.ArgumentParser(description="dotyoujee authorized external security scan")
     parser.add_argument("--target", required=True, help="Hostname or IP (e.g. scanme.nmap.org)")
     parser.add_argument("--client", default="Internal Test", help="Client name for the report")
     parser.add_argument(
@@ -404,7 +404,7 @@ def main() -> None:
         )
 
     target = validate_target(args.target)
-    print(f"Starting NexUpTech scan for {target} ...")
+    print(f"Starting dotyoujee scan for {target} ...")
 
     report = run_scan(target, args.client)
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)

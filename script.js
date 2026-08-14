@@ -1,5 +1,5 @@
 /* ================================================================
-   NexUpTech 3D Interactive Controller
+   dotyoujee 3D Interactive Controller
    Mouse tracking, parallax, and depth effects at 60fps
    ================================================================ */
 
@@ -209,7 +209,7 @@ function setupContactForm() {
       return;
     }
 
-    const whatsappText = `Hi NexUpTech,
+    const whatsappText = `Hi dotyoujee,
 
 I'm ${name} (${email}).
 
