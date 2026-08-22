@@ -3,40 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Scammer Payback Africa Initiative | dotyoujee</title>
+<title>Scammer Payback Africa | dotyoujee</title>
 <link rel="stylesheet" href="style.css">
-<style>
-    .dashboard-container { padding: 4rem 1rem; }
-    .status-card { padding: 2rem; border-left: 4px solid var(--primary); }
-</style>
 </head>
 <body>
   <header class="glass-header">
     <div class="container nav">
-      <a href="index.html" class="logo glass-text">dot<span>you</span>jee</a>
-      <nav class="nav-links">
-        <a href="index.html#instant-scan">Instant Scan</a>
+      <a href="index.html" class="logo">dot<span>you</span>jee</a>
+      <button class="nav-toggle" id="nav-toggle">☰</button>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
         <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="dashboard.html">Scammer Payback</a>
+        <a href="dashboard.html" class="active">Scammer Payback</a>
       </nav>
+      <button id="theme-toggle" class="theme-btn">🌙</button>
     </div>
   </header>
 
-  <main class="container dashboard-container">
-    <h1 class="glass-text">Scammer Payback Africa Initiative</h1>
-    <p>A proactive cybersecurity initiative in development. We are architecting the data analysis and reporting pipelines required to empower regional authorities with actionable intelligence against fraud.</p>
-    
-    <section class="card glass-card status-card" style="margin-top: 2rem;">
-        <h3>Development Roadmap</h3>
-        <p>Our focus is currently on constructing the framework for proactive intelligence gathering, advanced threat modeling, and building the forensic pipelines necessary to disrupt fraudulent ecosystems systematically. This initiative aims to bridge the gap between technical threat analysis and official enforcement efforts.</p>
-    </section>
+  <main class="container" style="padding: 4rem 0;">
+    <h1>Scammer Payback Africa Initiative</h1>
+    <p style="margin-top: 1rem; color: var(--text-secondary);">
+      In an era of rising digital fraud across the continent, dotyoujee is developing proactive 
+      methodologies to disrupt fraudulent ecosystems. We are not just reactive; we are 
+      architecting the future of regional cybersecurity intelligence.
+    </p>
 
-    <section class="glass-card" style="margin-top: 2rem; padding: 2rem;">
-        <h3>Interested in Collaboration?</h3>
-        <p>We are actively looking for partners in the cyber security and law enforcement space to refine our intelligence protocols and expand our defensive footprint. If you have capabilities or data to share, let's architect a solution together.</p>
-        <a href="contact.html" class="cta-btn glass-button" style="display:inline-block; margin-top:1rem;">Discuss Strategy</a>
-    </section>
+    <h2 style="margin-top: 2rem;">Our Strategic Approach</h2>
+    <p style="margin-top: 1rem; color: var(--text-secondary);">
+      The Scammer Payback Africa initiative focuses on high-impact threat modeling, forensic 
+      data analysis, and the creation of automated reporting pipelines. By mapping the 
+      infrastructure used by sophisticated scam operations, we aim to provide actionable intelligence 
+      to law enforcement and regulatory bodies, enabling them to neutralize threats at their core.
+    </p>
+
+    <h2 style="margin-top: 2rem;">Why This Matters</h2>
+    <p style="margin-top: 1rem; color: var(--text-secondary);">
+      Cyber fraud erodes trust in the digital economy. Our initiative bridges the gap between 
+      complex technical research and public sector enforcement, ensuring that local expertise 
+      is leveraged to protect SMEs, financial institutions, and vulnerable citizens from 
+      large-scale social engineering and technical scams.
+    </p>
+
+    <div style="margin-top: 3rem; padding: 2rem; background: var(--bg-secondary); border-radius: 12px;">
+        <h3>Join the Mission</h3>
+        <p style="margin-top: 1rem;">We are building the tools to secure Africa's digital future. If you are a cybersecurity professional, developer, or in law enforcement, let's discuss how we can scale these defenses together.</p>
+        <a href="contact.html" style="display: inline-block; margin-top: 1.5rem; padding: 0.8rem 1.5rem; background: var(--primary); color: white; text-decoration: none; border-radius: 8px;">Contact Our Strategy Team</a>
+    </div>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
