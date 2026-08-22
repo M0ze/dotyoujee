@@ -4,6 +4,19 @@
 
 dotyoujee is a self-taught, Kampala-based IT and cybersecurity consultancy. We help Ugandan businesses stay secure and compliant to win in the digital age — from NISF 2026 readiness and Data Protection Act audits to penetration testing and secure landing pages.
 
+## Our Direction
+
+**Mission**
+To democratize access to world-class cybersecurity and compliance services for Ugandan organizations, empowering them to thrive in a digital-first economy through practical, regulatory-aligned, and outcome-focused solutions.
+
+**Vision**
+A secure, compliant, and resilient Ugandan digital landscape where every organization, regardless of size, can operate with confidence and trust.
+
+**Goals**
+1. Establish dotyoujee as the primary partner for SMEs and regulated entities to meet NISF, BoU, and UCC requirements.
+2. Develop sustainable, automated threat intelligence and prevention tools (including the Scammer Payback Africa initiative) to counter local cyber threats.
+3. Build a pipeline of high-impact, productized security services that bridge the gap between enterprise-grade solutions and local affordability.
+
 **Live site:** https://m0ze.github.io/dotyoujee/
 
 **WhatsApp:** [+256 764 625 700](https://wa.me/256764625700?text=Hi%2C%20I'm%20interested%20in%20the%20NISF%202026%20Compliance%20Pack%20for%20my%20business.)

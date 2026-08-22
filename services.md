@@ -1,6 +1,6 @@
 # dotyoujee Service Catalog
 
-Productized cybersecurity and compliance services for the Ugandan market. Each pack delivers a clear outcome — not open-ended consulting hours.
+Productized cybersecurity and compliance services tailored for the Ugandan market. We bridge the gap between complex regulatory requirements and practical, actionable business security. Our approach centers on deep integration with local regulatory frameworks (NISF, BoU, UCC) ensuring that every deliverable is not just technically sound, but audit-ready and compliant from day one. We don't just find problems; we build the documented evidence and remediation paths you need to maintain progress and stakeholder confidence. Each pack delivers a clear, scoped outcome — not open-ended consulting hours.
 
 ---
 
