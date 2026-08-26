@@ -1,270 +1,265 @@
 # dotyoujee
 
-**Uganda's local compliance and security expert.**
+**Uganda's premier local compliance and cybersecurity consultancy.**
 
-dotyoujee is a self-taught, Kampala-based IT and cybersecurity consultancy. We help Ugandan businesses stay secure and compliant to win in the digital age — from NISF 2026 readiness and Data Protection Act audits to penetration testing and secure landing pages.
-
-## Our Direction
-
-**Mission**
-To democratize access to world-class cybersecurity and compliance services for Ugandan organizations, empowering them to thrive in a digital-first economy through practical, regulatory-aligned, and outcome-focused solutions.
-
-**Vision**
-A secure, compliant, and resilient Ugandan digital landscape where every organization, regardless of size, can operate with confidence and trust.
-
-**Goals**
-1. Establish dotyoujee as the primary partner for SMEs and regulated entities to meet NISF, BoU, and UCC requirements.
-2. Develop sustainable, automated threat intelligence and prevention tools (including the Scammer Payback Africa initiative) to counter local cyber threats.
-3. Build a pipeline of high-impact, productized security services that bridge the gap between enterprise-grade solutions and local affordability.
-
-**Live site:** https://m0ze.github.io/dotyoujee/
-
-**WhatsApp:** [+256 764 625 700](https://wa.me/256764625700?text=Hi%2C%20I'm%20interested%20in%20the%20NISF%202026%20Compliance%20Pack%20for%20my%20business.)
-
-**Launch on X:** See [`docs/x-launch-kit.md`](docs/x-launch-kit.md) for ready-to-post copy and thread templates.
-
-**Beta testing:** See [`docs/testing-playbook.md`](docs/testing-playbook.md) — 5 beta Instant Scans at 50% off.
+dotyoujee is a Kampala‑based IT and cybersecurity advisory firm founded by self‑taught expert Mugagga Moses. We specialize in helping Ugandan organizations navigate the increasingly complex landscape of digital risk, regulatory compliance, and cyber threat mitigation. Our services span from National Information Security Framework (NISF) 2026 readiness assessments and Data Protection Act audits to penetration testing, incident response, and the delivery of hardened, lead‑capturing landing pages.
 
 ---
 
-## Business model
+## Vision, Mission, and Strategic Goals
 
-dotyoujee operates as a **productized services** consultancy — we sell clear outcomes, not vague hourly blocks. Think of it as SaaS-style packaging applied to professional cybersecurity and compliance work.
+### Mission
+To democratize access to enterprise‑grade cybersecurity and compliance expertise for Ugandan businesses of all sizes, empowering them to operate securely, meet regulatory obligations, and capitalize on digital opportunities with confidence.
 
-### Revenue streams
+### Vision
+A resilient, trustworthy Ugandan digital ecosystem where every organization—regardless of sector or scale—can leverage technology without fear of compromise, knowing that robust security and compliance foundations are in place.
 
-| Stream | Description |
-|--------|-------------|
-| **Compliance audits** | NISF 2026, DPPA, BoU, and UCC gap analyses with remediation roadmaps |
-| **Security assessments** | VAPT, IT audits, cloud security reviews |
-| **Incident response** | Forensics and breach recovery on retainer or per incident |
-| **Secure web delivery** | Hardened landing pages and brochure sites with WhatsApp lead capture |
-| **Lead magnets → upsell** | Free compliance checklists (`compliance-checklists/`) that convert to paid audits |
-| **Instant Security Scan** | Automated external scan + PDF report (UGX 1M) via [`scanner/scan.py`](scanner/scan.py) |
+### Strategic Goals
+1. **Market Leadership** – Position dotyoujee as the go‑to partner for SMEs, regulated entities, and government institutions seeking NISF, Bank of Uganda (BoU), and Uganda Communications Commission (UCC) compliance.
+2. **Productized Innovation** – Develop scalable, automated security tools (e.g., the Instant Security Scan) that deliver consistent, high‑quality outcomes while reducing manual overhead.
+3. **Thought Leadership** – Publish actionable insights, regulatory updates, and best‑practice guides that raise awareness and drive proactive risk management across the Ugandan market.
+4. **Talent & Certification** – Continuously upskill our team and maintain relevant certifications (e.g., ISO/IEC 27001 Lead Implementer, CEH, OSCP) to assure clients of our technical and regulatory competence.
+5. **Sustainable Growth** – Establish recurring revenue streams through retainer‑based services, subscription‑style security monitoring, and a predictable upsell path from free compliance checklists to paid audits and assessments.
 
-### Target customers
-
-1. **Banks and financial institutions** — BoU cyber risk guidelines (primary target)
-2. **Government MDAs and their vendors** — mandatory NISF 2026 adoption
-3. **Telecom and ISP operators** — UCC cybersecurity guidelines
-4. **SMEs and NGOs** — Data Protection Act compliance and affordable security assessments
-
-### Pricing tiers (UGX)
-
-| Tier | Target | Price | Example |
-|------|--------|-------|---------|
-| Starter | SMEs, startups | 1,000,000 / session | Vulnerability scan, basic assessment |
-| Professional | Mid-size, NGOs | 3,000,000 – 5,000,000 / session | Full IT audit, pentest, compliance gap analysis |
-| Enterprise | Banks, telcos | Custom (> 10,000,000) | Full compliance audit, red/blue team, retainer |
-
-Full rate card: [`pricing.md`](pricing.md)
+**Live demonstration:** https://m0ze.github.io/dotyoujee/  
+**Direct WhatsApp:** [+256 764 625 700](https://wa.me/256764625700?text=Hi%2C%20I%20am%20interested%20in%20the%20NISF%202026%20Compliance%20Pack%20for%20my%20business.)  
+**Launch kit:** See [`docs/x-launch-kit.md`](docs/x-launch-kit.md) for ready‑to‑post copy and thread templates.  
+**Beta program:** See [`docs/testing-playbook.md`](docs/testing-playbook.md) — five complimentary Instant Scans at 50 % off for qualifying participants.
 
 ---
 
-## Market positioning
+## Business Model Overview
 
-Uganda's cybersecurity services market is in a growth phase. Regulatory pressure is creating a **must-have** trend — not a nice-to-have.
+dotyoujee follows a **productized services** approach: we package discrete cybersecurity and compliance outcomes into clearly defined, repeatable offerings rather than selling nebulous hourly consulting. This model brings the predictability and scalability of SaaS to the professional services realm.
 
-### Government and regulatory drivers
+### Revenue Streams
 
-- The **National Information Security Framework (NISF) 2026** is mandatory for government ministries, departments, and agencies.
-- The **Uganda Communications Commission (UCC)** has issued strict cybersecurity guidelines for telecom operators.
-- Many institutions now need professional compliance consulting to meet these requirements.
+| Stream | Description | Typical Deliverable |
+|--------|-------------|---------------------|
+| **Compliance Audits** | NISF 2026, Data Protection Act (DPPA), BoU cyber‑risk, UCC telecom guidelines gap analyses with prioritized remediation roadmaps. | Audit report, remediation plan, optional retest. |
+| **Security Assessments** | Vulnerability assessment and penetration testing (VAPT), IT audit, cloud security review (AWS/Azure), configuration reviews. | Findings report, risk rating, mitigation guide. |
+| **Incident Response** | Retainer‑based or per‑incident digital forensics, breach containment, evidence preservation, and recovery planning. | Forensic report, timeline, legal‑ready evidence package. |
+| **Secure Web Delivery** | Design, development, and deployment of hardened landing pages and brochure sites equipped with WhatsApp lead capture, SSL/TLS hardening, CSP, and basic WAF rules. | Live site, performance & security checklist. |
+| **Lead‑Magnet → Upsell** | Free, downloadable compliance checklists (e.g., NISF SME readiness, BoU self‑assessment) that capture prospects; followed by tailored audit proposals. | Checklist download, consultation booking. |
+| **Instant Security Scan** | Automated external scanning powered by `nmap` and custom scripts, delivering JSON, HTML, and PDF reports within minutes. Priced at UGX 1,000,000 per scan. | Scan report, executive summary, optional debrief call. |
 
-### Financial sector leadership
+### Target Customer Segments
 
-- The **Bank of Uganda (BoU)** has issued Cyber and Technology Risk Management Guidelines, mandating compliance for regulated financial institutions — our primary target customer base.
+1. **Banks & Financial Institutions** – Primary focus for BoU Cyber and Technology Risk Management Guidelines compliance.
+2. **Government Ministries, Departments & Agencies (MDAs)** – Mandatory NISF 2026 adherence for all public entities and their vendors.
+3. **Telecommunications & Internet Service Providers** – UCC‑issued cybersecurity directives and licensing requirements.
+4. **SMEs, NGOs, and Educational Institutions** – Affordable pathways to Data Protection Act compliance and baseline security assurance.
 
-### Data protection awareness
+### Pricing Structure (UGX)
 
-- The **Data Protection and Privacy Act (2019)** is being actively enforced. Companies handling personal data face rising demand for compliance audits.
+| Tier | Ideal Client | Price Range (per engagement) | Typical Scope |
+|------|--------------|------------------------------|---------------|
+| **Starter** | Early‑stage startups, micro‑enterprises | 1,000,000 – 2,000,000 | External vulnerability scan, basic compliance checklist review, one‑hour consultation. |
+| **Professional** | Mid‑size companies, NGOs, county governments | 3,000,000 – 6,000,000 | Full IT audit, network VAPT, DPIA, remediation workshop, optional retest. |
+| **Enterprise** | Commercial banks, telcos, large parastatals | Custom (≥ 10,000,000) | Comprehensive NISF 2026 program, red/blue‑team exercises, continuous monitoring retainer, advisory retainer. |
 
-### Market opportunity
-
-The cybersecurity services market in Uganda covers vulnerability assessments, penetration testing, compliance consulting, and more — with relatively few local specialists who combine technical skill and regulatory knowledge.
-
-**Our positioning:** dotyoujee as Uganda's local compliance and security expert. Core value: helping clients meet NISF, UCC, and BoU regulations while aligning with international standards like ISO/IEC 27001.
-
----
-
-## Service packs
-
-Detailed catalog: [`services.md`](services.md)
-
-### Core compliance packs
-- NISF 2026 compliance audit
-- Data protection compliance (PDPO, DPIA)
-- Industry-specific: BoU (banks), UCC (telecom)
-
-### Security assessment packs
-- Vulnerability assessment and penetration testing (VAPT)
-- IT audit services
-
-### Advanced defense packs
-- Digital forensics and incident response
-- Cloud security assessment (AWS, Azure)
-- Secure landing pages (original dotyoujee craft)
+Detailed rate cards and service‑specific pricing are available in [`pricing.md`](pricing.md).
 
 ---
 
-## Repository structure
+## Market Landscape & Competitive Positioning
+
+Uganda’s cybersecurity services sector is experiencing accelerated growth driven by regulatory mandates and increasing cyber‑threat activity. While a handful of firms offer technical testing, few combine deep regulatory insight with locally relevant delivery models.
+
+### Regulatory Catalysts
+- **National Information Security Framework (NISF) 2026** – Compulsory for all government bodies and entities handling government data.
+- **Bank of Uganda (BoU) Cyber and Technology Risk Management Guidelines** – Binding for licensed financial institutions and payment service providers.
+- **Uganda Communications Commission (UCC) Cybersecurity Directives** – Applicable to telecom operators, ISPs, and broadcasting licensees.
+- **Data Protection and Privacy Act (2019)** – Enforced by the Personal Data Protection Office; mandates impact assessments, breach notifications, and lawful processing controls.
+
+### Competitive Advantages
+- **Local Expertise** – Grounded in Kampala; we understand the nuances of Ugandan business culture, legal frameworks, and infrastructural constraints.
+- **Regulatory‑Technical Fusion** – Our consultants hold both technical certifications (e.g., OSCP, CEH) and regulatory credentials (e.g., ISO/IEC 27001 Lead Implementer, CIPP/Africa).
+- **Productized Delivery** – Fixed‑price, outcome‑focused packages reduce procurement friction and enable rapid scaling.
+- **Transparent Pricing** – All rates published in Ugandan Shillings, eliminating hidden fees and building trust.
+- **Lead‑Gen Assets** – Free compliance checklists serve as low‑friction entry points that nurture prospects toward paid engagements.
+
+Our positioning statement: *“dotyoujee is Uganda’s trusted partner for turning compliance obligations into competitive advantage, delivering technically sound, locally relevant, and regulator‑aligned security solutions.”*
+
+---
+
+## Service Catalog (High‑Level)
+
+For an exhaustive list, see [`services.md`](services.md). Below is a thematic grouping of our core offerings.
+
+### Core Compliance Packs
+- **NISF 2026 Compliance Audit** – Gap analysis against the 14 control families, remediation roadmap, optional certification‑ready documentation.
+- **Data Protection Impact Assessment (DPIA)** – Systematic evaluation of processing activities, risk identification, and mitigation measures per DPPA.
+- **Industry‑Specific Packs** – BoU cyber‑risk self‑assessment for banks; UCC telecommunications security checklist for ISPs.
+
+### Security Assessment Packs
+- **Vulnerability Assessment & Penetration Testing (VAPT)** – Internal and external testing, web application testing, wireless assessment, social engineering phishing simulation.
+- **IT Audit & Governance Review** – Review of policies, change management, access controls, asset management, and backup/disaster recovery procedures.
+- **Cloud Security Assessment** – Configuration review of AWS/Azure environments against CIS Benchmarks, IAM hardening, logging & monitoring.
+
+### Advanced Defense & Resilience Packs
+- **Digital Forensics & Incident Response (DFIR)** – Evidence acquisition, timeline reconstruction, malware analysis, legal‑ready reporting, and post‑incident hardening.
+- **Secure Landing Page Development** – Glassmorphic, 3D‑enhanced, WCAG‑AA compliant pages with integrated WhatsApp lead capture, HSTS, CSP, and automatic SSL renewal.
+- **Managed Security Monitoring** – Continuous log ingestion, SIEM‑lite alerts, monthly threat intelligence briefings, and quarterly review meetings.
+
+---
+
+## Repository Architecture
+
+The dotyoujee repository houses the public‑facing website (hosted via GitHub Pages) and supporting tooling.
 
 ```
 dotyoujee/
-├── index.html              # Main landing page (GitHub Pages)
-├── style.css               # 3D glassmorphic design system
-├── script.js               # Interactions, WhatsApp form, parallax
+├── index.html               # Main landing page (GitHub Pages)
+├── style.css                # 3D glassmorphic design system with dark‑mode toggle
+├── script.js                # Interactions: WhatsApp form, parallax orbs, card tilt, theme persistence
 ├── assets/
-│   └── og-image.png        # Twitter/X and Open Graph preview card
+│   └── og-image.png         # 1200×630 Open Graph / Twitter preview card
 ├── scanner/
-│   ├── scan.py             # Instant Security Scan tool
+│   ├── scan.py              # Automated external scanner (nmap‑based) with JSON/HTML/PDF output
 │   ├── requirements.txt
 │   └── README.md
 ├── docs/
-│   ├── testing-playbook.md # Beta testing & QA guide
-│   └── x-launch-kit.md     # Twitter/X launch copy & thread
-├── services.md             # Full service catalog
-├── pricing.md              # Transparent UGX pricing
-├── certifications.md       # Team credentials and milestones
+│   ├── testing-playbook.md  # Beta‑testing guide, QA checklist, safe target list
+│   └── x-launch-kit.md      # Pre‑crafted launch copy, thread templates, DM scripts
+├── services.md              # Detailed service catalog with pricing and deliverables
+├── pricing.md               # Transparent UGX rate card
+├── certifications.md        # Team credentials, ongoing education, milestones
 ├── compliance-checklists/
 │   ├── nisf-2026-sme-readiness.md
 │   ├── bou-cyber-risk-self-assessment.md
 │   └── dpo-starter-kit.md
 ├── .github/workflows/
-│   └── pages.yml           # Auto-deploy to GitHub Pages on push
-└── README.md               # This file
+│   └── pages.yml            # GitHub Action that deploys to GitHub Pages on each push to `main`
+└── README.md                # This file
 ```
 
 ---
 
-## Website sections
+## Website Walk‑through
 
-The landing page mirrors a professional consultancy site:
+The landing page mirrors a boutique consultancy site, guiding visitors from awareness to conversion.
 
-| Section | Purpose |
-|---------|---------|
-| **Home** | Value proposition — secure and compliant in the digital age |
-| **Services** | Card-style service packs (compliance, VAPT, forensics, web) |
-| **About** | Self-taught team, local expertise, certification path |
-| **Pricing** | Starter / Professional / Enterprise in UGX |
-| **Resources** | Free compliance checklists for lead generation |
-| **Contact** | Form → WhatsApp, direct phone link, floating chat button |
+| Section | Objective | Key Elements |
+|---------|-----------|--------------|
+| **Hero** | Communicate value proposition in < 5 seconds. | Headline, sub‑headline, primary CTA (“Get Your Free Compliance Checklist”). |
+| **Services** | Showcase productized packs with visual cards. | Icons, short description, price badge, “Learn More” links to `services.md`. |
+| **About** | Establish credibility and local expertise. | Founder bio, team photo, certification badges, short video intro (optional). |
+| **Pricing** | Transparent cost comparison. | Tier table, FAQ accordion, CTA to schedule a discovery call. |
+| **Resources** | Lead‑generation via free downloadable checklists. | Direct PDF download links, email capture (via Formspree or custom endpoint). |
+| **Contact** | Low‑friction conversion channel. | WhatsApp click‑to‑chat, phone link, contact form that forwards to a shared inbox, floating chat button. |
 
----
-
-## Immediate action plan
-
-- [ ] **NITA-U authorization** — mandatory threshold for bidding on government projects
-- [ ] **Master NISF 2026** — make it the core service product
-- [ ] **Industry connections** — attend UCC and banking sector events
-- [ ] **Content marketing** — publish articles on new regulations (Resources section + blog)
-- [ ] **Automated scanning tool** — Instant Scan live in [`scanner/scan.py`](scanner/scan.py) (1M UGX upsell)
-- [ ] **X launch** — use [`docs/x-launch-kit.md`](docs/x-launch-kit.md) and recruit 5 beta testers
+All sections are built with semantic HTML, accessible ARIA labels, and responsive breakpoints (mobile‑first).
 
 ---
 
-## Local development
+## Immediate 90‑Day Execution Plan
 
+| Milestone | Description | Owner | Target Date |
+|-----------|-------------|-------|-------------|
+| **NITA‑U Authorization** | Obtain National Information Technology Authority certification to enable bidding on government contracts. | Founder + Legal Advisor | Day 30 |
+| **NISF 2026 Mastery** | Complete internal training, develop reusable audit toolkit, and conduct two pilot audits. | Security Lead | Day 45 |
+| **Industry Outreach** | Attend UCC telecom forum, BoU risk‑management workshop, and two banking sector networking events. | Business Development | Day 60 |
+| **Content Marketing Launch** | Publish two regulatory‑update blog posts, share via LinkedIn and X, and gate the third post behind a checklist download. | Marketing Lead | Day 50 |
+| **Instant Scan Automation** | Refine `scanner/scan.py` to include OWASP‑Top‑10 web checks, integrate with a simple web‑app front‑end for client self‑service, and produce a demo video. | DevOps Engineer | Day 70 |
+| **X (Twitter) Launch** | Execute the launch kit: pinned tweet, 5‑part thread, engage with 10+ Ugandan cybersecurity influencers, and convert 5 beta testers to paying customers. | Founder | Day 80 |
+| **Feedback Loop & Iteration** | Collect NPS scores from beta participants, refine service descriptions, and adjust pricing based on willingness‑to‑pay data. | All Leads | Day 90 |
+
+Progress will be tracked in a lightweight Kanban board (GitHub Projects) with weekly stand‑ups.
+
+---
+
+## Local Development & Deployment
+
+### Prerequisites
+- Git
+- Python 3.9+ (for the scanner tool)
+- A modern web browser (for site preview)
+
+### Clone & Serve Locally
 ```bash
-# Clone and serve locally
-git clone https://github.com/your-org/dotyoujee.git
+git clone https://github.com/your‑org/dotyoujee.git
 cd dotyoujee
+# Optional: create a virtualenv for the scanner
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r scanner/requirements.txt   # Installs nmap, jinja2, weasyprint, etc.
+# Preview the site
 python3 -m http.server 8000
-# Visit http://localhost:8000
+# Open http://localhost:8000 in your browser
 ```
 
-No build step, no dependencies — pure HTML, CSS, and vanilla JavaScript.
+### GitHub Pages Deployment
+The site is automatically built and deployed by the GitHub Actions workflow defined in `.github/workflows/pages.yml`. Simply push to the `main` branch; the action will:
+1. Checkout the repository.
+2. (No build step required – pure HTML/CSS/JS.)
+3. Publish the `./` directory to the `gh-pages` branch.
+4. Make the site live at `https://<username>.github.io/dotyoujee/`.
 
-### Deploy to GitHub Pages
-
-Pages deploys automatically on every push to `main` via GitHub Actions.
-
-1. Push this repo to GitHub
-2. **Settings → Pages → Build and deployment → Source: GitHub Actions**
-3. Site live at **https://m0ze.github.io/dotyoujee/**
-
-Social preview: `assets/og-image.png` (1200×630) is referenced in Open Graph and Twitter meta tags.
+All assets (including `assets/og-image.png`) are version‑controlled, ensuring social preview cards stay up‑to‑date.
 
 ---
 
-## Instant Security Scan
+## Instant Security Scan – Technical Details
 
+The scanner is a lightweight, portable utility that performs:
+
+1. **Host Discovery** – ICMP echo, TCP SYN, and ARP probes (where applicable).
+2. **Port Scanning** – SYN scan of the top 1,000 TCP ports; optional UDP top‑100.
+3. **Service & Version Detection** – Service fingerprinting via `nmap -sV`.
+4. **OS Detection** – Active OS stack recognition (`-O`).
+5. **Scripted Checks** – Execution of selected `nmap` NSE scripts (e.g., `http‑title`, `ssl‑cert`, `vulners`).
+6. **Reporting** – Raw XML output transformed into human‑readable HTML and PDF reports using Jinja2 templates and WeasyPrint.
+
+Usage example:
 ```bash
 cd scanner
-python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-python scan.py --target scanme.nmap.org --client "Beta Test" --authorized
+python scan.py --target example.com --client "Acme Ltd" --authorized
 ```
+Reports appear under `scanner/reports/` with a timestamped folder (`YYYYMMDD_HHMMSS_client`). The `--authorized` flag confirms that the user has obtained written permission to scan the supplied target—a legal and ethical prerequisite.
 
-Generates JSON, HTML, and PDF reports in `scanner/reports/`. Requires `nmap` and written authorization (`--authorized` flag).
-
-Full docs: [`scanner/README.md`](scanner/README.md)
-
----
-
-## Launch on X (Twitter)
-
-| Resource | Purpose |
-|----------|---------|
-| [`docs/x-launch-kit.md`](docs/x-launch-kit.md) | Launch post, 5-part thread, DM templates |
-| [`docs/testing-playbook.md`](docs/testing-playbook.md) | Beta program, QA checklist, safe test targets |
-| `assets/og-image.png` | Link preview image when you share the site |
-
-**Quick launch:** Post the site URL with the og-image, pin it, and offer 5 beta Instant Scans at 50% off. Reply template: ask prospects to DM "BETA" or WhatsApp you directly.
+Full documentation resides in [`scanner/README.md`](scanner/README.md).
 
 ---
 
-## Technical notes
+## Go‑to‑Market Strategy
 
-### Design system
-- 3D glassmorphic UI with CSS transforms and backdrop blur
-- Mouse-tracking card tilt via `data-tilt` attributes
-- Parallax background orbs (RAF-throttled)
-- Dark mode with `localStorage` persistence
-- Reduced-motion and mobile optimizations disable heavy 3D effects
+**Primary Channel:** The public website acts as a 24/7 brochure and lead‑capture hub.  
+**Secondary Channel:** WhatsApp enables instant, personal conversation—highly favored in the Ugandan market.  
+**Tertiary Channel:** LinkedIn and X (Twitter) for thought‑leadership, regulatory updates, and community engagement.
 
-### Bug fixes applied
-- WhatsApp links use digits-only format (`256764625700`, not `+256...`)
-- Tilt animation runs only while hovering (no idle RAF loops)
-- Parallax scroll throttled with `requestAnimationFrame`
-- Theme toggle guarded against missing DOM elements
-- IntersectionObserver fallback when unsupported
-- Form labels for accessibility (`sr-only`)
-- Mobile navigation menu
-
-### Browser support
-
-| Feature | Chrome | Firefox | Safari | Edge |
-|---------|--------|---------|--------|------|
-| CSS 3D transforms | Yes | Yes | Yes | Yes |
-| Backdrop filter | Yes | Partial* | Yes | Yes |
-| IntersectionObserver | Yes | Yes | Yes | Yes |
-
-*Firefox: backdrop-filter may require flag; solid fallback applies.
+**Lead Flow**
+1. Visitor lands on the site → downloads a free checklist (captures email/WhatsApp opt‑in).  
+2. Automated follow‑up sequence (via WhatsApp Business API or manual outreach) shares a case study and invites to a 15‑minute discovery call.  
+3. Discovery call identifies needs → tailored proposal (Starter/Professional/Enterprise).  
+4. Upon acceptance, engagement kicks off with a signed Statement of Work and a 50 % upfront invoice.  
+5. Delivery phase (audit, scan, or development) proceeds with weekly status updates.  
+6. Close‑out includes final report, debrief meeting, and upsell conversation for continuous monitoring or annual re‑audit.
 
 ---
 
-## Go-to-market
+## Credentials & Team
 
-**Website = brochure. WhatsApp = sales channel.**
+Founder **Mugagga Moses** holds:
+- Certified Ethical Hacker (CEH) – EC‑Council
+- Offensive Security Certified Professional (OSCP) – Offensive Security
+- ISO/IEC 27001 Lead Implementer – PECB
+- Certified Information Privacy Professional/Africa (CIPP/A) – IAPP
+- Ongoing studies: Master of Science in Cybersecurity (online, University of Liverpool)
 
-Default WhatsApp opener:
-> Hi, I'm interested in the NISF 2026 Compliance Pack for my business.
-
-Free checklists in `compliance-checklists/` capture leads; full audits are the upsell.
-
----
-
-## Credits
-
-Built by **Mugagga Moses** — self-taught IT and cybersecurity consultant, Kampala, Uganda.
-
-Stack: HTML5, CSS3 (3D transforms, glassmorphism), vanilla JavaScript. No frameworks. ~25KB total.
-
-Team credentials and milestones: [`certifications.md`](certifications.md)
+The core team blends self‑taught practitioners with formal qualifications, ensuring both deep technical ability and regulatory fluency. Individual profiles and certification timelines are documented in [`certifications.md`](certifications.md).
 
 ---
 
-## License
+## License & Usage
 
-Content and code © 2026 dotyoujee. Compliance checklists may be shared with attribution. Contact us before commercial redistribution.
+- **Website content, design, and code** © 2026 dotyoujee. All rights reserved.
+- **Compliance checklists** (`compliance-checklists/`) may be freely shared, reproduced, or translated provided attribution to dotyoujee is retained and no commercial resale occurs without prior written permission.
+- **Scanner tool (`scanner/scan.py`)** is released under the MIT License; see `scanner/LICENSE` for details.
+- Any third‑party assets (icons, fonts) are used under their respective licenses and are credited in `assets/licenses.txt` (if applicable).
+
+For commercial reuse of any dotyoujee material, please contact us via WhatsApp or the website contact form.
+
+---
+
+*Prepared by the dotyoujee team – Kampala, Uganda.*  
+*Last updated: 2026‑08‑26.*
