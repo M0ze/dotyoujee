@@ -264,6 +264,27 @@ function setupMobileNav() {
 }
 
 /* ================================================================
+   FAQ accordion
+   ================================================================ */
+function setupFAQ() {
+  document.querySelectorAll('.faq-question').forEach((question) => {
+    question.addEventListener('click', () => {
+      const faqItem = question.parentElement;
+      const isActive = faqItem.classList.contains('active');
+
+      // Close all items
+      document.querySelectorAll('.faq-item').forEach((item) => {
+        item.classList.remove('active');
+      });
+
+      if (!isActive) {
+        faqItem.classList.add('active');
+      }
+    });
+  });
+}
+
+/* ================================================================
    Apply mobile / reduced-motion optimizations
    ================================================================ */
 function applyPerformanceOptimizations() {
@@ -293,6 +314,7 @@ function init() {
   setupContactForm();
   setupWhatsAppButton();
   setupMobileNav();
+  setupFAQ();
 }
 
 if (document.readyState === 'loading') {
