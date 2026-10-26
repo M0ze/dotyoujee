@@ -1,0 +1,12 @@
+dotyoujee website assets
+=========================
+
+All website assets, including the Open Graph image assets/og-image.png,
+were created by dotyoujee and are the original work of the dotyoujee team.
+No third-party assets requiring attribution are bundled with this repository.
+
+Other notes
+-----------
+- scanner/scan.py — MIT License (see scanner/LICENSE).
+- Compliance checklists (compliance-checklists/) — free to share with attribution;
+  commercial resale requires prior written permission.

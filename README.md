@@ -55,7 +55,7 @@ dotyoujee follows a **productized services** approach: we package discrete cyber
 | Tier | Ideal Client | Price Range (per engagement) | Typical Scope |
 |------|--------------|------------------------------|---------------|
 | **Starter** | Early‑stage startups, micro‑enterprises | 1,000,000 – 2,000,000 | External vulnerability scan, basic compliance checklist review, one‑hour consultation. |
-| **Professional** | Mid‑size companies, NGOs, county governments | 3,000,000 – 6,000,000 | Full IT audit, network VAPT, DPIA, remediation workshop, optional retest. |
+| **Professional** | Mid‑size companies, NGOs, county governments | 3,000,000 – 5,000,000 | Full IT audit, network VAPT, DPIA, remediation workshop, optional retest. |
 | **Enterprise** | Commercial banks, telcos, large parastatals | Custom (≥ 10,000,000) | Comprehensive NISF 2026 program, red/blue‑team exercises, continuous monitoring retainer, advisory retainer. |
 
 Detailed rate cards and service‑specific pricing are available in [`pricing.md`](pricing.md).
