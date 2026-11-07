@@ -1,55 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="dotyoujee terms of service.">
-  <title>Terms | dotyoujee</title>
-  <link rel="stylesheet" href="../style.css">
+  <title>Terms of Service | dotyoujee Uganda</title>
+  <meta name="description" content="Terms of Service and Rules of Engagement for cybersecurity advisory, VAPT, and compliance assessments by dotyoujee Uganda.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="glass-header">
-    <div class="container nav">
-      <a href="../index.html" class="logo">dot<span class="accent">you</span>jee</a>
-      <nav class="nav-links">
-        <a href="../index.html#instant-scan">Instant Scan</a>
-        <a href="../services.html">Services</a>
-        <a href="../about.html">About</a>
-        <a href="../pricing.html">Pricing</a>
-        <a href="../resources.html">Resources</a>
-        <a href="../contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-  <main class="container">
-    <section class="faq-item" style="border:none;">
-      <h1 class="section-title">Terms of Service</h1>
-      <div class="glass-section">
-        <p>By accessing dotyoujee's website (the "Site"), you agree to these terms.</p>
-        <h2>Services</h2>
-        <p>dotyoujee provides cybersecurity and compliance advisory services. Some services are described as productized packs with fixed pricing. Deliverables and timelines are set out in the relevant service agreement.</p>
-        <h2>Pricing</h2>
-        <p>Prices are published in Ugandan Shillings (UGX) and are fixed for each engagement unless stated otherwise. Any change to the scope of work requires a written change request and updated pricing.</p>
-        <h2>Instant Security Scan</h2>
-        <p>The Instant Security Scan is a surface-level external vulnerability scan. It is <strong>not</strong> a full penetration test. By booking a scan you confirm that you own the target or have written authorisation from the system owner. Scanning third parties without permission may be unlawful.</p>
-        <h2>Confidentiality</h2>
-        <p>You may retain confidential information you share with us for the purpose of engaging our services. We use reasonable technical and organisational measures to protect it, but no method of transmission is completely secure.</p>
-        <h2>Limitation of liability</h2>
-        <p>To the maximum extent permitted by Ugandan law, dotyoujee's liability arising from these services is limited to the amount actually paid, or, if greater, the value of the services performed.</p>
-        <h2>Governing law</h2>
-        <p>These terms are governed by the laws of Uganda.</p>
-        <p>© 2026 dotyoujee. All rights reserved.</p>
+  <canvas id="cyber-canvas" aria-hidden="true"></canvas>
+
+  <div class="main-content">
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="brand-logo">
+          <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+          </svg>
+          dot<span class="accent">youjee</span>
+          <span class="soc-status-badge">
+            <span class="pulse-dot"></span> Kampala SOC Active
+          </span>
+        </a>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="index.html#instant-scan" class="nav-link">Instant Scan</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="dashboard.html" class="nav-link">Threat Intel</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">🌙</button>
+          <a href="contact.html" class="btn-primary">Get a Quote</a>
+          <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu">
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
       </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <nav class="footer-nav">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+    </header>
+
+    <main class="container" style="padding-top: 3.5rem; padding-bottom: 5rem; max-width: 900px;">
+      <div class="section-header" style="text-align: left; margin-bottom: 2.5rem;">
+        <span class="section-tag">Commercial &amp; Legal Terms</span>
+        <h1 class="section-title">Terms of Service &amp; Rules of Engagement</h1>
+        <p class="section-description">
+          Governing all advisory engagements, penetration testing scopes, and automated security scans performed by dotyoujee in Uganda.
+        </p>
+      </div>
+
+      <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 3rem; line-height: 1.8; color: var(--text-secondary); display: flex; flex-direction: column; gap: 1.5rem;">
+        <div>
+          <h2 style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 0.5rem;">1. Engagement Scope &amp; Legal Authorization</h2>
+          <p>
+            dotyoujee provides offensive and defensive cybersecurity advisory services. Technical testing, vulnerability scanning, and penetration testing are executed <strong>only upon explicit written authorization</strong> from the legal owner of the targeted systems. Unauthorized testing of third-party systems is unlawful under the Computer Misuse Act (Uganda) and will be refused immediately.
+          </p>
+        </div>
+
+        <div>
+          <h2 style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 0.5rem;">2. Rules of Engagement (RoE) &amp; Safe Harbor</h2>
+          <p>
+            Prior to any offensive testing (VAPT), a mutual Rules of Engagement (RoE) document must be executed defining testing windows, IP whitelists, emergency contacts, out-of-scope production databases, and communication protocols. Testing is non-destructive by design; denial-of-service (DDoS) testing is strictly excluded unless explicitly commissioned under isolated sandbox conditions.
+          </p>
+        </div>
+
+        <div>
+          <h2 style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 0.5rem;">3. Fixed-Price Commercial Terms</h2>
+          <p>
+            Prices published on this site in Ugandan Shillings (UGX) reflect scoped packages (Starter, Professional, Enterprise). Custom engagements require a signed Statement of Work (SoW). Standard commercial terms require 50% advance deposit upon signing, and 50% upon delivery and presentation of the final audit report. All work includes a complimentary 30-day verification retest.
+          </p>
+        </div>
+
+        <div>
+          <h2 style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 0.5rem;">4. Intellectual Property &amp; Deliverables</h2>
+          <p>
+            Upon settlement of invoices, the client receives exclusive, irrevocable rights to all customized deliverable reports, remediation roadmaps, and evidence files. dotyoujee retains ownership of its proprietary scripts, testing harnesses, and anonymized threat intelligence heuristics.
+          </p>
+        </div>
+
+        <div>
+          <h2 style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 0.5rem;">5. Limitation of Liability</h2>
+          <p>
+            While our assessments follow leading industry standards (ISO 27001, PTES, OWASP), no technical evaluation can guarantee 100% immunity from future zero-day exploits or determined state-sponsored adversaries. To the maximum extent permitted under Ugandan law, dotyoujee’s aggregate liability arising out of any engagement shall not exceed the total fees received for the specific service rendered.
+          </p>
+        </div>
+
+        <div>
+          <h2 style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 0.5rem;">6. Governing Law &amp; Jurisdiction</h2>
+          <p>
+            These terms and all service agreements are governed by the laws of the Republic of Uganda. Any dispute shall be resolved through good-faith mediation in Kampala before recourse to the High Court of Uganda (Commercial Division).
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 0.75rem;">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+            </svg>
+            dot<span class="accent">youjee</span>
+          </a>
+          <p class="footer-brand-desc">Uganda's premier cybersecurity &amp; regulatory compliance advisory firm. Protecting digital enterprise across East Africa.</p>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Service Packs</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="services.html#nisf-2026">NISF 2026 Audit</a></li>
+            <li class="footer-link-item"><a href="services.html#dppa">DPPA &amp; PDPO Registration</a></li>
+            <li class="footer-link-item"><a href="services.html#vapt">Offensive VAPT Pentesting</a></li>
+            <li class="footer-link-item"><a href="services.html#bou">Bank of Uganda Guidelines</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Compliance Hub</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="resources.html">Free Checklists</a></li>
+            <li class="footer-link-item"><a href="dashboard.html">Threat Intel Radar</a></li>
+            <li class="footer-link-item"><a href="about.html">About Founder</a></li>
+            <li class="footer-link-item"><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Direct Engagement</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;">WhatsApp scoping call available within 2 hours:</p>
+          <a href="https://wa.me/256764625700?text=Hi%20dotyoujee%2C%20I%20have%20a%20legal%20inquiry%20regarding%20terms." target="_blank" rel="noopener noreferrer" class="btn-primary btn-whatsapp" style="width: 100%; justify-content: center;">WhatsApp +256 764 625 700</a>
+        </div>
+      </div>
+      <div class="container footer-bottom-bar">
+        <div>&copy; 2026 dotyoujee. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="floating-whatsapp">
+      <span class="whatsapp-tooltip">Chat with Lead Auditor</span>
+      <a href="https://wa.me/256764625700" target="_blank" rel="noopener noreferrer" class="whatsapp-pill-btn" aria-label="WhatsApp dotyoujee">
+        <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.203c.043.071.043.418-.101.823z"/></svg>
+      </a>
     </div>
-  </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

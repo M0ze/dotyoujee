@@ -1,53 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="dotyoujee privacy policy — how we handle your personal data.">
-  <title>Privacy | dotyoujee</title>
-  <link rel="stylesheet" href="../style.css">
+  <title>Privacy Policy (DPPA 2019) | dotyoujee Uganda</title>
+  <meta name="description" content="dotyoujee Privacy Policy compliant with Uganda's Data Protection and Privacy Act 2019 (DPPA) and Personal Data Protection Office (PDPO) standards.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="glass-header">
-    <div class="container nav">
-      <a href="../index.html" class="logo">dot<span class="accent">you</span>jee</a>
-      <nav class="nav-links">
-        <a href="../index.html#instant-scan">Instant Scan</a>
-        <a href="../services.html">Services</a>
-        <a href="../about.html">About</a>
-        <a href="../pricing.html">Pricing</a>
-        <a href="../resources.html">Resources</a>
-        <a href="../contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-  <main class="container">
-    <section class="faq-item" style="border:none;">
-      <h1 class="section-title">Privacy</h1>
-      <div class="glass-section">
-        <p>dotyoujee is a Ugandan consultancy. We handle any personal data you share with care.</p>
-        <h2>What we collect</h2>
-        <p>When you contact us through the website form or WhatsApp, we collect the information you provide — name, email, message, and services of interest — so we can respond to your enquiry.</p>
-        <h2>How we use it</h2>
-        <p>We use your data only to reply to your enquiry, deliver the service you requested, and (where you opt in) to send occasional newsletter updates.</p>
-        <h2>Where your data lives</h2>
-        <p>Email and WhatsApp messages are stored with our email/chat providers, which may be hosted outside Uganda. If you are concerned about where your data is processed, please contact us before submitting.</p>
-        <h2>Your rights</h2>
-        <p>Under Uganda's Data Protection and Privacy Act (DPPA), you may ask us to correct, restrict, or delete your personal data. Contact us at the details below.</p>
-        <h2>Contact</h2>
-        <p>For privacy enquiries, WhatsApp or email us: <a href="https://wa.me/256764625700">+256 764 625 700</a>.</p>
+  <canvas id="cyber-canvas" aria-hidden="true"></canvas>
+
+  <div class="main-content">
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="brand-logo">
+          <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+          </svg>
+          dot<span class="accent">youjee</span>
+          <span class="soc-status-badge">
+            <span class="pulse-dot"></span> Kampala SOC Active
+          </span>
+        </a>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="index.html#instant-scan" class="nav-link">Instant Scan</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="dashboard.html" class="nav-link">Threat Intel</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">🌙</button>
+          <a href="contact.html" class="btn-primary">Get a Quote</a>
+          <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu">
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
       </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 dotyoujee. All rights reserved.</p>
-      <nav class="footer-nav">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+    </header>
+
+    <main class="container" style="padding-top: 3.5rem; padding-bottom: 5rem; max-width: 900px;">
+      <div class="section-header" style="text-align: left; margin-bottom: 2.5rem;">
+        <span class="section-tag">Statutory Governance</span>
+        <h1 class="section-title">Privacy Policy &amp; Data Protection Statement</h1>
+        <p class="section-description">
+          Last revised: 2026. Aligned with Uganda’s Data Protection and Privacy Act (DPPA 2019) and the regulations of the Personal Data Protection Office (PDPO).
+        </p>
+      </div>
+
+      <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 3rem; line-height: 1.8; color: var(--text-secondary); display: flex; flex-direction: column; gap: 1.5rem;">
+        <div>
+          <h2 style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 0.5rem;">1. Principles of Data Processing</h2>
+          <p>
+            dotyoujee ("we", "us", or "our") operates as a registered cybersecurity and technology advisory consultancy based in Kampala, Uganda. Under Section 3 of Uganda’s Data Protection and Privacy Act (2019), we adhere to the core principles of lawful processing, minimization, purpose limitation, transparency, and data subject consent.
+          </p>
+        </div>
+
+        <div>
+          <h2 style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 0.5rem;">2. Information We Collect</h2>
+          <p>
+            We collect personal and corporate data strictly to the extent necessary to deliver scoping proposals, client audits, and security advisories. This includes:
+          </p>
+          <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+            <li><strong>Contact Identifiers:</strong> Name, professional corporate email, phone/WhatsApp number, organization name, and title.</li>
+            <li><strong>Technical Scoping Metadata:</strong> Domain names, public IP ranges, and system descriptions submitted by clients for testing purposes.</li>
+            <li><strong>Threat Telemetry:</strong> Anonymized scam reports, fraud numbers, and malicious URLs voluntarily provided to the Scammer Payback Africa repository.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 0.5rem;">3. Lawful Basis and Purpose of Processing</h2>
+          <p>
+            We process data under Section 7 of the DPPA:
+          </p>
+          <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+            <li>To perform cybersecurity assessments under mutual contractual engagement.</li>
+            <li>To comply with regulatory audit filings for NITA-U, Bank of Uganda, and UCC mandates.</li>
+            <li>With your consent, to deliver our monthly threat intelligence digest.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 0.5rem;">4. Strict Client Confidentiality &amp; Penetration Testing Data</h2>
+          <p>
+            All vulnerability findings, source code artifacts, and architectural diagrams examined during VAPT and IT audits are classified as <strong>Strictly Confidential</strong>. We never share, publish, or sell client data. Testing artifacts are permanently scrubbed from our offline forensic drives within 60 days of audit sign-off unless a longer retention schedule is stipulated in our contract.
+          </p>
+        </div>
+
+        <div>
+          <h2 style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 0.5rem;">5. Data Subject Rights Under Ugandan Law</h2>
+          <p>
+            Under Part V of the Data Protection and Privacy Act, you have the right to request access to your personal data, rectify inaccuracies, object to processing, or demand erasure. Requests may be directed to our Data Protection Lead via WhatsApp or email.
+          </p>
+        </div>
+
+        <div style="background: var(--bg-surface-elevated); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent-cyan);">
+          <h3 style="font-size: 1.1rem; color: var(--text-main); margin-bottom: 0.25rem;">Data Protection Officer Contact</h3>
+          <p style="font-size: 0.9rem;">
+            dotyoujee Privacy &amp; Legal Desk<br>
+            Kampala, Uganda<br>
+            WhatsApp Hotline: <a href="https://wa.me/256764625700" style="color: var(--accent-cyan); font-weight: 700;">+256 764 625 700</a><br>
+            Email: <span style="color: var(--text-main); font-family: var(--font-mono);">security@dotyoujee.ug</span>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 0.75rem;">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+            </svg>
+            dot<span class="accent">youjee</span>
+          </a>
+          <p class="footer-brand-desc">Uganda's premier cybersecurity &amp; regulatory compliance advisory firm. Protecting digital enterprise across East Africa.</p>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Service Packs</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="services.html#nisf-2026">NISF 2026 Audit</a></li>
+            <li class="footer-link-item"><a href="services.html#dppa">DPPA &amp; PDPO Registration</a></li>
+            <li class="footer-link-item"><a href="services.html#vapt">Offensive VAPT Pentesting</a></li>
+            <li class="footer-link-item"><a href="services.html#bou">Bank of Uganda Guidelines</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Compliance Hub</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="resources.html">Free Checklists</a></li>
+            <li class="footer-link-item"><a href="dashboard.html">Threat Intel Radar</a></li>
+            <li class="footer-link-item"><a href="about.html">About Founder</a></li>
+            <li class="footer-link-item"><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Direct Engagement</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;">WhatsApp scoping call available within 2 hours:</p>
+          <a href="https://wa.me/256764625700?text=Hi%20dotyoujee%2C%20I%20have%20a%20privacy%20inquiry." target="_blank" rel="noopener noreferrer" class="btn-primary btn-whatsapp" style="width: 100%; justify-content: center;">WhatsApp +256 764 625 700</a>
+        </div>
+      </div>
+      <div class="container footer-bottom-bar">
+        <div>&copy; 2026 dotyoujee. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="floating-whatsapp">
+      <span class="whatsapp-tooltip">Chat with Lead Auditor</span>
+      <a href="https://wa.me/256764625700" target="_blank" rel="noopener noreferrer" class="whatsapp-pill-btn" aria-label="WhatsApp dotyoujee">
+        <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.203c.043.071.043.418-.101.823z"/></svg>
+      </a>
     </div>
-  </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

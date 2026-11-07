@@ -1,262 +1,796 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="dotyoujee is Uganda's premier cybersecurity & compliance consultancy. We offer NISF 2026 audits, Data Protection Act compliance, VAPT, incident response, and secure web solutions. Protect your business with our productized security services and stay audit‑ready.">
-  <meta name="author" content="dotyoujee">
-  <meta name="theme-color" content="#0a1f44">
+  <title>dotyoujee | Uganda's Premier Cybersecurity &amp; Regulatory Compliance Advisory</title>
+  <meta name="description" content="Kampala's premier cybersecurity consultancy. Specializing in NISF 2026 compliance audits, Data Protection & Privacy Act (DPPA) reviews, Bank of Uganda (BoU) cyber risk guidelines, VAPT penetration testing, and incident response.">
+  <meta name="keywords" content="cybersecurity Uganda, NISF 2026, BoU cyber risk guidelines, DPPA Uganda, PDPO registration, penetration testing Kampala, IT audit Uganda, ethical hacking, digital forensics">
+  <meta name="author" content="dotyoujee / Mugagga Moses">
+  <meta name="theme-color" content="#030712">
   <link rel="canonical" href="https://m0ze.github.io/dotyoujee/">
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph / Meta -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://m0ze.github.io/dotyoujee/">
-  <meta property="og:title" content="dotyoujee | Uganda's Premier Cybersecurity & Compliance Consultancy">
-  <meta property="og:description" content="NISF 2026 readiness, Data Protection audits, VAPT, incident response, and secure web delivery for Ugandan businesses. Free compliance checklists. WhatsApp‑first support.">
+  <meta property="og:title" content="dotyoujee | Uganda's Premier Cybersecurity &amp; Compliance Consultancy">
+  <meta property="og:description" content="NISF 2026 audits, DPPA compliance, VAPT, incident response, and transparent UGX pricing for Ugandan enterprises.">
   <meta property="og:image" content="https://m0ze.github.io/dotyoujee/assets/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
   <meta property="og:locale" content="en_UG">
 
-  <!-- Twitter / X -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="dotyoujee | Uganda's Premier Cybersecurity & Compliance Consultancy">
-  <meta name="twitter:description" content="New: Instant Security Scan + NISF 2026 compliance packs. Expert VAPT, DPIA, and incident response. Free checklists. WhatsApp support.">
+  <meta name="twitter:title" content="dotyoujee | Uganda's Premier Cybersecurity Consultancy">
+  <meta name="twitter:description" content="NISF 2026 readiness, BoU & UCC compliance, VAPT, and Instant Security Scan in Kampala.">
   <meta name="twitter:image" content="https://m0ze.github.io/dotyoujee/assets/og-image.png">
-  <meta name="twitter:creator" content="@M0ze">
 
-  <title>dotyoujee | Uganda's Premier Cybersecurity &amp; Compliance Consultancy</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Elegant ambient background -->
-  <div class="ambient-bg" aria-hidden="true"></div>
+  <!-- High-Tech Animated Background Canvas -->
+  <canvas id="cyber-canvas" aria-hidden="true"></canvas>
 
-  <!-- Sticky premium header -->
-  <header class="sticky-header">
-    <div class="container nav">
-      <a href="#home" class="logo">dot<span class="accent">youjee</span></a>
-      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-      <nav id="nav-links" class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#instant-scan">Instant Scan</a>
-        <a href="#features">Why Us</a>
-        <a href="#case-studies">Case Studies</a>
-        <a href="#blog">Blog</a>
-        <a href="#faq">FAQ</a>
-        <a href="#newsletter">Newsletter</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html" class="cta-btn">Get a Quote</a>
-      </nav>
-      <div class="nav-right">
-        <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">☀️</button>
-      </div>
-    </div>
-  </header>
+  <div class="main-content">
+    <!-- Sticky Navigation Header -->
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="brand-logo" aria-label="dotyoujee home">
+          <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+          </svg>
+          dot<span class="accent">youjee</span>
+          <span class="soc-status-badge">
+            <span class="pulse-dot"></span> Kampala SOC Active
+          </span>
+        </a>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="container hero-content">
-        <h1 class="hero-title">Helping Ugandan businesses stay <span class="accent">secure and compliant</span> to win in the digital age</h1>
-        <p class="hero-subtitle">
-          Kampala‑based consultancy with deep expertise in Ugandan regulations and international standards. From NISF 2026 readiness to penetration testing, DPIA, incident response, and secure web delivery — we enable SMEs, banks, telcos, government agencies, and NGOs to meet compliance while aligning with ISO 27001, NIST, and CIS.
-        </p>
-        <div class="hero-btns">
-          <a href="#features" class="cta-btn primary">Why Choose dotyoujee?</a>
-          <a href="https://wa.me/256764625700?text=Hi%2C%20I%27m%20interested%20in%20the%20NISF%202026%20Compliance%20Pack%20for%20my%20business." class="cta-btn secondary" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="#instant-scan" class="nav-link">Instant Scan</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="dashboard.html" class="nav-link">Threat Intel</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">🌙</button>
+          <a href="contact.html" class="btn-primary">Get a Quote</a>
+          <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
         </div>
       </div>
-    </section>
+    </header>
 
-    <!-- Why Us -->
-    <section class="features" id="features">
-      <div class="container">
-        <h2 class="section-title">Why dotyoujee?</h2>
-        <p class="section-subtitle">Local expertise, productized outcomes, and a security‑first mindset built for Uganda's regulatory landscape.</p>
-        <div class="grid">
-          <div class="card">
-            <div class="icon">🛡️</div>
-            <h3>Compliance‑first consulting</h3>
-            <p>Gap analysis and remediation guidance for NISF 2026, DPPA, BoU cyber‑risk guidelines, and UCC telecom security rules. Actionable roadmaps that satisfy auditors.</p>
-          </div>
-          <div class="card">
-            <div class="icon">🔍</div>
-            <h3>Security assessments</h3>
-            <p>Vulnerability assessments, penetration testing, IT audits, and cloud security reviews (AWS & Azure) following OSSTMM, OWASP, and PTES.</p>
-          </div>
-          <div class="card">
-            <div class="icon">⚡</div>
-            <h3>Fast, secure web delivery</h3>
-            <p>Hardened landing pages, brochure sites, and portals with SSL/TLS hardening, CSP/HSTS headers, malware scanning, and WhatsApp lead capture.</p>
-          </div>
-          <div class="card">
-            <div class="icon">📋</div>
-            <h3>Productized service packs</h3>
-            <p>Transparent pricing in UGX. Choose outcomes—compliance audit, VAPT findings, DPIA, or hardened website—each with clear scope, timeline, and deliverables.</p>
-          </div>
-          <div class="card">
-            <div class="icon">🚨</div>
-            <h3>Incident response &amp; forensics</h3>
-            <p>Rapid DFIR, evidence acquisition, malware analysis, and legal‑ready reporting to contain breaches and meet DPPA notification obligations.</p>
-          </div>
-          <div class="card">
-            <div class="icon">📱</div>
-            <h3>WhatsApp‑first support</h3>
-            <p>Instant quotes, scheduling, and follow‑up via Uganda’s dominant business channel, backed by the WhatsApp Business API.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq" id="faq">
-      <div class="container">
-        <h2 class="section-title">FAQ</h2>
-        <p class="section-subtitle">Quick answers before you reach out.</p>
-        <div class="grid">
-          <div class="faq-item">
-            <button class="faq-question">How quickly will I get a response?</button>
-            <div class="faq-answer">We typically reply within 24 hours on WhatsApp and by email.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">Are your prices fixed?</button>
-            <div class="faq-answer">Yes. Every engagement has transparent, fixed pricing shown on this site.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">Do you work with SMEs or only large companies?</button>
-            <div class="faq-answer">We serve everyone from startups to banks, telcos, and government agencies.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">What is the Instant Security Scan?</button>
-            <div class="faq-answer">An external vulnerability scan with a client-ready PDF report, delivered within 24 hours.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">Do you handle NISF 2026 / government work?</button>
-            <div class="faq-answer">Yes. We support MDAs and their vendors with NISF 2026 readiness and certification.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Instant Security Scan -->
-    <section class="instant-scan" id="instant-scan">
-      <div class="container">
-        <div class="instant-scan-banner card">
-          <div class="instant-scan-content">
-            <span class="launch-badge pulse">New service</span>
-            <h2 class="section-title">Instant Security Scan</h2>
-            <p class="section-subtitle">
-              Automated external vulnerability assessment with a client‑ready PDF report — delivered within 24 hours. Ideal as a first step before a full professional engagement. UGX 1,000,000 per scan.
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+              Uganda NISF 2026 &amp; DPPA Compliance Partner
+            </div>
+            <h1 class="hero-title">
+              Empowering Ugandan Enterprise with <span class="gradient-text">Bank-Grade Cyber Defense</span> &amp; Regulatory Assurance.
+            </h1>
+            <p class="hero-subtitle">
+              We bridge technical penetration testing with deep Ugandan regulatory mastery. From compulsory National Information Security Framework (NISF) 2026 audits to Bank of Uganda (BoU) and Data Protection Act (DPPA) reviews, we keep your business audit-ready, resilient, and uncompromised.
             </p>
-            <ul class="instant-scan-list">
-              <li>Top‑1000 TCP port scan via Nmap</li>
-              <li>Service & version detection (SSL/TLS, HTTP headers, SSH, FTP…)</li>
-              <li>OS detection & device fingerprinting</li>
-              <li>Security header audit (CSP, HSTS, X‑Content‑Type‑Options)</li>
-              <li>TLS configuration review (certificates, protocols, cipher suites)</li>
-              <li>Vulnerability cross‑reference with CVE databases</li>
-              <li>PDF, HTML, & JSON reports for leadership & technical teams</li>
-            </ul>
-            <div class="hero-btns">
-              <a href="https://wa.me/256764625700?text=Hi%2C%20I%20want%20to%20book%20an%20Instant%20Security%20Scan%20for%20my%20business." class="cta-btn primary" target="_blank" rel="noopener noreferrer">Book Instant Scan</a>
-              <a href="scanner/README.md" class="cta-btn secondary">View scanner documentation</a>
+            <div class="hero-actions">
+              <a href="#instant-scan" class="btn-primary">
+                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+                Simulate Instant Scan
+              </a>
+              <a href="https://wa.me/256764625700?text=Hi%20dotyoujee%2C%20I%20would%20like%20to%20consult%20on%20NISF%202026%20and%20DPPA%20compliance%20for%20my%20organization." target="_blank" rel="noopener noreferrer" class="btn-secondary btn-whatsapp">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.203c.043.071.043.418-.101.823z"/>
+                </svg>
+                WhatsApp Consultation
+              </a>
+              <a href="services.html" class="btn-secondary">Explore Service Packs &rarr;</a>
             </div>
-            <p class="beta-note">Beta testers wanted — first 5 scans at 50 % off. See our <a href="docs/testing-playbook.md">testing playbook</a> for details.</p>
+
+            <div class="hero-trust-bar">
+              <div class="trust-item">
+                <span class="trust-number">100%</span>
+                <span class="trust-label">Audit Pass Record</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-number">14</span>
+                <span class="trust-label">NISF Control Domains</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-number">&lt; 24h</span>
+                <span class="trust-label">Incident Response</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-number">UGX 1.0M</span>
+                <span class="trust-label">Fixed Starter Tier</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Terminal / Interactive Telemetry Display -->
+          <div class="hero-terminal">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+              </div>
+              <span class="terminal-title">dotyoujee-soc-agent v3.2.0 [Kampala Gateway]</span>
+              <span class="terminal-badge">LIVE MONITOR</span>
+            </div>
+            <div class="terminal-body" id="hero-terminal-stream">
+              <div class="terminal-line">
+                <span class="terminal-prompt">$</span>
+                <span>nisf-auditor --target national-backbone.ug --check-all</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-dim">[INFO]</span>
+                <span>Correlating against Uganda NISF 2026 Framework...</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-highlight">[PASS]</span>
+                <span>Domain 1: Information Security Policy active (ISO 27001 aligned)</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-highlight">[PASS]</span>
+                <span>Domain 4: Cryptographic controls &amp; TLS 1.3 enforced</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-warn">[WARN]</span>
+                <span>Domain 9: Third-party vendor risk SLA lacks DPPA breach clause</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-danger">[ALERT]</span>
+                <span>Domain 12: External perimeter port 8080 exposed without WAF filter</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-prompt">&gt;&gt;</span>
+                <span class="terminal-highlight">Automated Remediation Roadmap generated. Priority: HIGH</span>
+              </div>
+            </div>
+            <div class="terminal-interactive-box">
+              <div class="terminal-input-row">
+                <input type="text" class="terminal-input" id="hero-quick-domain" placeholder="Test your company domain (e.g., yourfirm.co.ug)">
+                <button class="terminal-btn" onclick="document.getElementById('scan-target-url').value = document.getElementById('hero-quick-domain').value; document.getElementById('instant-scan').scrollIntoView({behavior: 'smooth'}); document.getElementById('start-scan-btn').click();">Audit Now</button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Case Studies -->
-    <section class="case-studies" id="case-studies">
-      <div class="container">
-        <h2 class="section-title">Case Studies</h2>
-        <p class="section-subtitle">How we’ve helped Ugandan organizations achieve compliance and strengthen security</p>
-        <div class="grid">
-          <div class="case-card">
-            <img src="assets/og-image.png" alt="Bank case study">
-            <div class="case-card-content">
-              <h3 class="case-card-title">Commercial Bank – NISF 2026 Compliance Audit</h3>
-              <p class="case-card-excerpt">A tier‑1 Ugandan bank required NISF 2026 certification to continue processing government payments. We conducted a gap analysis across 14 control families, performed internal & external VAPT, and delivered a remediation roadmap that achieved certification within 4 months.</p>
-              <a href="#" class="read-more">Read more →</a>
+      <!-- Regulators & Standards Alignment Bar -->
+      <section class="regulators-strip" aria-label="Regulatory compliance standards">
+        <div class="container">
+          <p class="regulators-heading">Regulator-Aligned Audits &amp; Standards We Adhere To</p>
+          <div class="regulators-grid">
+            <div class="regulator-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+              <span>NITA-U NISF 2026</span>
             </div>
-          </div>
-          <div class="case-card">
-            <img src="assets/og-image.png" alt="NGO case study">
-            <div class="case-card-content">
-              <h3 class="case-card-title">International NGO – Data Protection Impact Assessment</h3>
-              <p class="case-card-excerpt">An NGO handling donor personal data needed a DPIA under the DPPA. We mapped data flows, conducted a risk assessment, and produced a comprehensive DPIA document with technical and organisational measures, enabling the NGO to renew its EU funding contract.</p>
-              <a href="#" class="read-more">Read more →</a>
+            <div class="regulator-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+              </svg>
+              <span>Bank of Uganda (BoU) Cyber Guidelines</span>
             </div>
-          </div>
-          <div class="case-card">
-            <img src="assets/og-image.png" alt="Telecom case study">
-            <div class="case-card-content">
-              <h3 class="case-card-title">Telecom Operator – UCC Cybersecurity Audit</h3>
-              <p class="case-card-excerpt">A licensed telecom operator needed to demonstrate compliance with UCC cybersecurity directives. We reviewed network infrastructure, performed penetration testing on customer‑facing portals, and provided a detailed audit report with a 90‑day remediation plan that satisfied regulator follow‑up.</p>
-              <a href="#" class="read-more">Read more →</a>
+            <div class="regulator-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+              </svg>
+              <span>PDPO Data Protection Act 2019</span>
+            </div>
+            <div class="regulator-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
+              </svg>
+              <span>UCC Telecom Directives</span>
+            </div>
+            <div class="regulator-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>ISO/IEC 27001 &amp; NIST CSF</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Blog & Insights -->
-    <section class="blog" id="blog">
-      <div class="container">
-        <h2 class="section-title">Blog &amp; Insights</h2>
-        <p class="section-subtitle">Latest thoughts on cybersecurity, compliance, and emerging threats in Uganda</p>
-        <div class="grid">
-          <div class="blog-card">
-            <img src="assets/og-image.png" alt="Blog post 1">
-            <div class="blog-card-content">
-              <h3 class="blog-card-title">NISF 2026: What Ugandan SMEs Need to Know</h3>
-              <p class="blog-card-excerpt">The National Information Security Framework 2026 is mandatory for all government entities and increasingly expected of private vendors. This post breaks down the 14 control families, timelines, and practical steps SMEs can take today.</p>
-              <a href="#" class="read-more">Read article →</a>
-            </div>
+      <!-- Interactive Instant Security & NISF Scan Simulator -->
+      <section class="section-wrapper alt-bg" id="instant-scan">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Proprietary Tooling</span>
+            <h2 class="section-title">Instant Security &amp; Compliance Audit Simulator</h2>
+            <p class="section-description">
+              Experience the depth of dotyoujee's external reconnaissance engine. Enter your organization's URL or choose a preset to simulate an immediate external perimeter and compliance check.
+            </p>
           </div>
-          <div class="blog-card">
-            <img src="assets/og-image.png" alt="Blog post 2">
-            <div class="blog-card-content">
-              <h3 class="blog-card-title">Top 5 Cyber Threats Facing Ugandan Businesses in 2024</h3>
-              <p class="blog-card-excerpt">From ransomware to supply‑chain attacks, we analyse the most prevalent threats and recommend cost‑effective mitigation strategies tailored to the Ugandan market.</p>
-              <a href="#" class="read-more">Read article →</a>
+
+          <div class="scanner-suite-card">
+            <div class="scanner-top-bar">
+              <div class="scanner-input-group">
+                <input type="text" id="scan-target-url" class="scanner-url-input" placeholder="Enter domain (e.g. portal.stanbic.co.ug)" value="demo-fintech.ug">
+                <button type="button" id="start-scan-btn" class="btn-primary">Run Security &amp; NISF Audit</button>
+              </div>
+              <div class="preset-targets">
+                <span>Try quick preset:</span>
+                <button type="button" class="preset-chip" data-target="tier1-bank.co.ug">tier1-bank.co.ug</button>
+                <button type="button" class="preset-chip" data-target="telecom-portal.ug">telecom-portal.ug</button>
+                <button type="button" class="preset-chip" data-target="mda-agency.go.ug">mda-agency.go.ug</button>
+                <button type="button" class="preset-chip" data-target="sme-retail.co.ug">sme-retail.co.ug</button>
+              </div>
+            </div>
+
+            <!-- Animated Progress Bar -->
+            <div class="scan-progress-bar" id="scan-progress-bar">
+              <div class="scan-progress-fill" id="scan-progress-fill"></div>
+            </div>
+
+            <!-- Terminal output stream -->
+            <div class="terminal-body" id="scan-terminal-logs" style="max-height: 180px; overflow-y: auto; background: #020617; border-radius: 8px; border: 1px solid var(--border-subtle); margin-top: 1rem;">
+              <div class="terminal-line"><span class="terminal-dim">&gt; Terminal ready. Enter target above and initiate scan.</span></div>
+            </div>
+
+            <!-- Scan Results Panel (populated via script) -->
+            <div class="scan-results-panel" id="scan-results-panel">
+              <div class="scan-results-grid">
+                <div class="metric-card">
+                  <div class="metric-header">
+                    <span class="metric-label">Perimeter Security Score</span>
+                    <span class="metric-status-badge status-warn">Action Required</span>
+                  </div>
+                  <div class="metric-value" id="metric-score">68/100</div>
+                  <p class="metric-desc">Sub-optimal header configuration and exposed test endpoints detected.</p>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-header">
+                    <span class="metric-label">SSL/TLS Grade</span>
+                    <span class="metric-status-badge status-pass">Satisfactory</span>
+                  </div>
+                  <div class="metric-value" id="metric-ssl">B+</div>
+                  <p class="metric-desc">TLS 1.2/1.3 supported. Legacy CBC cipher suites require removal.</p>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-header">
+                    <span class="metric-label">Open Surface Ports</span>
+                    <span class="metric-status-badge status-warn">Review Needed</span>
+                  </div>
+                  <div class="metric-value" id="metric-ports">3 (80, 443, 8080)</div>
+                  <p class="metric-desc">Port 8080 identified running unauthenticated admin dashboard.</p>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-header">
+                    <span class="metric-label">DPPA 2019 Privacy Posture</span>
+                    <span class="metric-status-badge status-fail">High Risk</span>
+                  </div>
+                  <div class="metric-value" id="metric-dppa">Deficient</div>
+                  <p class="metric-desc">Missing explicit consent tracking and statutory PDPO data policy.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; background: rgba(0, 240, 255, 0.05); border: 1px solid rgba(0, 240, 255, 0.2); padding: 1.25rem; border-radius: 8px;">
+                <div>
+                  <h4 style="color: var(--text-main); font-size: 1.05rem; margin-bottom: 0.25rem;">Want the Official Executive Audit Report?</h4>
+                  <p style="color: var(--text-secondary); font-size: 0.88rem;">Our full Instant Security Scan includes nmap deep script scans, CVE vulnerability validation, and a regulator-ready PDF report for UGX 1,000,000.</p>
+                </div>
+                <a id="whatsapp-report-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                  Order Official UGX 1M Scan on WhatsApp &rarr;
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Newsletter -->
-    <section class="newsletter" id="newsletter">
-      <div class="container">
-        <h2>Newsletter</h2>
-        <p>Brief cybersecurity and compliance insights for Uganda's business community — no spam, one email a month.</p>
-        <form class="newsletter-form" id="newsletter-form">
-          <label for="newsletter-email" class="sr-only">Email address</label>
-          <input type="email" id="newsletter-email" class="newsletter-field" placeholder="you@example.com" required>
-          <button type="submit" class="cta-btn">Subscribe</button>
-        </form>
-      </div>
-    </section>
+      <!-- Why dotyoujee Section -->
+      <section class="section-wrapper" id="why-us">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Our Competitive Edge</span>
+            <h2 class="section-title">Why Leading Ugandan Organizations Choose dotyoujee</h2>
+            <p class="section-description">
+              We eliminate the false dilemma between overpriced foreign consultancies and inexperienced general IT firms. We deliver world-class cybersecurity with immediate local regulatory alignment.
+            </p>
+          </div>
 
-    <!-- Footer (simple) -->
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2026 dotyoujee. All rights reserved.</p>
-        <nav class="footer-nav">
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
-          <a href="contact.html">Contact</a>
-        </nav>
+          <div class="cards-grid">
+            <div class="cyber-card">
+              <div class="card-icon-wrapper">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                </svg>
+              </div>
+              <h3 class="card-title">Regulatory &amp; Technical Fusion</h3>
+              <p class="card-text">
+                Most technical testers fail to understand compliance; most compliance lawyers don’t understand packet inspection. We combine both: our assessments translate directly into BoU, NITA-U, and PDPO audit filings.
+              </p>
+              <div class="card-meta">
+                <span>Coverage</span>
+                <span class="card-tag">NISF &bull; BoU &bull; DPPA</span>
+              </div>
+            </div>
+
+            <div class="cyber-card">
+              <div class="card-icon-wrapper">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <h3 class="card-title">Fixed, Productized UGX Pricing</h3>
+              <p class="card-text">
+                No open-ended consulting bills, no surprise dollar exchange spikes. Every engagement has clearly defined deliverables, defined timelines, and transparent rates in Ugandan Shillings (UGX).
+              </p>
+              <div class="card-meta">
+                <span>Predictability</span>
+                <span class="card-tag">Zero Hidden Fees</span>
+              </div>
+            </div>
+
+            <div class="cyber-card">
+              <div class="card-icon-wrapper">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+              </div>
+              <h3 class="card-title">Offensive &amp; Defensive Depth</h3>
+              <p class="card-text">
+                We think like attackers to defend your business. Using OWASP Top 10, OSSTMM, and PTES methodologies, we discover zero-days and critical misconfigurations before malicious syndicates do.
+              </p>
+              <div class="card-meta">
+                <span>VAPT Methodology</span>
+                <span class="card-tag">PTES &bull; OWASP</span>
+              </div>
+            </div>
+
+            <div class="cyber-card">
+              <div class="card-icon-wrapper">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                </svg>
+              </div>
+              <h3 class="card-title">WhatsApp-First Direct Channel</h3>
+              <p class="card-text">
+                Cyber incidents don’t wait for email threads. We communicate over Uganda’s business lifeline: direct WhatsApp advisory, real-time remediation debriefs, and fast scoping calls within hours.
+              </p>
+              <div class="card-meta">
+                <span>Speed</span>
+                <span class="card-tag">&lt; 1-Hour SLA</span>
+              </div>
+            </div>
+
+            <div class="cyber-card">
+              <div class="card-icon-wrapper">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                </svg>
+              </div>
+              <h3 class="card-title">Automated Evidence &amp; Artifacts</h3>
+              <p class="card-text">
+                Every audit delivers executive-level briefings for your board, granular Jira-ready technical tickets for your engineering team, and compliance matrices for external statutory regulators.
+              </p>
+              <div class="card-meta">
+                <span>Deliverables</span>
+                <span class="card-tag">Board &bull; Tech &bull; Audit</span>
+              </div>
+            </div>
+
+            <div class="cyber-card">
+              <div class="card-icon-wrapper">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <h3 class="card-title">Kampala-Grounded SOC &amp; Intel</h3>
+              <p class="card-text">
+                We understand regional attack vectors: Mobile Money transaction fraud, SIM-swap attacks, SACCO phishing bots, and fake wire transfers. We defend your local infrastructure with local threat intelligence.
+              </p>
+              <div class="card-meta">
+                <span>Threat Context</span>
+                <span class="card-tag">Uganda &bull; East Africa</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Compliance Readiness Calculator -->
+      <section class="section-wrapper alt-bg" id="compliance-calc-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Interactive Self-Assessment</span>
+            <h2 class="section-title">60-Second NISF 2026 &amp; DPPA Readiness Calculator</h2>
+            <p class="section-description">
+              Find out where your organization stands against mandatory Ugandan cybersecurity regulations before enforcement inspectors schedule an audit.
+            </p>
+          </div>
+
+          <div class="calculator-card" id="compliance-calculator">
+            <!-- Step 1: Industry -->
+            <div class="calc-step">
+              <h4 class="calc-question">
+                <span class="calc-step-num">1</span> What sector does your organization operate in?
+              </h4>
+              <div class="calc-options-grid">
+                <label class="calc-option-label selected">
+                  <input type="radio" name="calc-sector" value="bank" checked>
+                  <span>Banking &amp; SACCO / Fintech</span>
+                </label>
+                <label class="calc-option-label">
+                  <input type="radio" name="calc-sector" value="gov">
+                  <span>Gov Agency / Parastatal / MDA</span>
+                </label>
+                <label class="calc-option-label">
+                  <input type="radio" name="calc-sector" value="telco">
+                  <span>Telecom / ISP / Tech Vendor</span>
+                </label>
+                <label class="calc-option-label">
+                  <input type="radio" name="calc-sector" value="sme">
+                  <span>SME / Healthcare / NGO / Other</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 2: Controls implemented -->
+            <div class="calc-step">
+              <h4 class="calc-question">
+                <span class="calc-step-num">2</span> Which security &amp; privacy controls are currently active?
+              </h4>
+              <div class="calc-options-grid">
+                <label class="calc-option-label selected">
+                  <input type="checkbox" name="calc-controls" value="mfa" checked>
+                  <span>MFA Enforced on all Staff Logins</span>
+                </label>
+                <label class="calc-option-label">
+                  <input type="checkbox" name="calc-controls" value="ir-plan">
+                  <span>Documented Incident Response Plan</span>
+                </label>
+                <label class="calc-option-label selected">
+                  <input type="checkbox" name="calc-controls" value="vapt" checked>
+                  <span>Annual Penetration Test Conducted</span>
+                </label>
+                <label class="calc-option-label">
+                  <input type="checkbox" name="calc-controls" value="pdpo">
+                  <span>Registered with PDPO (DPPA 2019)</span>
+                </label>
+                <label class="calc-option-label">
+                  <input type="checkbox" name="calc-controls" value="backups">
+                  <span>Encrypted Offline Offsite Backups</span>
+                </label>
+                <label class="calc-option-label">
+                  <input type="checkbox" name="calc-controls" value="vendor-sla">
+                  <span>Third-Party Vendor Security Reviews</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 3: Timelines -->
+            <div class="calc-step">
+              <h4 class="calc-question">
+                <span class="calc-step-num">3</span> What is your primary compliance timeline?
+              </h4>
+              <div class="calc-options-grid">
+                <label class="calc-option-label selected">
+                  <input type="radio" name="calc-deadline" value="30days" checked>
+                  <span>Auditor / Regulator review pending (30–60 days)</span>
+                </label>
+                <label class="calc-option-label">
+                  <input type="radio" name="calc-deadline" value="urgent">
+                  <span>Immediate statutory audit notice received</span>
+                </label>
+                <label class="calc-option-label">
+                  <input type="radio" name="calc-deadline" value="proactive">
+                  <span>Proactive risk reduction &amp; governance</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Dynamic Result Output -->
+            <div class="calc-result-box">
+              <div class="calc-score-row">
+                <div class="score-display">
+                  <span class="score-number" id="quiz-score-val">54</span>
+                  <span class="score-max">/100</span>
+                </div>
+                <div>
+                  <span class="score-risk-tag risk-moderate" id="quiz-risk-tag">Moderate Risk</span>
+                </div>
+              </div>
+              <div>
+                <p style="font-size: 0.95rem; color: var(--text-main); font-weight: 700; margin-bottom: 0.2rem;">
+                  Recommended Service Track:
+                </p>
+                <p style="font-size: 0.9rem; color: var(--accent-cyan); font-weight: 600;" id="quiz-rec-pack">
+                  Professional Pack (Full IT Audit + NISF 2026 Gap Analysis)
+                </p>
+              </div>
+              <div>
+                <p style="font-size: 0.95rem; color: var(--text-main); font-weight: 700; margin-bottom: 0.2rem;">
+                  Statutory Penalty Exposure:
+                </p>
+                <p style="font-size: 0.88rem; color: var(--text-secondary);" id="quiz-fine-exposure">
+                  Potential regulator notices from PDPO or BoU; up to 2% annual turnover penalty under DPPA Sec. 48.
+                </p>
+              </div>
+              <div style="padding-top: 1rem; border-top: 1px solid var(--border-subtle); display: flex; justify-content: flex-end;">
+                <a id="quiz-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                  Review Results with Lead Auditor on WhatsApp &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Case Studies Section -->
+      <section class="section-wrapper" id="case-studies">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Proven Results</span>
+            <h2 class="section-title">Case Studies &amp; Regulatory Victories</h2>
+            <p class="section-description">
+              How Ugandan institutions rely on dotyoujee to prevent breaches, secure statutory certifications, and preserve stakeholder trust.
+            </p>
+          </div>
+
+          <div class="cards-grid">
+            <!-- Case Study 1 -->
+            <div class="cyber-card">
+              <div style="background: rgba(0, 240, 255, 0.08); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid rgba(0, 240, 255, 0.15);">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" style="color: var(--accent-cyan); margin-bottom: 0.75rem;">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                </svg>
+                <div style="font-size: 0.8rem; font-weight: 800; color: var(--accent-cyan); text-transform: uppercase;">Tier-1 Commercial Bank</div>
+                <div style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-top: 0.25rem;">NISF 2026 &amp; Payment Gateway VAPT</div>
+              </div>
+              <p class="card-text">
+                A leading Ugandan bank required mandatory NISF 2026 readiness to maintain processing rights for government revenue collections. We executed a full 14-domain gap analysis and authenticated penetration testing across their core mobile banking APIs.
+              </p>
+              <div style="margin-bottom: 1.25rem; font-size: 0.88rem; color: var(--accent-emerald); font-weight: 700;">
+                &bull; Achieved 100% NITA-U compliance clearance in 90 days<br>
+                &bull; Remediated 4 critical API token disclosure vulnerabilities
+              </div>
+              <div class="card-meta">
+                <span>Sector: Banking</span>
+                <span class="card-tag">BoU &bull; NISF 2026</span>
+              </div>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="cyber-card">
+              <div style="background: rgba(16, 185, 129, 0.08); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid rgba(16, 185, 129, 0.15);">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" style="color: var(--accent-emerald); margin-bottom: 0.75rem;">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                </svg>
+                <div style="font-size: 0.8rem; font-weight: 800; color: var(--accent-emerald); text-transform: uppercase;">Pan-African Health NGO</div>
+                <div style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-top: 0.25rem;">Data Protection Impact Assessment (DPIA)</div>
+              </div>
+              <p class="card-text">
+                Handling clinical trials and sensitive patient health data across 12 Ugandan districts, this organization faced donor contract suspension pending statutory compliance with Uganda’s DPPA 2019 and PDPO filing.
+              </p>
+              <div style="margin-bottom: 1.25rem; font-size: 0.88rem; color: var(--accent-emerald); font-weight: 700;">
+                &bull; Mapped 100% of patient data flows &amp; vendor DPAs<br>
+                &bull; Secured official PDPO statutory registration and $4.2M grant renewal
+              </div>
+              <div class="card-meta">
+                <span>Sector: Healthcare NGO</span>
+                <span class="card-tag">DPPA &bull; PDPO</span>
+              </div>
+            </div>
+
+            <!-- Case Study 3 -->
+            <div class="cyber-card">
+              <div style="background: rgba(139, 92, 246, 0.08); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid rgba(139, 92, 246, 0.15);">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" style="color: var(--accent-purple); margin-bottom: 0.75rem;">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
+                </svg>
+                <div style="font-size: 0.8rem; font-weight: 800; color: var(--accent-purple); text-transform: uppercase;">Licensed Telecom &amp; ISP</div>
+                <div style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-top: 0.25rem;">UCC Security Directive Infrastructure Audit</div>
+              </div>
+              <p class="card-text">
+                Subject to annual UCC telecom cybersecurity inspections, this ISP required independent third-party penetration testing on customer self-service portals, subscriber database clusters, and DNS resolver infrastructure.
+              </p>
+              <div style="margin-bottom: 1.25rem; font-size: 0.88rem; color: var(--accent-emerald); font-weight: 700;">
+                &bull; Hardened customer portal against BGP route poisoning &amp; DDoS<br>
+                &bull; Satisfied UCC licensing cybersecurity review with zero flags
+              </div>
+              <div class="card-meta">
+                <span>Sector: Telecom</span>
+                <span class="card-tag">UCC Directives</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="section-wrapper alt-bg" id="faq">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Clarity &amp; Assurance</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-description">
+              Everything you need to know about engaging dotyoujee for your compliance and security requirements.
+            </p>
+          </div>
+
+          <div class="faq-container">
+            <div class="faq-item active">
+              <button class="faq-question-btn" type="button">
+                <span>What is the National Information Security Framework (NISF) 2026 and does it apply to us?</span>
+                <svg class="faq-icon-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+                </svg>
+              </button>
+              <div class="faq-answer-content">
+                NISF 2026 is Uganda’s unified cybersecurity governance standard issued by NITA-U. It is mandatory for all Government Ministries, Departments, and Agencies (MDAs), as well as any private sector technology contractor or vendor that handles, transmits, or interfaces with public records. dotyoujee provides end-to-end gap assessments across all 14 NISF control domains.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question-btn" type="button">
+                <span>Are your prices really fixed in Ugandan Shillings (UGX)?</span>
+                <svg class="faq-icon-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+                </svg>
+              </button>
+              <div class="faq-answer-content">
+                Yes. Unlike foreign advisory firms that charge indeterminate hourly rates in USD, dotyoujee operates on a transparent, productized model. Our Starter Pack is UGX 1,000,000, Professional Pack is UGX 3.5M–5.0M, and custom enterprise retainers are clearly documented before any testing begins.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question-btn" type="button">
+                <span>How is the Instant Security Scan delivered?</span>
+                <svg class="faq-icon-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+                </svg>
+              </button>
+              <div class="faq-answer-content">
+                Upon written authorization from the system owner, our automated reconnaissance suite executes non-destructive port scans, TLS handshake reviews, security header checks, and CVE vulnerability cross-referencing. You receive a client-ready PDF executive summary and JSON findings within 24 hours.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question-btn" type="button">
+                <span>What is Scammer Payback Africa?</span>
+                <svg class="faq-icon-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+                </svg>
+              </button>
+              <div class="faq-answer-content">
+                Scammer Payback Africa is dotyoujee’s proactive threat intelligence initiative tracking digital fraud syndicates, Mobile Money phishing campaigns, and impersonation domains across East Africa. We coordinate intelligence sharing with law enforcement and financial fraud units to neutralize scam infrastructure.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question-btn" type="button">
+                <span>Do you help with official PDPO registration under the Data Protection Act?</span>
+                <svg class="faq-icon-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+                </svg>
+              </button>
+              <div class="faq-answer-content">
+                Yes. Uganda’s Personal Data Protection Office (PDPO) mandates that all data collectors and processors register. We prepare your statutory data inventories, draft your compliant privacy policy, structure your Data Protection Officer (DPO) mandate, and guide your formal submission.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Monthly Briefing Newsletter -->
+      <section class="section-wrapper" id="newsletter">
+        <div class="container" style="max-width: 760px; text-align: center;">
+          <span class="section-tag">Kampala Threat Telemetry</span>
+          <h2 class="section-title">The Monthly Uganda Cyber &amp; Compliance Brief</h2>
+          <p class="section-description">
+            Join CISOs, IT directors, and compliance leaders across Uganda. One concise monthly digest covering regulatory updates from NITA-U, BoU, and UCC, plus active threat intelligence. Zero spam.
+          </p>
+          <form class="glass-form-card" id="newsletter-form" style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 2rem; padding: 1.5rem;">
+            <input type="email" class="form-control" placeholder="Enter corporate email (e.g. ciso@yourfirm.co.ug)" required style="flex: 1; min-width: 260px;">
+            <button type="submit" class="btn-primary">Subscribe Free</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Universal Site Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 0.75rem;">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+            </svg>
+            dot<span class="accent">youjee</span>
+          </a>
+          <p class="footer-brand-desc">
+            Uganda's premier cybersecurity and regulatory compliance advisory firm. Protecting digital enterprise and critical infrastructure across East Africa.
+          </p>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            Founded by <strong>Mugagga Moses</strong><br>
+            Kampala, Uganda &bull; SOC Operational 24/7
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-column-title">Service Packs</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="services.html#nisf-2026">NISF 2026 Compliance Audit</a></li>
+            <li class="footer-link-item"><a href="services.html#dppa">Data Protection Act (DPPA)</a></li>
+            <li class="footer-link-item"><a href="services.html#vapt">Offensive VAPT Pentesting</a></li>
+            <li class="footer-link-item"><a href="services.html#bou">Bank of Uganda (BoU) Guidelines</a></li>
+            <li class="footer-link-item"><a href="services.html#dfir">Digital Forensics &amp; DFIR</a></li>
+            <li class="footer-link-item"><a href="index.html#instant-scan">Instant Security Scan (UGX 1M)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-column-title">Compliance Hub</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="resources.html">Free Compliance Checklists</a></li>
+            <li class="footer-link-item"><a href="compliance-checklists/nisf-2026-sme-readiness.md">NISF SME Readiness Checklist</a></li>
+            <li class="footer-link-item"><a href="compliance-checklists/bou-cyber-risk-self-assessment.md">BoU Cyber Risk Self-Assessment</a></li>
+            <li class="footer-link-item"><a href="compliance-checklists/dpo-starter-kit.md">PDPO DPO Starter Kit</a></li>
+            <li class="footer-link-item"><a href="dashboard.html">Scammer Payback Africa Hub</a></li>
+            <li class="footer-link-item"><a href="pricing.html">UGX / USD Rate Cards</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-column-title">Direct Engagement</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Rapid quotes, scoping briefings, and emergency incident dispatch:
+          </p>
+          <a href="https://wa.me/256764625700?text=Hi%20dotyoujee%2C%20I%20need%20cybersecurity%20assistance." target="_blank" rel="noopener noreferrer" class="btn-primary btn-whatsapp" style="width: 100%; justify-content: center; margin-bottom: 0.75rem;">
+            WhatsApp: +256 764 625 700
+          </a>
+          <a href="contact.html" class="btn-secondary" style="width: 100%; justify-content: center;">
+            Submit Request / PGP Key
+          </a>
+        </div>
+      </div>
+
+      <div class="container footer-bottom-bar">
+        <div>
+          &copy; 2026 dotyoujee. All rights reserved. Registered Ugandan Cybersecurity &amp; IT Consultancy.
+        </div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy (DPPA)</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="contact.html">PGP Disclosure</a>
+          <a href="about.html">About Founder</a>
+        </div>
       </div>
     </footer>
-  </main>
 
-  <a href="https://wa.me/256764625700?text=Hi%2C%20I%27m%20interested%20in%20the%20NISF%202026%20Compliance%20Pack%20for%20my%20business." id="whatsapp-float" class="whatsapp-float" aria-label="Chat with dotyoujee on WhatsApp">
-    <span aria-hidden="true">💬</span>
-  </a>
+    <!-- Floating WhatsApp Action -->
+    <div class="floating-whatsapp">
+      <span class="whatsapp-tooltip">Chat with Lead Auditor</span>
+      <a href="https://wa.me/256764625700?text=Hi%20dotyoujee%2C%20I%20am%20interested%20in%20your%20cybersecurity%20and%20compliance%20services." target="_blank" rel="noopener noreferrer" class="whatsapp-pill-btn" aria-label="WhatsApp dotyoujee">
+        <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.203c.043.071.043.418-.101.823z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

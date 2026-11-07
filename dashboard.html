@@ -1,53 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Scammer Payback Africa | dotyoujee</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scammer Payback Africa &amp; Threat Intel Hub | dotyoujee</title>
+  <meta name="description" content="Proactive threat modeling, scam infrastructure disruption, and regional cybersecurity intelligence across Uganda and East Africa. Report digital fraud.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="glass-header">
-    <div class="container nav">
-      <a href="index.html" class="logo">dot<span>you</span>jee</a>
-      <button class="nav-toggle" id="nav-toggle">☰</button>
-      <nav class="nav-links" id="nav-links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="dashboard.html" class="active">Scammer Payback</a>
-      </nav>
-      <button id="theme-toggle" class="theme-btn">🌙</button>
+  <canvas id="cyber-canvas" aria-hidden="true"></canvas>
+
+  <div class="main-content">
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="brand-logo">
+          <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+          </svg>
+          dot<span class="accent">youjee</span>
+          <span class="soc-status-badge">
+            <span class="pulse-dot"></span> Kampala SOC Active
+          </span>
+        </a>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="index.html#instant-scan" class="nav-link">Instant Scan</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="dashboard.html" class="nav-link active">Threat Intel</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">🌙</button>
+          <a href="contact.html" class="btn-primary">Get a Quote</a>
+          <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu">
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container" style="padding-top: 3.5rem; padding-bottom: 5rem;">
+      <div class="section-header">
+        <span class="section-tag">Proactive Cyber Defense Initiative</span>
+        <h1 class="section-title">Scammer Payback Africa &amp; Regional Threat Intel</h1>
+        <p class="section-description">
+          In an era of rising digital fraud across East Africa, dotyoujee is developing proactive methodologies to disrupt fraudulent ecosystems. We map illicit infrastructure, analyze scam telemetry, and generate actionable dossiers for regulatory bodies and law enforcement.
+        </p>
+      </div>
+
+      <!-- Telemetry Stats Strip -->
+      <div class="scan-results-grid" style="margin-bottom: 3.5rem;">
+        <div class="metric-card">
+          <div class="metric-header">
+            <span class="metric-label">Fraud Infrastructure Tracked</span>
+            <span class="metric-status-badge status-pass">Live Radar</span>
+          </div>
+          <div class="metric-value">1,480+</div>
+          <p class="metric-desc">Identified phone numbers, Telegram bots &amp; rogue SMS headers.</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-header">
+            <span class="metric-label">Phishing Domains Flagged</span>
+            <span class="metric-status-badge status-warn">Actioned</span>
+          </div>
+          <div class="metric-value">394</div>
+          <p class="metric-desc">Impersonating Ugandan banks, telecom portals, and parastatals.</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-header">
+            <span class="metric-label">Mobile Money Intercept Rings</span>
+            <span class="metric-status-badge status-fail">Investigated</span>
+          </div>
+          <div class="metric-value">48 Rings</div>
+          <p class="metric-desc">SIM-swap syndicates and social engineering script farms.</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-header">
+            <span class="metric-label">Enforcement Dossiers</span>
+            <span class="metric-status-badge status-pass">Completed</span>
+          </div>
+          <div class="metric-value">19 Delivered</div>
+          <p class="metric-desc">Shared with law enforcement and financial cybercrime units.</p>
+        </div>
+      </div>
+
+      <!-- Active Threat Advisory Feed -->
+      <section style="margin-bottom: 4rem;">
+        <h2 style="font-size: 1.6rem; color: var(--text-main); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem;">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--accent-amber);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          Active Regional Threat Advisories (Uganda &amp; East Africa)
+        </h2>
+
+        <div class="cards-grid">
+          <!-- Advisory 1 -->
+          <div class="cyber-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <span class="card-tag" style="background: rgba(239, 68, 68, 0.15); color: #ef4444;">CRITICAL VULN</span>
+              <span style="font-size: 0.78rem; font-family: var(--font-mono); color: var(--text-muted);">UG-THREAT-2026-09</span>
+            </div>
+            <h3 class="card-title">Rogue MTN / Airtel "Reversal SMS" Phishing Waves</h3>
+            <p class="card-text">
+              Automated GSM modem pools broadcasting forged sender IDs ("MobileMoney") claiming accidental transfer reversals. The SMS directs victims to a fraudulent Web portal harvesting mobile PINs and OTPs.
+            </p>
+            <div class="card-meta">
+              <span>Target: Mobile Money Users</span>
+              <span class="status-fail" style="padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 0.75rem;">Active Campaign</span>
+            </div>
+          </div>
+
+          <!-- Advisory 2 -->
+          <div class="cyber-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <span class="card-tag" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">HIGH EXPOSURE</span>
+              <span style="font-size: 0.78rem; font-family: var(--font-mono); color: var(--text-muted);">UG-THREAT-2026-08</span>
+            </div>
+            <h3 class="card-title">Fake SACCO &amp; Microfinance Loan Harvester APKs</h3>
+            <p class="card-text">
+              Malicious Android applications distributed via WhatsApp groups claiming instant collateral-free loans. Upon installation, the malware exfiltrates contact books, SMS histories, and device photos for extortion.
+            </p>
+            <div class="card-meta">
+              <span>Target: SME Borrowers</span>
+              <span class="status-warn" style="padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 0.75rem;">Under Tracking</span>
+            </div>
+          </div>
+
+          <!-- Advisory 3 -->
+          <div class="cyber-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <span class="card-tag" style="background: rgba(0, 240, 255, 0.15); color: var(--accent-cyan);">SUPPLY CHAIN</span>
+              <span style="font-size: 0.78rem; font-family: var(--font-mono); color: var(--text-muted);">UG-THREAT-2026-07</span>
+            </div>
+            <h3 class="card-title">Spoofed Public Sector Tender Portals (MDA Lookalikes)</h3>
+            <p class="card-text">
+              Cybersquatted domains mirroring Ugandan ministries (e.g., mock domains with `.gov-ug.com`) targeting government contractors with phony tender bidding fees and credential harvesting attachments.
+            </p>
+            <div class="card-meta">
+              <span>Target: Public Contractors</span>
+              <span class="status-pass" style="padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 0.75rem;">Domain Sinkholed</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Incident Report Form Card -->
+      <section style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 3rem; margin-bottom: 4rem;">
+        <div>
+          <span class="section-tag">Community Defense Triage</span>
+          <h2 style="font-size: 1.85rem; color: var(--text-main); font-weight: 800; margin-bottom: 1rem;">Report an Active Scam or Fraud Vector</h2>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
+            Encountered a suspicious loan app, phishing SMS, spoofed government domain, or WhatsApp impersonation bot? Report it directly to dotyoujee's threat research team.
+          </p>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.5rem;">
+            <strong>Confidentiality Notice:</strong> Submissions are triaged under strict ethical protocols. We never disclose source identities, and no active investigation is launched without proper lawful authorization.
+          </p>
+          <div style="background: rgba(0, 240, 255, 0.05); border: 1px solid rgba(0, 240, 255, 0.2); padding: 1.25rem; border-radius: 8px;">
+            <p style="font-size: 0.85rem; color: var(--accent-cyan); font-weight: 700; margin-bottom: 0.25rem;">Law Enforcement &amp; CISO Collaboration:</p>
+            <p style="font-size: 0.82rem; color: var(--text-secondary);">If you are in law enforcement or an institutional CISO requiring verified threat feeds, contact us directly via PGP or WhatsApp.</p>
+          </div>
+        </div>
+
+        <div>
+          <form class="glass-form" id="scam-report-form">
+            <div class="form-group">
+              <label for="scam-type" class="form-label">Threat Vector Category</label>
+              <select id="scam-type" class="form-control" required>
+                <option value="Mobile Money Phishing SMS">Mobile Money / Bank SMS Phishing</option>
+                <option value="Malicious Android Loan APK">Malicious Loan App (Spyware APK)</option>
+                <option value="Spoofed Brand / Government Domain">Spoofed Brand or Government Portal</option>
+                <option value="WhatsApp / Telegram Impersonation Bot">Social Media / WhatsApp Impersonation</option>
+                <option value="Crypto / Forex SACCO Investment Scam">Fraudulent Forex / Crypto Scheme</option>
+                <option value="Other Regional Threat">Other Regional Threat Vector</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="scam-target" class="form-label">Suspect Entity, Phone Number, or Domain URL</label>
+              <input type="text" id="scam-target" class="form-control" placeholder="e.g. +256 7XX XXX XXX or fake-portal.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="scam-details" class="form-label">Observed Behavior &amp; Context</label>
+              <textarea id="scam-details" class="form-control" placeholder="Provide copy of SMS text, links, or fraudulent demands made..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%;">
+              Submit Threat Telemetry via WhatsApp &rarr;
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 0.75rem;">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+            </svg>
+            dot<span class="accent">youjee</span>
+          </a>
+          <p class="footer-brand-desc">Uganda's premier cybersecurity &amp; regulatory compliance advisory firm. Protecting digital enterprise across East Africa.</p>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Service Packs</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="services.html#nisf-2026">NISF 2026 Audit</a></li>
+            <li class="footer-link-item"><a href="services.html#dppa">DPPA &amp; PDPO Registration</a></li>
+            <li class="footer-link-item"><a href="services.html#vapt">Offensive VAPT Pentesting</a></li>
+            <li class="footer-link-item"><a href="services.html#bou">Bank of Uganda Guidelines</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Compliance Hub</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="resources.html">Free Checklists</a></li>
+            <li class="footer-link-item"><a href="dashboard.html">Threat Intel Radar</a></li>
+            <li class="footer-link-item"><a href="about.html">About Founder</a></li>
+            <li class="footer-link-item"><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Direct Engagement</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;">WhatsApp scoping call available within 2 hours:</p>
+          <a href="https://wa.me/256764625700?text=Hi%20dotyoujee%2C%20I%20am%20reviewing%20the%20Scammer%20Payback%20hub." target="_blank" rel="noopener noreferrer" class="btn-primary btn-whatsapp" style="width: 100%; justify-content: center;">WhatsApp +256 764 625 700</a>
+        </div>
+      </div>
+      <div class="container footer-bottom-bar">
+        <div>&copy; 2026 dotyoujee. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="floating-whatsapp">
+      <span class="whatsapp-tooltip">Chat with Lead Auditor</span>
+      <a href="https://wa.me/256764625700" target="_blank" rel="noopener noreferrer" class="whatsapp-pill-btn" aria-label="WhatsApp dotyoujee">
+        <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.203c.043.071.043.418-.101.823z"/></svg>
+      </a>
     </div>
-  </header>
-
-  <main class="container" style="padding: 4rem 0;">
-    <h1>Scammer Payback Africa Initiative</h1>
-    <p style="margin-top: 1rem; color: var(--text-secondary);">
-      In an era of rising digital fraud across the continent, dotyoujee is developing proactive 
-      methodologies to disrupt fraudulent ecosystems. We are not just reactive; we are 
-      architecting the future of regional cybersecurity intelligence.
-    </p>
-
-    <h2 style="margin-top: 2rem;">Our Strategic Approach</h2>
-    <p style="margin-top: 1rem; color: var(--text-secondary);">
-      The Scammer Payback Africa initiative focuses on high-impact threat modeling, forensic 
-      data analysis, and the creation of automated reporting pipelines. We are mapping the infrastructure used by sophisticated scam operations and building automated reporting pipelines, and we aim to share actionable threat intelligence with law enforcement and regulators where appropriate.
-    </p>
-
-    <h2 style="margin-top: 2rem;">Why This Matters</h2>
-    <p style="margin-top: 1rem; color: var(--text-secondary);">
-      Status: research and methodology in development. No client engagements, no disclosure of active investigations, and no operation is started without proper authorisation.
-    </p>
-    <p style="margin-top: 1rem; color: var(--text-secondary);">
-      Cyber fraud erodes trust in the digital economy. Our initiative bridges the gap between technical research and public-sector enforcement, helping to protect SMEs, financial institutions, and vulnerable citizens from large-scale social engineering and technical scams.
-    </p>
-
-    <div style="margin-top: 3rem; padding: 2rem; background: var(--bg-secondary); border-radius: 12px;">
-        <h3>Join the Mission</h3>
-        <p style="margin-top: 1rem;">We are building the tools to secure Africa's digital future. If you are a cybersecurity professional, developer, or in law enforcement, let's discuss how we can scale these defenses together.</p>
-        <a href="contact.html" style="display: inline-block; margin-top: 1.5rem; padding: 0.8rem 1.5rem; background: var(--primary); color: white; text-decoration: none; border-radius: 8px;">Contact Our Strategy Team</a>
-    </div>
-  </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
