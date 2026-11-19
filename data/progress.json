@@ -1,0 +1,695 @@
+{
+  "generated_at": "2026-11-19T22:27:07Z",
+  "operator": "Mugagga Moses",
+  "tagline": "IT consultancy in Kampala. Cybersecurity apprenticeship in public.",
+  "totals": {
+    "xp": 46,
+    "posts": 1,
+    "verified_posts": 0,
+    "hours": 1.0,
+    "modules_done": 0,
+    "modules_total": 31,
+    "by_type": {
+      "meta": 1
+    }
+  },
+  "level": {
+    "name": "Recruit",
+    "min": 0,
+    "next": "Initiate",
+    "next_min": 300,
+    "to_next": 254
+  },
+  "commit_xp": {
+    "xp": 46,
+    "commits": 23,
+    "repos": [
+      "M0ze/dotyoujee"
+    ]
+  },
+  "streak": {
+    "current": 1,
+    "longest": 1,
+    "last_entry": "2026-11-19"
+  },
+  "tracks": [
+    {
+      "id": "network-linux",
+      "title": "Networking & Linux Foundations",
+      "short": "The bedrock. Everything else sits on this.",
+      "status": "active",
+      "color": "mint",
+      "total": 10,
+      "completed": 0,
+      "percent": 0,
+      "xp": 0,
+      "modules": [
+        {
+          "id": "nl-01",
+          "title": "How a packet actually travels",
+          "xp": 90,
+          "prereqs": [],
+          "objectives": [
+            "Explain encapsulation from application data to frame",
+            "Read an OSI/TCP-IP map without confusing the two",
+            "Trace one DNS lookup and one HTTPS request end to end"
+          ],
+          "lab": "Capture a single DNS query and TCP handshake in Wireshark; annotate every layer in a writeup.",
+          "resources": [
+            "Computer Networks (Tanenbaum) ch.1",
+            "Cisco Networking Basics free course",
+            "Wireshark official user guide"
+          ],
+          "done": false
+        },
+        {
+          "id": "nl-02",
+          "title": "IPv4, subnetting and CIDR",
+          "xp": 110,
+          "prereqs": [
+            "nl-01"
+          ],
+          "objectives": [
+            "Convert between binary, decimal and CIDR",
+            "Subnet a /24 into four equal networks",
+            "Explain why private ranges exist and where NAT breaks things"
+          ],
+          "lab": "Subnet a fictional Kampala SACCO network with 4 branches; document addresses, gateways and broadcast domains.",
+          "resources": [
+            "RFC 1918",
+            "Subnetting practice exercises",
+            "Professor Messer N10-008 subnetting videos"
+          ],
+          "done": false
+        },
+        {
+          "id": "nl-03",
+          "title": "DNS, HTTP and TLS in practice",
+          "xp": 100,
+          "prereqs": [
+            "nl-01"
+          ],
+          "objectives": [
+            "Walk through recursive DNS resolution",
+            "Read an HTTP response header line by line",
+            "Explain the TLS handshake and what a certificate proves"
+          ],
+          "lab": "Use dig and openssl s_client against a domain you own or are authorised to test; save annotated output.",
+          "resources": [
+            "RFC 1034/1035",
+            "MDN HTTP overview",
+            "openssl s_client man page"
+          ],
+          "done": false
+        },
+        {
+          "id": "nl-04",
+          "title": "Linux filesystem, users and permissions",
+          "xp": 120,
+          "prereqs": [
+            "nl-01"
+          ],
+          "objectives": [
+            "Navigate the filesystem and explain FHS layout",
+            "Read and set rwx bits, setuid and sticky bits",
+            "Create users/groups and explain why least privilege matters"
+          ],
+          "lab": "Build a shared folder with two groups and verify who can read, write and execute.",
+          "resources": [
+            "Linux Journey: permissions",
+            "man chmod, man chown",
+            "The Linux Documentation Project"
+          ],
+          "done": false
+        },
+        {
+          "id": "nl-05",
+          "title": "Processes, services and systemd",
+          "xp": 100,
+          "prereqs": [
+            "nl-04"
+          ],
+          "objectives": [
+            "List and inspect running processes",
+            "Explain signals, foreground and background jobs",
+            "Write a minimal systemd unit and read its journal"
+          ],
+          "lab": "Run a small Python HTTP server as a systemd service; break it, then fix it from journalctl.",
+          "resources": [
+            "systemd.unit man page",
+            "DigitalOcean systemd tutorial",
+            "ps and top man pages"
+          ],
+          "done": false
+        },
+        {
+          "id": "nl-06",
+          "title": "Shell, piping and text tools",
+          "xp": 110,
+          "prereqs": [
+            "nl-04"
+          ],
+          "objectives": [
+            "Compose grep, sed, awk and sort pipelines",
+            "Use find and xargs safely",
+            "Write a bash script with argument checks and exit codes"
+          ],
+          "lab": "Write a script that parses auth.log and reports failed SSH logins per IP.",
+          "resources": [
+            "MIT Missing Semester: shell tools",
+            "ShellCheck",
+            "Advanced Bash-Scripting Guide"
+          ],
+          "done": false
+        },
+        {
+          "id": "nl-07",
+          "title": "Networking on Linux",
+          "xp": 120,
+          "prereqs": [
+            "nl-02",
+            "nl-04"
+          ],
+          "objectives": [
+            "Inspect interfaces with ip and ss",
+            "Read a routing table and add a static route",
+            "Explain iptables/nftables chains and a basic firewall policy"
+          ],
+          "lab": "Configure two VMs on an isolated network, route between them, then block a port with nftables.",
+          "resources": [
+            "iproute2 docs",
+            "nftables wiki",
+            "Linux Networking and System Administration"
+          ],
+          "done": false
+        },
+        {
+          "id": "nl-08",
+          "title": "Windows basics and Active Directory",
+          "xp": 130,
+          "prereqs": [
+            "nl-04"
+          ],
+          "objectives": [
+            "Explain domains, OUs, users and groups",
+            "Describe what a domain controller does",
+            "Read a Group Policy and know what it enforces"
+          ],
+          "lab": "Draw an AD topology for a 40-person SACCO and mark privileged groups.",
+          "resources": [
+            "Microsoft AD fundamentals",
+            "PowerShell getting started",
+            "Mandiant AD attack map (defensive reading)"
+          ],
+          "done": false
+        },
+        {
+          "id": "nl-09",
+          "title": "Logs, time and observability",
+          "xp": 90,
+          "prereqs": [
+            "nl-05",
+            "nl-06"
+          ],
+          "objectives": [
+            "Explain syslog severity and journald",
+            "Sync clocks with NTP and explain why time matters in incidents",
+            "Correlate two log sources into one timeline"
+          ],
+          "lab": "Collect auth.log, journal and nginx logs for one day and write a timeline of a suspicious event.",
+          "resources": [
+            "RFC 5424",
+            "journalctl man page",
+            "The Practice of Network Security Monitoring ch.2"
+          ],
+          "done": false
+        },
+        {
+          "id": "nl-10",
+          "title": "Boss fight: build the home lab",
+          "xp": 250,
+          "prereqs": [
+            "nl-01",
+            "nl-02",
+            "nl-03",
+            "nl-04",
+            "nl-05",
+            "nl-06",
+            "nl-07",
+            "nl-08",
+            "nl-09"
+          ],
+          "objectives": [
+            "Stand up a repeatable lab from documented steps",
+            "Segment it into attacker, victim and management networks",
+            "Publish a build log with diagrams and failure notes"
+          ],
+          "lab": "Document the whole build, including what broke and how you fixed it. Evidence link is mandatory.",
+          "resources": [
+            "Your own notes from nl-01 to nl-09",
+            "VirtualBox or Proxmox docs"
+          ],
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "offensive",
+      "title": "Penetration Testing Journey",
+      "short": "Authorised breaking, scoped properly, reported clearly.",
+      "status": "planned",
+      "color": "amber",
+      "total": 5,
+      "completed": 0,
+      "percent": 0,
+      "xp": 0,
+      "modules": [
+        {
+          "id": "pt-01",
+          "title": "Rules of engagement and legal scope",
+          "xp": 100,
+          "prereqs": [],
+          "objectives": [
+            "Write a scope document",
+            "Explain authorisation and stop conditions"
+          ],
+          "lab": "Draft a RoE for a fictional engagement.",
+          "resources": [
+            "PTES standard"
+          ],
+          "done": false
+        },
+        {
+          "id": "pt-02",
+          "title": "Reconnaissance with Nmap",
+          "xp": 120,
+          "prereqs": [
+            "pt-01",
+            "nl-03"
+          ],
+          "objectives": [
+            "Choose scan types",
+            "Interpret service and version detection"
+          ],
+          "lab": "Scan your own lab and annotate results.",
+          "resources": [
+            "Nmap reference guide"
+          ],
+          "done": false
+        },
+        {
+          "id": "pt-03",
+          "title": "Web fundamentals and OWASP Top 10",
+          "xp": 180,
+          "prereqs": [
+            "pt-02"
+          ],
+          "objectives": [
+            "Map findings to OWASP categories",
+            "Prove impact without destroying data"
+          ],
+          "lab": "DVWA or Juice Shop walkthrough with writeup.",
+          "resources": [
+            "OWASP Top 10",
+            "PortSwigger Web Security Academy"
+          ],
+          "done": false
+        },
+        {
+          "id": "pt-04",
+          "title": "Vulnerability validation and reporting",
+          "xp": 150,
+          "prereqs": [
+            "pt-03"
+          ],
+          "objectives": [
+            "Reproduce findings",
+            "Write CVSS-informed severity with business context"
+          ],
+          "lab": "Produce a client-ready report from your lab findings.",
+          "resources": [
+            "FIRST CVSS calculator"
+          ],
+          "done": false
+        },
+        {
+          "id": "pt-05",
+          "title": "Boss fight: full web app assessment",
+          "xp": 300,
+          "prereqs": [
+            "pt-04"
+          ],
+          "objectives": [
+            "Scope, test, report, retest"
+          ],
+          "lab": "Complete assessment with RoE, evidence and retest log.",
+          "resources": [
+            "Your notes"
+          ],
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "reverse",
+      "title": "Reverse Engineering Journey",
+      "short": "Binaries, assembly and how software really behaves.",
+      "status": "planned",
+      "color": "violet",
+      "total": 4,
+      "completed": 0,
+      "percent": 0,
+      "xp": 0,
+      "modules": [
+        {
+          "id": "re-01",
+          "title": "x86-64 basics and calling conventions",
+          "xp": 140,
+          "prereqs": [
+            "nl-04"
+          ],
+          "objectives": [
+            "Read registers and stack frames",
+            "Follow a function call"
+          ],
+          "lab": "Disassemble a tiny C program and annotate it.",
+          "resources": [
+            "Intel SDM volumes 1-2"
+          ],
+          "done": false
+        },
+        {
+          "id": "re-02",
+          "title": "Ghidra and static analysis",
+          "xp": 160,
+          "prereqs": [
+            "re-01"
+          ],
+          "objectives": [
+            "Identify functions and data flow",
+            "Rename and comment a decompiled binary"
+          ],
+          "lab": "Reverse a crackme and write the solution.",
+          "resources": [
+            "Ghidra docs"
+          ],
+          "done": false
+        },
+        {
+          "id": "re-03",
+          "title": "Dynamic analysis and debugging",
+          "xp": 160,
+          "prereqs": [
+            "re-02"
+          ],
+          "objectives": [
+            "Set breakpoints and inspect memory",
+            "Trace a key check"
+          ],
+          "lab": "Document a debugger session step by step.",
+          "resources": [
+            "gdb docs"
+          ],
+          "done": false
+        },
+        {
+          "id": "re-04",
+          "title": "Boss fight: unpack and explain a sample",
+          "xp": 320,
+          "prereqs": [
+            "re-03"
+          ],
+          "objectives": [
+            "Safely unpack in an isolated VM",
+            "Produce an IOC and behaviour report"
+          ],
+          "lab": "Write a malware analysis style report.",
+          "resources": [
+            "Your isolated lab"
+          ],
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "defensive",
+      "title": "Defensive Operations",
+      "short": "Detection, triage and response without the theatre.",
+      "status": "planned",
+      "color": "cyan",
+      "total": 4,
+      "completed": 0,
+      "percent": 0,
+      "xp": 0,
+      "modules": [
+        {
+          "id": "df-01",
+          "title": "Log sources and detection logic",
+          "xp": 130,
+          "prereqs": [
+            "nl-09"
+          ],
+          "objectives": [
+            "Choose useful log sources",
+            "Write a detection rule"
+          ],
+          "lab": "Build a Sigma rule and test it.",
+          "resources": [
+            "Sigma HQ"
+          ],
+          "done": false
+        },
+        {
+          "id": "df-02",
+          "title": "Alert triage and false positives",
+          "xp": 140,
+          "prereqs": [
+            "df-01"
+          ],
+          "objectives": [
+            "Prioritise an alert queue",
+            "Document a triage decision"
+          ],
+          "lab": "Work a 20-alert queue and record outcomes.",
+          "resources": [
+            "Blue Team Labs"
+          ],
+          "done": false
+        },
+        {
+          "id": "df-03",
+          "title": "Incident response workflow",
+          "xp": 180,
+          "prereqs": [
+            "df-02"
+          ],
+          "objectives": [
+            "Contain, preserve, communicate",
+            "Write an incident timeline"
+          ],
+          "lab": "Run a tabletop for a ransomware scenario.",
+          "resources": [
+            "NIST SP 800-61"
+          ],
+          "done": false
+        },
+        {
+          "id": "df-04",
+          "title": "Boss fight: detect and write up an intrusion",
+          "xp": 300,
+          "prereqs": [
+            "df-03"
+          ],
+          "objectives": [
+            "Detect, scope, report"
+          ],
+          "lab": "Full intrusion writeup with evidence.",
+          "resources": [
+            "Your lab"
+          ],
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "build-free",
+      "title": "Zero-Budget Builder (Vibe Coding, For Real)",
+      "short": "Ship useful tools on free tiers without selling your data.",
+      "status": "planned",
+      "color": "lime",
+      "total": 4,
+      "completed": 0,
+      "percent": 0,
+      "xp": 0,
+      "modules": [
+        {
+          "id": "zb-01",
+          "title": "Git, GitHub and static hosting",
+          "xp": 90,
+          "prereqs": [],
+          "objectives": [
+            "Use branches and PRs",
+            "Deploy a static site"
+          ],
+          "lab": "Ship a tiny page and document the deploy.",
+          "resources": [
+            "GitHub Skills"
+          ],
+          "done": false
+        },
+        {
+          "id": "zb-02",
+          "title": "Free-tier architecture and its limits",
+          "xp": 110,
+          "prereqs": [
+            "zb-01"
+          ],
+          "objectives": [
+            "Compare free tiers",
+            "Know the data and lock-in costs"
+          ],
+          "lab": "Write a trade-off table for three free stacks.",
+          "resources": [
+            "Vendor docs"
+          ],
+          "done": false
+        },
+        {
+          "id": "zb-03",
+          "title": "Automate with scripts and Actions",
+          "xp": 140,
+          "prereqs": [
+            "zb-02",
+            "nl-06"
+          ],
+          "objectives": [
+            "Write a GitHub Action",
+            "Avoid leaking secrets"
+          ],
+          "lab": "Automate a real repetitive task.",
+          "resources": [
+            "GitHub Actions docs"
+          ],
+          "done": false
+        },
+        {
+          "id": "zb-04",
+          "title": "Boss fight: ship a free useful tool",
+          "xp": 260,
+          "prereqs": [
+            "zb-03"
+          ],
+          "objectives": [
+            "Build, deploy, document"
+          ],
+          "lab": "Public repo, README, and a post-mortem.",
+          "resources": [
+            "Your notes"
+          ],
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "grc-uganda",
+      "title": "Uganda Compliance & GRC",
+      "short": "The local regulatory layer that makes technical work count.",
+      "status": "planned",
+      "color": "orange",
+      "total": 4,
+      "completed": 0,
+      "percent": 0,
+      "xp": 0,
+      "modules": [
+        {
+          "id": "gr-01",
+          "title": "NISF 2026: the 14 domains",
+          "xp": 140,
+          "prereqs": [],
+          "objectives": [
+            "Map domains to controls",
+            "Read a regulator circular"
+          ],
+          "lab": "Complete the free NISF checklist with evidence.",
+          "resources": [
+            "compliance-checklists/nisf-2026-sme-readiness.md"
+          ],
+          "done": false
+        },
+        {
+          "id": "gr-02",
+          "title": "DPPA 2019 and PDPO registration",
+          "xp": 150,
+          "prereqs": [
+            "gr-01"
+          ],
+          "objectives": [
+            "Build a data inventory",
+            "Draft a lawful privacy notice"
+          ],
+          "lab": "DPIA for a fictional NGO.",
+          "resources": [
+            "compliance-checklists/dpo-starter-kit.md"
+          ],
+          "done": false
+        },
+        {
+          "id": "gr-03",
+          "title": "BoU and UCC sector guidance",
+          "xp": 150,
+          "prereqs": [
+            "gr-01"
+          ],
+          "objectives": [
+            "Compare sector obligations",
+            "Map to NIST CSF"
+          ],
+          "lab": "Write a crosswalk table.",
+          "resources": [
+            "BoU guidelines",
+            "UCC directives"
+          ],
+          "done": false
+        },
+        {
+          "id": "gr-04",
+          "title": "Boss fight: mock audit pack",
+          "xp": 280,
+          "prereqs": [
+            "gr-02",
+            "gr-03"
+          ],
+          "objectives": [
+            "Produce board and regulator artefacts"
+          ],
+          "lab": "Full gap analysis with remediation roadmap.",
+          "resources": [
+            "Your checklists"
+          ],
+          "done": false
+        }
+      ]
+    }
+  ],
+  "badges": [],
+  "recent": [
+    {
+      "slug": "0001-why-this-log-exists",
+      "title": "Why this log exists, and how the points actually work",
+      "date": "2026-11-19",
+      "type": "meta",
+      "track": "network-linux",
+      "xp": 0,
+      "evidence": "",
+      "verified": false
+    }
+  ],
+  "rules": {
+    "meta": 0,
+    "notes": 0,
+    "lab": 60,
+    "writeup": 120,
+    "ctf": 80,
+    "cert": 500
+  }
+}

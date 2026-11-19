@@ -1,229 +1,109 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book a Briefing | dotyoujee</title>
-  <meta name="description" content="Book a 20-minute security briefing with a dotyoujee lead auditor. Choose an engagement tier, tell us your context, and get a written scope — no popup, no redirect.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2305070a'/%3E%3Cpath d='M16 27s8-4 8-11V6l-8-3-8 3v10c0 7 8 11 8 11z' fill='none' stroke='%2300f5d4' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="assets/home.css">
-  <link rel="stylesheet" href="assets/commerce.css">
+  <title>Book a briefing — dotyoujee Ops Log</title>
+  <meta name="description" content="Scoped IT and security briefing with a written quote. No popup, no fake backend, no surprise redirect.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2306080b'/%3E%3Cpath d='M7 10h7l3 5 3-5h5M7 22h7l3-5 3 5h5' fill='none' stroke='%234ff0c8' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/app.css">
 </head>
-<body class="home book-page">
-
-  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+<body data-page="contact">
 
   <header class="site-header" id="site-header">
-    <div class="container nav-wrapper">
-      <a href="index.html" class="brand-logo" aria-label="dotyoujee home">
-        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
-        dot<span class="accent">youjee</span>
-      </a>
-      <nav class="nav-menu" id="nav-menu" aria-label="Primary navigation">
-        <a href="index.html#services" class="nav-link">Services</a>
-        <a href="pricing.html" class="nav-link">Packages</a>
-        <a href="index.html#lab" class="nav-link">Live Lab</a>
-        <a href="resources.html" class="nav-link">Resources</a>
-        <a href="about.html" class="nav-link">About</a>
-      </nav>
-      <div class="nav-actions">
-        <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme" title="Toggle theme">🌙</button>
-        <a href="contact.html" class="btn-primary btn-sm magnetic">Book a briefing ↗</a>
-        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand"><span class="brand-mark">dj</span> dotyoujee <span class="light">/ ops log</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learn.html">Skill tree</a></li>
+        <li><a href="blog.html">Journal</a></li>
+        <li><a href="index.html#consultancy">Consultancy</a></li>
+        <li><a href="index.html#rules">Rules</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:.6rem">
+        <a href="contact.html" class="nav-cta">Book a briefing ↗</a>
+        <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="book-hero">
-      <div class="container book-hero-inner">
-        <div class="section-index"><span>//</span><i></i><small>Engagement desk</small></div>
-        <h1>Let's scope your <span class="accent-text">next move.</span></h1>
-        <p>One short form goes straight to a lead auditor. You get a written scope, a fixed quote and a start date — no call centre, no sales theatre, no surprise redirect.</p>
-        <div class="book-promise">
-          <span><i></i> Reply within one business day</span>
-          <span><i></i> 20-minute scoping call</span>
-          <span><i></i> Fixed UGX quote in writing</span>
-        </div>
+    <section class="hero" style="padding-bottom:4rem">
+      <div class="container">
+        <div class="eyebrow"><span class="rule"></span> Engagement desk</div>
+        <h1>Let's scope it <em>honestly.</em></h1>
+        <p class="hero-lede">Tell me what you need. You get a written scope, a fixed UGX quote and a clear statement of what I can and cannot do. Nothing here pretends to be a ticket system.</p>
       </div>
     </section>
 
-    <section class="book-section">
-      <div class="container book-grid">
-
-        <div class="book-form-wrap">
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="form-card">
           <form id="booking-form" novalidate>
-            <div class="book-form-head">
-              <span class="section-tag">Briefing request</span>
-              <h2>Tell us what you're protecting</h2>
-              <p>Fields marked * are required. Your details stay on this page until you choose to send them.</p>
-            </div>
-
+            <div class="eyebrow" style="margin-bottom:1rem">Briefing request</div>
             <div class="form-row">
-              <div class="form-group">
-                <label for="bk-name" class="form-label">Full name *</label>
-                <input type="text" id="bk-name" class="form-control" placeholder="e.g. Sarah Namubiru" required autocomplete="name">
-                <small class="field-error">Please enter your name.</small>
-              </div>
-              <div class="form-group">
-                <label for="bk-org" class="form-label">Organisation</label>
-                <input type="text" id="bk-org" class="form-control" placeholder="e.g. Apex SACCO Uganda" autocomplete="organization">
-              </div>
+              <div class="field"><label for="c-name">Full name *</label><input id="c-name" required><small>Please enter your name.</small></div>
+              <div class="field"><label for="c-org">Organisation</label><input id="c-org"></div>
             </div>
-
             <div class="form-row">
-              <div class="form-group">
-                <label for="bk-email" class="form-label">Work email *</label>
-                <input type="email" id="bk-email" class="form-control" placeholder="you@yourfirm.co.ug" required autocomplete="email">
-                <small class="field-error">Enter a valid email address.</small>
-              </div>
-              <div class="form-group">
-                <label for="bk-phone" class="form-label">WhatsApp / phone</label>
-                <input type="tel" id="bk-phone" class="form-control" placeholder="+256 7.." autocomplete="tel">
+              <div class="field"><label for="c-email">Work email *</label><input id="c-email" type="email" required><small>Enter a valid email.</small></div>
+              <div class="field"><label for="c-timeline">Timeline</label>
+                <select id="c-timeline"><option>Planning ahead</option><option>Within 30 days</option><option>Within 60–90 days</option><option>Active incident — urgent</option></select>
               </div>
             </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="bk-sector" class="form-label">Sector *</label>
-                <select id="bk-sector" class="form-control" required>
-                  <option value="">Select a sector</option>
-                  <option>Banking / SACCO / Fintech</option>
-                  <option>Government / MDA / Parastatal</option>
-                  <option>Telecom / ISP / Technology</option>
-                  <option>SME / Startup</option>
-                  <option>NGO / Healthcare / Education</option>
-                  <option>Other</option>
-                </select>
-                <small class="field-error">Choose a sector.</small>
-              </div>
-              <div class="form-group">
-                <label for="bk-timeline" class="form-label">Timeline *</label>
-                <select id="bk-timeline" class="form-control" required>
-                  <option value="">Select a timeline</option>
-                  <option>Immediate — active incident or statutory notice</option>
-                  <option>Within 30 days</option>
-                  <option>Within 60–90 days</option>
-                  <option>Planning ahead / retainer</option>
-                </select>
-                <small class="field-error">Choose a timeline.</small>
-              </div>
+            <div class="field"><label for="c-service">What do you need? *</label>
+              <select id="c-service" required>
+                <option value="">Select a service</option>
+                <option>IT baseline for SMEs</option>
+                <option>Email &amp; DNS hardening</option>
+                <option>Compliance starter pack (NISF / DPPA)</option>
+                <option>Security awareness session</option>
+                <option>Hardened web delivery</option>
+                <option>Learning-in-public talk</option>
+                <option>Not sure — help me choose</option>
+              </select><small>Pick the closest option.</small>
             </div>
-
-            <div class="form-group">
-              <label for="bk-pack" class="form-label">Package of interest *</label>
-              <select id="bk-pack" class="form-control" required>
-                <option value="">Not sure yet — help me choose</option>
-                <option value="recon">Tier 0 · Free Recon Call</option>
-                <option value="essential">Tier 1 · Essential Scan — UGX 1M</option>
-                <option value="guard">Tier 2 · Guard Retainer — from UGX 1.8M/mo</option>
-                <option value="assurance">Tier 3 · Assurance Audit — UGX 3.5M–5M</option>
-                <option value="programme">Tier 4 · Compliance Programme — UGX 6M–9M</option>
-                <option value="enterprise">Tier 5 · Enterprise Domain — custom</option>
-                <option value="addon">À la carte / role-based support</option>
-              </select>
-              <small class="field-error">Pick a package or leave it open.</small>
-            </div>
-
-            <div class="form-group">
-              <label for="bk-brief" class="form-label">What's going on? *</label>
-              <textarea id="bk-brief" class="form-control" rows="5" placeholder="Systems in scope, regulator deadline, incident details, or simply what keeps you up at night…" required></textarea>
-              <small class="field-error">A sentence or two is enough.</small>
-            </div>
-
-            <label class="consent-row">
-              <input type="checkbox" id="bk-consent" required>
-              <span>I agree that dotyoujee may use these details to prepare my scope and quote. I have read the <a href="privacy.html" target="_blank" rel="noopener noreferrer">privacy notice</a>. *</span>
-            </label>
-            <small class="field-error consent-error">Consent is required before we can respond.</small>
-
-            <button type="submit" class="btn-primary book-submit magnetic">Prepare my briefing ↗</button>
-            <p class="form-footnote">Nothing leaves this page until you confirm in the next step.</p>
+            <div class="field"><label for="c-brief">What's the context? *</label><textarea id="c-brief" required placeholder="Systems involved, deadlines, and what you're worried about."></textarea><small>A sentence or two is enough.</small></div>
+            <label class="consent"><input type="checkbox" id="c-consent"><span>I agree that my details may be used to prepare a scope and quote, as described in the <a class="accent" href="privacy.html">privacy notice</a>. *</span></label>
+            <small id="c-consent-error" style="display:none;color:var(--red);font-size:.7rem;margin-top:.3rem">Consent is required.</small>
+            <p style="margin-top:1.4rem"><button type="submit" class="btn btn-primary">Prepare my briefing ↗</button></p>
+            <p class="muted" style="font-size:.72rem;margin-top:.6rem">Nothing is sent automatically. You choose WhatsApp or email on the next step.</p>
           </form>
 
-          <div class="confirm-card" id="booking-confirm" hidden tabindex="-1">
-            <div class="confirm-mark">✓</div>
-            <span class="section-tag">Briefing ready</span>
-            <h2>Your brief is drafted.</h2>
-            <p>Nothing was sent automatically. Review it, then choose how to deliver it to our engagement desk.</p>
-            <div class="confirm-ref">
-              <span>Reference</span>
-              <strong id="bk-ref">DJ-00000000-0000</strong>
-            </div>
-            <pre class="confirm-summary" id="bk-summary"></pre>
+          <div class="confirm" id="booking-confirm" hidden tabindex="-1">
+            <div class="eyebrow">Briefing ready</div>
+            <h2>Review, then send.</h2>
+            <p class="muted" style="font-size:.86rem">This is the exact message that will be sent if you choose a channel below.</p>
+            <pre id="booking-summary"></pre>
             <div class="confirm-actions">
-              <a id="bk-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary magnetic">Send on WhatsApp ↗</a>
-              <a id="bk-email" href="#" class="btn-ghost magnetic">Open in email</a>
-              <button type="button" id="bk-copy" class="btn-ghost magnetic">Copy brief</button>
+              <a id="c-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Send on WhatsApp ↗</a>
+              <a id="c-email" href="#" class="btn btn-ghost">Open in email</a>
+              <button type="button" id="c-copy" class="btn btn-ghost">Copy brief</button>
             </div>
-            <button type="button" id="bk-edit" class="text-link">← Edit details</button>
-            <p class="form-footnote">WhatsApp and email open only when you tap them. You stay in control.</p>
+            <p style="margin-top:1.2rem"><button type="button" id="c-edit" class="back-link">← Edit details</button></p>
           </div>
         </div>
 
-        <aside class="book-aside">
-          <div class="channel-card">
-            <span class="section-tag">Direct line</span>
-            <h3>Skip the form if you're in a hurry</h3>
-            <p>Our lead auditor answers Uganda business numbers directly. Best for active incidents.</p>
-            <a href="https://wa.me/256764625700?text=Hi%20dotyoujee%2C%20I%20need%20a%20security%20briefing." target="_blank" rel="noopener noreferrer" class="btn-ghost magnetic" style="width:100%;justify-content:center;">+256 764 625 700 ↗</a>
-            <small>Typical reply: under 30 minutes during Kampala business hours.</small>
-          </div>
-
-          <div class="channel-card">
-            <span class="section-tag">What happens next</span>
-            <h3>From form to fixed quote</h3>
-            <ol class="next-steps">
-              <li><span>01</span><div><strong>We read your brief</strong><p>A lead auditor reviews it the same business day.</p></div></li>
-              <li><span>02</span><div><strong>20-minute scope call</strong><p>We confirm assets, regulators and boundaries — no pitch deck.</p></div></li>
-              <li><span>03</span><div><strong>Written scope &amp; quote</strong><p>Fixed UGX price, deliverables, timeline and start date.</p></div></li>
-              <li><span>04</span><div><strong>Sign, then start</strong><p>50% on the Statement of Work, 50% on acceptance.</p></div></li>
-            </ol>
-          </div>
-
-          <div class="channel-card quiet">
-            <span class="section-tag">Compare first?</span>
-            <h3>Not sure which tier fits?</h3>
-            <p>The package ladder lays out deliverables, timelines and role coverage for all six tiers.</p>
-            <a href="pricing.html" class="text-link magnetic">See all packages ↗</a>
-          </div>
+        <aside class="contact-aside">
+          <div class="service"><h3>What happens next</h3><p>01 · I read the brief. 02 · We agree scope on a short call. 03 · Written quote with fixed UGX price. 04 · Signed scope, then work starts.</p></div>
+          <div class="service"><h3>Typical response</h3><p>Within one business day. If it is an active incident, use the WhatsApp line instead — the form is not monitored continuously.</p></div>
+          <div class="service"><h3>Direct line</h3><p><a class="accent" href="https://wa.me/256764625700" target="_blank" rel="noopener noreferrer">+256 764 625 700 ↗</a></p></div>
+          <div class="boundary"><h3>Honest boundaries</h3><ul><li>No 24/7 SOC.</li><li>No accredited pentest or DFIR retainer sold here.</li><li>No certification claimed without a verifiable ID.</li></ul></div>
         </aside>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="index.html" class="brand-logo">
-            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
-            dot<span class="accent">youjee</span>
-          </a>
-          <p>Cybersecurity and regulatory assurance for Ugandan enterprise. Built in Kampala, aligned globally.</p>
-          <span class="footer-live"><i></i> SOC operational 24/7</span>
-        </div>
-        <div class="footer-col"><h4>Packages</h4><a href="pricing.html#tiers">Six engagement tiers</a><a href="pricing.html#roles">Specialist roles</a><a href="pricing.html#rates">À la carte rates</a><a href="pricing.html#terms">Commercial terms</a></div>
-        <div class="footer-col"><h4>Explore</h4><a href="index.html#services">Capabilities</a><a href="index.html#lab">Live lab</a><a href="resources.html">Free checklists</a><a href="about.html">About the founder</a></div>
-        <div class="footer-col"><h4>Engage</h4><a href="contact.html">Book a briefing</a><a href="https://wa.me/256764625700" target="_blank" rel="noopener noreferrer">+256 764 625 700</a><a href="privacy.html">Privacy notice</a></div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 dotyoujee. All rights reserved.</span>
-        <div><a href="privacy.html">Privacy (DPPA)</a><a href="terms.html">Terms</a></div>
-      </div>
-      <div class="footer-wordmark" aria-hidden="true">dotyoujee</div>
+    <div class="container footer-grid">
+      <div><a href="index.html" class="brand"><span class="brand-mark">dj</span> dotyoujee <span class="light">/ ops log</span></a><p>IT consultancy in Kampala. Cybersecurity apprenticeship in public.</p></div>
+      <div class="footer-col"><h4>Navigate</h4><a href="index.html">Home</a><a href="learn.html">Skill tree</a><a href="blog.html">Journal</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
     </div>
+    <div class="container footer-bottom"><span>© 2026 dotyoujee · Kampala</span><span>No popup. No redirect. You choose the channel.</span></div>
   </footer>
 
-  <div class="floating-whatsapp">
-    <a href="https://wa.me/256764625700?text=Hi%20dotyoujee%2C%20I%20just%20used%20your%20booking%20page." target="_blank" rel="noopener noreferrer" class="whatsapp-pill-btn" aria-label="Chat with dotyoujee on WhatsApp">
-      <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.203c.043.071.043.418-.101.823z"/></svg>
-    </a>
-  </div>
-
-  <script src="assets/booking.js"></script>
+  <script src="assets/app.js"></script>
+  <script src="assets/contact.js"></script>
 </body>
 </html>

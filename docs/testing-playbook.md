@@ -76,7 +76,7 @@ Offer **5 beta slots at 50% off** (UGX 500,000 per Instant Scan) to build case s
 
 ### Beta workflow
 
-1. **Outreach** — WhatsApp or X DM using templates in [`x-launch-kit.md`](x-launch-kit.md).
+1. **Outreach** — WhatsApp or X DM. Write it yourself; the old template kit was retired with the previous site.
 2. **Authorization** — Send this message and save their reply:
 
    > I authorize dotyoujee to perform an external security scan on `[domain/IP]` on `[date]`. I understand this is a surface-level assessment, not a full penetration test.
@@ -148,4 +148,4 @@ Verify lead magnets work as marketing tools:
 
 ## Next: launch on X
 
-Ready to go public? Follow the copy and thread templates in [`x-launch-kit.md`](x-launch-kit.md).
+Ready to go public? Keep it factual: link the journal entry and its evidence, not a sales pitch.

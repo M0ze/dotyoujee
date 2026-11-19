@@ -72,4 +72,4 @@ This is a **surface-level external scan**, not a full penetration test. Position
 
 ## Next steps
 
-See [`docs/testing-playbook.md`](../docs/testing-playbook.md) for the full beta testing program and [`docs/x-launch-kit.md`](../docs/x-launch-kit.md) for Twitter/X launch copy.
+See [`docs/testing-playbook.md`](../docs/testing-playbook.md) for the safe testing procedure.

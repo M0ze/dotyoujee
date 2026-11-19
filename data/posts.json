@@ -1,0 +1,25 @@
+[
+  {
+    "slug": "0001-why-this-log-exists",
+    "title": "Why this log exists, and how the points actually work",
+    "date": "2026-11-19",
+    "type": "meta",
+    "track": "network-linux",
+    "difficulty": "beginner",
+    "hours": 1.0,
+    "summary": "An honest apprenticeship log where progress needs receipts, not vibes.",
+    "tags": [
+      "meta",
+      "rules",
+      "transparency"
+    ],
+    "evidence": "",
+    "evidence_label": "",
+    "verified": false,
+    "completed": [],
+    "base_xp": 0,
+    "xp": 0,
+    "body": "# Why this log exists\n\nI am learning IT and cybersecurity in public. This is the journal and the scoreboard.\n\nI want to show progress to myself and to anyone who cares, but I do not want to\nbecome the kind of site that claims a 24/7 SOC, invented certifications and a\n\"100% pass rate\". So the rules here are deliberately hostile to fakery.\n\n## The only rule that matters\n\n**No receipt, no points.**\n\nEvery post that earns XP must carry a link to something checkable:\n\n- a lab writeup in this repo,\n- a CTF flag or TryHackMe / Hack The Box completion,\n- a certification with a verifiable ID,\n- or a commit in one of the learning repositories.\n\nMeta posts and notes are allowed, but they earn zero. That is on purpose.\n\n## Where the points come from\n\n- Lab writeup: 60 XP, plus the XP of any modules marked complete in that post.\n- Full writeup: 120 XP.\n- CTF or platform completion: 80 XP.\n- Verifiable certification: 500 XP.\n- Commits to the configured learning repos: 2 XP each, capped at 40 per week.\n\nA module only pays out once. If two posts claim the same module, the earlier one\ngets the XP. You cannot grind the same lesson twice.\n\n## What the levels mean\n\nRecruit → Initiate → Operator → Analyst → Engineer → Architect.\n\nThese are progress markers in a personal game. They are not certifications, not\njob titles, and not permission to call myself a security professional. The only\nthings I claim externally are the things I can point to.\n\n## The first track\n\nNetworking and Linux foundations. It is ten modules: packets, subnetting,\nDNS/HTTP/TLS, Linux permissions, services, shell tooling, Linux networking,\nWindows and Active Directory basics, logs and time, then a boss fight to build a\nhome lab. Everything else — penetration testing, reverse engineering, defensive\noperations, zero-budget building and Uganda compliance — is mapped out but locked\nuntil the foundations are done.\n\nThat order is not arbitrary. You cannot test a network you cannot explain, and you\ncannot explain a network you have not built.\n\n## How this is generated\n\nThe posts are Markdown files in `journal/`. `scripts/build.py` reads them, checks\ntheir evidence fields, counts commits through the GitHub API, and writes\n`data/progress.json` and `data/posts.json`. Those generated files are committed\nto the repo, so what you see on the dashboard is the same data anyone can audit.\n\nIf a claim here looks big, click the evidence link. If there is no link, there\nshould be no points behind it.",
+    "module_xp": 0
+  }
+]

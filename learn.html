@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill tree — dotyoujee Ops Log</title>
+  <meta name="description" content="The full curriculum map: networking, Linux, offensive, reverse engineering, defensive, zero-budget building and Uganda GRC.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2306080b'/%3E%3Cpath d='M7 10h7l3 5 3-5h5M7 22h7l3-5 3 5h5' fill='none' stroke='%234ff0c8' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body data-page="learn">
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand"><span class="brand-mark">dj</span> dotyoujee <span class="light">/ ops log</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learn.html" class="active">Skill tree</a></li>
+        <li><a href="blog.html">Journal</a></li>
+        <li><a href="index.html#consultancy">Consultancy</a></li>
+        <li><a href="index.html#rules">Rules</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:.6rem">
+        <a href="contact.html" class="nav-cta">Book a briefing ↗</a>
+        <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-bottom:4rem">
+      <div class="container">
+        <div class="eyebrow"><span class="rule"></span> Curriculum · dependency ordered</div>
+        <h1>The skill <em>tree.</em></h1>
+        <p class="hero-lede">A module is only complete when a post lists its ID and links to evidence. Locked modules have prerequisites you have not proven yet — that is the point.</p>
+        <p style="font-family:var(--mono);font-size:.7rem;color:var(--mint);margin-top:1.4rem">
+          <span data-bind="learn-xp" class="loading">…</span> · <span data-bind="learn-modules" class="loading">…</span>
+        </p>
+        <p style="font-family:var(--mono);font-size:.62rem;color:var(--faint);margin-top:.5rem">Total XP includes commits counted by the build script. Module XP below is earned only from posts with evidence.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters" data-bind="track-filters"><span class="loading">loading filters…</span></div>
+        <div data-bind="track-list"><p class="loading">loading curriculum…</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a href="index.html" class="brand"><span class="brand-mark">dj</span> dotyoujee <span class="light">/ ops log</span></a><p>Curriculum and progress generated from committed files.</p></div>
+      <div class="footer-col"><h4>Source</h4><a href="data/tracks.json">tracks.json</a><a href="data/progress.json">progress.json</a><a href="journal/_template.md">Post template</a></div>
+      <div class="footer-col"><h4>Navigate</h4><a href="index.html">Home</a><a href="blog.html">Journal</a><a href="contact.html">Book a briefing</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 dotyoujee · Kampala</span><span>Ranks are game levels, not credentials.</span></div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

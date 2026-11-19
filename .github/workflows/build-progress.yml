@@ -1,0 +1,35 @@
+name: Build progress data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'journal/**'
+      - 'data/tracks.json'
+      - 'scripts/build.py'
+      - '.github/workflows/build-progress.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate progress.json and posts.json
+        run: python3 scripts/build.py
+
+      - name: Commit generated data if changed
+        run: |
+          git config user.name "ops-log-bot"
+          git config user.email "ops-log-bot@users.noreply.github.com"
+          git add data/progress.json data/posts.json
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+          else
+            git commit -m "chore: rebuild progress data [skip ci]"
+            git push
+          fi

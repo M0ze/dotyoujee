@@ -1,558 +1,169 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>dotyoujee — Cyber Assurance for Regulated Uganda</title>
-  <meta name="description" content="Kampala-born cybersecurity and regulatory assurance. NISF 2026 audits, DPPA compliance, BoU cyber risk, VAPT and 24/7 incident response for Ugandan enterprises.">
-  <meta name="keywords" content="cybersecurity Uganda, NISF 2026, BoU cyber risk guidelines, DPPA Uganda, PDPO registration, penetration testing Kampala, IT audit Uganda, incident response East Africa">
-  <meta name="author" content="dotyoujee / Mugagga Moses">
-  <meta name="theme-color" content="#05070a">
+  <title>dotyoujee — IT consultancy &amp; cybersecurity apprenticeship in public</title>
+  <meta name="description" content="Honest IT consultancy in Kampala and an evidence-gated cybersecurity apprenticeship log. Progress needs receipts, not vibes.">
   <link rel="canonical" href="https://m0ze.github.io/dotyoujee/">
-
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://m0ze.github.io/dotyoujee/">
-  <meta property="og:title" content="dotyoujee — Cyber Assurance for Regulated Uganda">
-  <meta property="og:description" content="NISF 2026 readiness, DPPA compliance, BoU cyber risk and offensive security — delivered from Kampala, priced in UGX.">
-  <meta property="og:image" content="https://m0ze.github.io/dotyoujee/assets/og-image.svg">
-  <meta property="og:locale" content="en_UG">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="dotyoujee — Cyber Assurance for Regulated Uganda">
-  <meta name="twitter:description" content="Audit-ready security for Uganda's banks, MDAs, telcos and SMEs.">
-  <meta name="twitter:image" content="https://m0ze.github.io/dotyoujee/assets/og-image.svg">
-
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2305070a'/%3E%3Cpath d='M16 27s8-4 8-11V6l-8-3-8 3v10c0 7 8 11 8 11z' fill='none' stroke='%2300f5d4' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="assets/home.css">
-
-  <script type="importmap">
-  {
-    "imports": {
-      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
-    }
-  }
-  </script>
+  <meta property="og:title" content="dotyoujee — IT consultancy &amp; cybersecurity apprenticeship in public">
+  <meta property="og:description" content="Real work. Receipts only. A public, auditable learning journey in IT and security.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2306080b'/%3E%3Cpath d='M7 10h7l3 5 3-5h5M7 22h7l3-5 3 5h5' fill='none' stroke='%234ff0c8' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/app.css">
 </head>
-<body class="home">
+<body data-page="home">
 
-  <!-- Scroll + cursor chrome -->
-  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
-  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
-  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
-
-  <!-- Persistent WebGL stage: sits behind the page, revealed in hero + CTA -->
-  <div class="stage" id="stage" aria-hidden="true">
-    <canvas id="webgl-canvas"></canvas>
-    <div class="stage-fallback"></div>
-  </div>
-
-  <!-- Scroll section navigation -->
-  <nav class="section-dots" id="section-dots" aria-label="Section navigation">
-    <a href="#hero" data-dot="hero" class="active" aria-label="Top"><span></span></a>
-    <a href="#mandate" data-dot="mandate" aria-label="Our mandate"><span></span></a>
-    <a href="#services" data-dot="services" aria-label="Capabilities"><span></span></a>
-    <a href="#lab" data-dot="lab" aria-label="Live lab"><span></span></a>
-    <a href="#method" data-dot="method" aria-label="Method"><span></span></a>
-    <a href="#proof" data-dot="proof" aria-label="Selected work"><span></span></a>
-    <a href="#faq" data-dot="faq" aria-label="FAQ"><span></span></a>
-    <a href="#cta" data-dot="cta" aria-label="Get in touch"><span></span></a>
-  </nav>
-
-  <!-- ============================ HEADER ============================ -->
   <header class="site-header" id="site-header">
-    <div class="container nav-wrapper">
-      <a href="index.html" class="brand-logo" aria-label="dotyoujee home">
-        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/>
-        </svg>
-        dot<span class="accent">youjee</span>
-      </a>
-
-      <nav class="nav-menu" id="nav-menu" aria-label="Primary navigation">
-        <a href="#services" class="nav-link" data-nav="services">Services</a>
-        <a href="#lab" class="nav-link" data-nav="lab">Live Lab</a>
-        <a href="#method" class="nav-link" data-nav="method">Method</a>
-        <a href="#proof" class="nav-link" data-nav="proof">Proof</a>
-        <a href="pricing.html" class="nav-link">Packages</a>
-        <a href="resources.html" class="nav-link">Resources</a>
-        <a href="about.html" class="nav-link">About</a>
-      </nav>
-
-      <div class="nav-actions">
-        <span class="soc-live"><span class="pulse-dot"></span> SOC LIVE · KAMPALA</span>
-        <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme" title="Toggle theme">🌙</button>
-        <a href="contact.html?source=home" class="btn-primary btn-sm magnetic">Book a briefing <span aria-hidden="true">↗</span></a>
-        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand"><span class="brand-mark">dj</span> dotyoujee <span class="light">/ ops log</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="learn.html">Skill tree</a></li>
+        <li><a href="blog.html">Journal</a></li>
+        <li><a href="#consultancy">Consultancy</a></li>
+        <li><a href="#rules">Rules</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:.6rem">
+        <a href="contact.html" class="nav-cta">Book a briefing ↗</a>
+        <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- ============================ HERO ============================ -->
-    <section class="hero" id="hero">
-      <div class="hero-grid-bg" aria-hidden="true"></div>
-      <div class="hero-glow hero-glow-a" aria-hidden="true"></div>
-      <div class="hero-glow hero-glow-b" aria-hidden="true"></div>
-
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <div class="eyebrow" data-reveal>
-            <span class="eyebrow-line"></span>
-            <span>Cyber assurance · Est. Kampala</span>
-          </div>
-
-          <h1 class="hero-title" data-split>
-            Security that holds up <em>under scrutiny.</em>
-          </h1>
-
-          <p class="hero-lede" data-reveal data-delay="120">
-            We turn Ugandan regulatory obligation into defensible proof. Penetration testing,
-            NISF 2026 gap analysis and DPPA readiness — engineered for banks, MDAs, telcos and
-            the enterprises they depend on.
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span class="rule"></span> Kampala · IT practice + apprenticeship</div>
+          <h1>Real work. <em>Receipts only.</em></h1>
+          <p class="hero-lede">
+            Small-office IT support, Linux, backups and security basics in Kampala — plus a cybersecurity apprenticeship in public. This site does two things:
+            explains what I can actually deliver today, and shows the apprenticeship honestly — with every point
+            tied to something you can click and check.
           </p>
-
-          <div class="hero-actions" data-reveal data-delay="200">
-            <a href="#lab" class="btn-primary magnetic">Run a live audit <span aria-hidden="true">→</span></a>
-            <a href="https://wa.me/256764625700?text=Hi%20dotyoujee%2C%20I%27d%20like%20a%20security%20briefing%20for%20my%20organisation." target="_blank" rel="noopener noreferrer" class="btn-ghost magnetic">
-              <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.203c.043.071.043.418-.101.823z"/></svg>
-              Talk to a lead auditor
-            </a>
+          <div class="hero-actions">
+            <a href="learn.html" class="btn btn-primary">See the skill tree <span aria-hidden="true">→</span></a>
+            <a href="blog.html" class="btn btn-ghost">Read the journal</a>
           </div>
+          <p class="hero-note">No SOC badge. No invented certifications. No "live scanner". If a claim has no receipt, it isn't on this site.</p>
+        </div>
 
-          <div class="hero-stats" data-reveal data-delay="280">
-            <div class="stat"><strong data-count="14">0</strong><span>NISF control domains</span></div>
-            <div class="stat"><strong data-count="24" data-suffix="h" data-prefix="&lt; ">0</strong><span>Incident response</span></div>
-            <div class="stat"><strong data-count="1" data-prefix="UGX " data-suffix="M">0</strong><span>Fixed starter tier</span></div>
+        <aside class="console" aria-label="Progress snapshot">
+          <div class="console-top"><span class="console-dots"><i></i><i></i><i></i></span><span>progress.json · snapshot</span></div>
+          <div class="console-body">
+            <div class="console-xp">
+              <div class="xp-number"><span data-bind="xp" class="loading">…</span><small>XP</small></div>
+              <div class="level-box"><strong data-bind="level">—</strong><span data-bind="level-min">—</span></div>
+            </div>
+            <div class="progress-track"><span class="progress-fill" data-bind="progress-bar"></span></div>
+            <div class="progress-caption"><span data-bind="progress-caption">—</span><span data-bind="to-next">—</span></div>
+            <div class="stat-row">
+              <div><strong data-bind="posts">—</strong><span data-bind="posts-label">entries</span></div>
+              <div><strong data-bind="verified">—</strong><span>with receipts</span></div>
+              <div><strong data-bind="modules">—</strong><span>modules</span></div>
+              <div><strong data-bind="streak">—</strong><span>streak</span></div>
+            </div>
+            <div class="badge-row" data-bind="badges"><span class="loading">loading badges…</span></div>
           </div>
-        </div>
-
-        <!-- Floating telemetry over the 3D globe -->
-        <div class="hud hud-top" data-parallax="0.25" data-reveal data-delay="360">
-          <span class="hud-dot"></span>
-          <div><small>PERIMETER STATUS</small><strong>All systems observed</strong></div>
-        </div>
-        <div class="hud hud-left" data-parallax="-0.18" data-reveal data-delay="440">
-          <small>ACTIVE FRAMEWORK</small>
-          <strong>NISF 2026 · 14 domains</strong>
-          <div class="hud-bar"><span style="width:78%"></span></div>
-        </div>
-        <div class="hud hud-bottom" data-parallax="0.12" data-reveal data-delay="520">
-          <small>LIVE SIGNAL</small>
-          <strong class="mono">KLA · 00°19′N 32°35′E</strong>
-        </div>
-      </div>
-
-      <a class="scroll-cue" href="#mandate" aria-label="Scroll to next section">
-        <span>Scroll to explore</span><i></i>
-      </a>
-    </section>
-
-    <!-- ============================ MARQUEE ============================ -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>NISF 2026 <b>✳</b> DPPA 2019 <b>✳</b> BANK OF UGANDA <b>✳</b> UCC DIRECTIVES <b>✳</b> ISO/IEC 27001 <b>✳</b> NIST CSF <b>✳</b></span>
-        <span>NISF 2026 <b>✳</b> DPPA 2019 <b>✳</b> BANK OF UGANDA <b>✳</b> UCC DIRECTIVES <b>✳</b> ISO/IEC 27001 <b>✳</b> NIST CSF <b>✳</b></span>
-      </div>
-    </div>
-
-    <!-- ============================ MANDATE ============================ -->
-    <section class="section mandate" id="mandate">
-      <div class="container mandate-grid">
-        <div class="section-index" data-reveal><span>01</span><i></i><small>Our mandate</small></div>
-        <div>
-          <h2 class="statement scroll-text" data-reveal>
-            Compliance is not a document. It's a defensible position when the auditor, the regulator, and the attacker all show up on the same day.
-          </h2>
-          <div class="mandate-foot" data-reveal data-delay="120">
-            <p>
-              dotyoujee is a Kampala-based security practice built around one conviction:
-              Ugandan organisations deserve the same rigour as global enterprises — with
-              regulators, pricing and response times that actually make sense here.
-            </p>
-            <a href="about.html" class="text-link magnetic">Meet the founder <span aria-hidden="true">↗</span></a>
+          <div class="console-foot">
+            <span data-bind="generated">—</span>
+            <span>commits counted separately · <a class="accent" href="https://github.com/M0ze/dotyoujee/commits/main" target="_blank" rel="noopener noreferrer"><span data-bind="commit-count">—</span> in the repo ↗</a></span>
           </div>
-        </div>
+        </aside>
       </div>
     </section>
 
-    <!-- ============================ REGULATORS ============================ -->
-    <section class="regulators" aria-label="Frameworks we align to">
+    <section class="section">
       <div class="container">
-        <p class="regulators-label" data-reveal>Audited against the frameworks that govern you</p>
-        <div class="regulators-row" data-reveal data-delay="80">
-          <div class="reg-pill"><span class="reg-mark">N</span> NITA-U <small>NISF 2026</small></div>
-          <div class="reg-pill"><span class="reg-mark">B</span> Bank of Uganda <small>Cyber Risk</small></div>
-          <div class="reg-pill"><span class="reg-mark">P</span> PDPO <small>DPPA 2019</small></div>
-          <div class="reg-pill"><span class="reg-mark">U</span> UCC <small>Telecom Directives</small></div>
-          <div class="reg-pill"><span class="reg-mark">I</span> ISO/IEC <small>27001 · NIST CSF</small></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================ SERVICES ============================ -->
-    <section class="section services" id="services">
-      <div class="container">
-        <div class="section-head" data-reveal>
-          <div class="section-index"><span>02</span><i></i><small>Capabilities</small></div>
+        <div class="section-head">
+          <div class="section-no">01 / THE MAP</div>
           <div>
-            <h2 class="section-title">One practice. Every angle of <span class="accent-text">assurance.</span></h2>
-            <p class="section-lede">From the first policy draft to the final incident debrief — fixed scope, clear evidence, no theatre.</p>
+            <h2>Six journeys. One rule.</h2>
+            <p>Networking and Linux is the first fully built track. The rest are mapped and locked until the foundations are done — because you can't test what you can't explain.</p>
           </div>
         </div>
-
-        <div class="bento" data-reveal-group>
-          <a href="services.html#nisf-2026" class="bento-card bento-wide magnetic" data-reveal>
-            <div class="bento-num">01</div>
-            <div class="bento-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A12 12 0 0112 2.944 12 12 0 013.382 6.984 12 12 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-            </div>
-            <h3>NISF 2026 Readiness</h3>
-            <p>A full 14-domain gap analysis mapped to NITA-U's framework, with a remediation roadmap your board can actually approve.</p>
-            <span class="bento-tag">Mandatory · MDAs &amp; vendors</span>
-            <span class="bento-arrow" aria-hidden="true">↗</span>
-          </a>
-
-          <a href="services.html#vapt" class="bento-card magnetic" data-reveal data-delay="70">
-            <div class="bento-num">02</div>
-            <div class="bento-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            </div>
-            <h3>Offensive VAPT</h3>
-            <p>PTES and OWASP-driven testing that finds the misconfiguration before someone else does.</p>
-            <span class="bento-tag">PTES · OWASP · OSSTMM</span>
-            <span class="bento-arrow" aria-hidden="true">↗</span>
-          </a>
-
-          <a href="services.html#dppa" class="bento-card magnetic" data-reveal data-delay="140">
-            <div class="bento-num">03</div>
-            <div class="bento-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
-            </div>
-            <h3>DPPA &amp; DPIA</h3>
-            <p>Data maps, lawful-basis registers, DPO mandates and PDPO submission — handled end to end.</p>
-            <span class="bento-tag">Data Protection Act 2019</span>
-            <span class="bento-arrow" aria-hidden="true">↗</span>
-          </a>
-
-          <a href="services.html#bou" class="bento-card magnetic" data-reveal data-delay="210">
-            <div class="bento-num">04</div>
-            <div class="bento-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-            </div>
-            <h3>BoU Cyber Risk</h3>
-            <p>Technology-risk self-assessments and control evidence for licensed financial institutions.</p>
-            <span class="bento-tag">Banking · Fintech · SACCO</span>
-            <span class="bento-arrow" aria-hidden="true">↗</span>
-          </a>
-
-          <a href="services.html#dfir" class="bento-card bento-wide magnetic" data-reveal data-delay="280">
-            <div class="bento-num">05</div>
-            <div class="bento-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            </div>
-            <h3>Incident Response &amp; DFIR</h3>
-            <p>Containment, evidence preservation and a timeline that survives legal scrutiny — dispatched from Kampala within hours, not days.</p>
-            <span class="bento-tag">24/7 retainer · &lt; 24h dispatch</span>
-            <span class="bento-arrow" aria-hidden="true">↗</span>
-          </a>
-        </div>
+        <div class="track-grid" data-bind="home-tracks"><p class="loading">loading tracks…</p></div>
+        <div style="margin-top:2rem"><a href="learn.html" class="btn btn-ghost">Open the full skill tree →</a></div>
       </div>
     </section>
 
-    <!-- ============================ LIVE LAB ============================ -->
-    <section class="section lab" id="lab">
+    <section class="section alt">
       <div class="container">
-        <div class="section-head" data-reveal>
-          <div class="section-index"><span>03</span><i></i><small>Live lab</small></div>
+        <div class="section-head">
+          <div class="section-no">02 / JOURNAL</div>
           <div>
-            <h2 class="section-title">Don't take our word for it. <span class="accent-text">Run the tools.</span></h2>
-            <p class="section-lede">Two working instruments, built to show you what we look at before we ever send a proposal.</p>
+            <h2>Latest from the log.</h2>
+            <p>Writeups, lab notes and things that broke. Meta posts earn zero; real evidence earns points.</p>
           </div>
         </div>
-
-        <div class="lab-shell" data-reveal>
-          <div class="lab-tabs" role="tablist" aria-label="Interactive tools">
-            <button class="lab-tab active" role="tab" aria-selected="true" aria-controls="lab-scan" id="tab-scan" data-tab="lab-scan">01 · Perimeter audit simulator</button>
-            <button class="lab-tab" role="tab" aria-selected="false" aria-controls="lab-quiz" id="tab-quiz" data-tab="lab-quiz">02 · Readiness scorecard</button>
-            <span class="lab-status"><i></i> Tooling online</span>
-          </div>
-
-          <!-- Tool 1: scanner simulator -->
-          <div class="lab-panel active" id="lab-scan" role="tabpanel" aria-labelledby="tab-scan">
-            <div class="lab-toolbar">
-              <label class="sr-only" for="scan-target-url">Target domain</label>
-              <div class="input-wrap">
-                <span class="input-prefix mono">@</span>
-                <input type="text" id="scan-target-url" class="scanner-url-input" placeholder="yourfirm.co.ug" value="demo-fintech.ug" autocomplete="off">
-              </div>
-              <button type="button" id="start-scan-btn" class="btn-primary magnetic">Run audit <span aria-hidden="true">→</span></button>
-            </div>
-
-            <div class="preset-targets">
-              <span>Try a preset</span>
-              <button type="button" class="preset-chip" data-target="tier1-bank.co.ug">tier1-bank.co.ug</button>
-              <button type="button" class="preset-chip" data-target="telecom-portal.ug">telecom-portal.ug</button>
-              <button type="button" class="preset-chip" data-target="mda-agency.go.ug">mda-agency.go.ug</button>
-              <button type="button" class="preset-chip" data-target="sme-retail.co.ug">sme-retail.co.ug</button>
-            </div>
-
-            <div class="scan-progress-bar" id="scan-progress-bar"><div class="scan-progress-fill" id="scan-progress-fill"></div></div>
-
-            <div class="terminal" aria-live="polite">
-              <div class="terminal-top"><span class="terminal-dots"><i></i><i></i><i></i></span><span class="mono">dj-audit · session</span><span class="terminal-live mono">SIMULATION</span></div>
-              <div class="terminal-body" id="scan-terminal-logs">
-                <div class="terminal-line"><span class="terminal-dim">$ awaiting target — enter a domain and run the audit.</span></div>
-              </div>
-            </div>
-
-            <div class="scan-results-panel" id="scan-results-panel">
-              <div class="scan-results-grid">
-                <div class="metric-card"><span class="metric-label">Perimeter score</span><div class="metric-value" id="metric-score">68/100</div><p class="metric-desc">Header hygiene and exposed endpoints.</p></div>
-                <div class="metric-card"><span class="metric-label">SSL/TLS grade</span><div class="metric-value" id="metric-ssl">B+</div><p class="metric-desc">TLS 1.2/1.3 with legacy ciphers present.</p></div>
-                <div class="metric-card"><span class="metric-label">Open ports</span><div class="metric-value" id="metric-ports">3 · 80,443,8080</div><p class="metric-desc">8080 exposes an unauthenticated panel.</p></div>
-                <div class="metric-card"><span class="metric-label">DPPA posture</span><div class="metric-value" id="metric-dppa">Deficient</div><p class="metric-desc">Consent tracking and PDPO policy missing.</p></div>
-              </div>
-              <div class="lab-convert">
-                <div><strong>Want the regulator-ready report?</strong><p>The official scan adds deep NSE checks, CVE validation and a PDF executive summary — UGX 1,000,000.</p></div>
-                <a id="whatsapp-report-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary magnetic">Order official scan ↗</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tool 2: readiness calculator -->
-          <div class="lab-panel" id="lab-quiz" role="tabpanel" aria-labelledby="tab-quiz" hidden>
-            <div class="calculator-card" id="compliance-calculator">
-              <div class="calc-step">
-                <h4 class="calc-question"><span class="calc-step-num">1</span> What sector are you operating in?</h4>
-                <div class="calc-options-grid">
-                  <label class="calc-option-label selected"><input type="radio" name="calc-sector" value="bank" checked><span>Banking · SACCO · Fintech</span></label>
-                  <label class="calc-option-label"><input type="radio" name="calc-sector" value="gov"><span>Government · MDA · Parastatal</span></label>
-                  <label class="calc-option-label"><input type="radio" name="calc-sector" value="telco"><span>Telecom · ISP · Tech vendor</span></label>
-                  <label class="calc-option-label"><input type="radio" name="calc-sector" value="sme"><span>SME · NGO · Healthcare · Other</span></label>
-                </div>
-              </div>
-
-              <div class="calc-step">
-                <h4 class="calc-question"><span class="calc-step-num">2</span> Which controls are already live?</h4>
-                <div class="calc-options-grid">
-                  <label class="calc-option-label selected"><input type="checkbox" name="calc-controls" value="mfa" checked><span>MFA on all staff logins</span></label>
-                  <label class="calc-option-label"><input type="checkbox" name="calc-controls" value="ir-plan"><span>Documented IR plan</span></label>
-                  <label class="calc-option-label selected"><input type="checkbox" name="calc-controls" value="vapt" checked><span>Annual penetration test</span></label>
-                  <label class="calc-option-label"><input type="checkbox" name="calc-controls" value="pdpo"><span>Registered with PDPO</span></label>
-                  <label class="calc-option-label"><input type="checkbox" name="calc-controls" value="backups"><span>Encrypted offline backups</span></label>
-                  <label class="calc-option-label"><input type="checkbox" name="calc-controls" value="vendor-sla"><span>Vendor security reviews</span></label>
-                </div>
-              </div>
-
-              <div class="calc-step">
-                <h4 class="calc-question"><span class="calc-step-num">3</span> What is driving your timeline?</h4>
-                <div class="calc-options-grid">
-                  <label class="calc-option-label selected"><input type="radio" name="calc-deadline" value="30days" checked><span>Regulator review pending (30–60 days)</span></label>
-                  <label class="calc-option-label"><input type="radio" name="calc-deadline" value="urgent"><span>Immediate statutory notice</span></label>
-                  <label class="calc-option-label"><input type="radio" name="calc-deadline" value="proactive"><span>Proactive governance</span></label>
-                </div>
-              </div>
-
-              <div class="calc-result-box">
-                <div class="calc-score-row">
-                  <div class="score-display"><span class="score-number" id="quiz-score-val">54</span><span class="score-max">/100</span></div>
-                  <span class="score-risk-tag risk-moderate" id="quiz-risk-tag">Moderate Risk</span>
-                </div>
-                <div class="result-cols">
-                  <div><small>Recommended track</small><p class="rec" id="quiz-rec-pack">Professional Pack · Full IT Audit + NISF Gap Analysis</p></div>
-                  <div><small>Exposure</small><p id="quiz-fine-exposure">Potential PDPO or BoU notices; up to 2% turnover under DPPA s.48.</p></div>
-                </div>
-                <div class="calc-cta"><a id="quiz-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary magnetic">Review with a lead auditor ↗</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div data-bind="recent"><p class="loading">loading entries…</p></div>
+        <div style="margin-top:2rem"><a href="blog.html" class="btn btn-ghost">All entries →</a></div>
       </div>
     </section>
 
-    <!-- ============================ METHOD ============================ -->
-    <section class="section method" id="method">
+    <section class="section" id="consultancy">
       <div class="container">
-        <div class="section-head" data-reveal>
-          <div class="section-index"><span>04</span><i></i><small>How we work</small></div>
+        <div class="section-head">
+          <div class="section-no">03 / THE PRACTICE</div>
           <div>
-            <h2 class="section-title">A process built for <span class="accent-text">audit day.</span></h2>
-            <p class="section-lede">No black boxes. Every stage leaves behind evidence your regulator and your engineers can both read.</p>
+            <h2>What I can honestly deliver today.</h2>
+            <p>Small-scope IT work for Ugandan SMEs and NGOs. Fixed price, written scope, no mystery retainers.</p>
           </div>
         </div>
-
-        <div class="timeline" id="timeline">
-          <div class="timeline-track"><span class="timeline-fill" id="timeline-fill"></span></div>
-          <div class="timeline-step" data-reveal>
-            <span class="step-dot"></span><span class="step-no">01</span>
-            <h3>Scope &amp; authorise</h3>
-            <p>Rules of engagement, asset inventory and written sign-off before a single packet is sent.</p>
-          </div>
-          <div class="timeline-step" data-reveal data-delay="80">
-            <span class="step-dot"></span><span class="step-no">02</span>
-            <h3>Test &amp; map</h3>
-            <p>Offensive testing and control review, mapped live to NISF, BoU or DPPA requirements.</p>
-          </div>
-          <div class="timeline-step" data-reveal data-delay="160">
-            <span class="step-dot"></span><span class="step-no">03</span>
-            <h3>Evidence &amp; fix</h3>
-            <p>Board-ready findings, engineering-ready tickets, and hands-on remediation support.</p>
-          </div>
-          <div class="timeline-step" data-reveal data-delay="240">
-            <span class="step-dot"></span><span class="step-no">04</span>
-            <h3>Verify &amp; defend</h3>
-            <p>Retest, compliance pack and a retainer that keeps the evidence current all year.</p>
-          </div>
+        <div class="service-grid">
+          <div class="service"><h3>IT baseline for SMEs</h3><p>Asset inventory, account review, permission clean-up, backup and restore checks, and a written "here's what you actually have" report.</p></div>
+          <div class="service"><h3>Email &amp; DNS hardening</h3><p>SPF, DKIM, DMARC, MFA rollout and mailbox rule audits — the unglamorous fixes that stop most real-world compromise.</p></div>
+          <div class="service"><h3>Compliance starter pack</h3><p>NISF and DPPA self-assessment checklists, data inventories and a prioritised list of gaps. Advisory, not certification.</p></div>
+          <div class="service"><h3>Security awareness sessions</h3><p>Practical, local-context training on phishing, mobile money fraud and safe handling of company data.</p></div>
+          <div class="service"><h3>Hardened web delivery</h3><p>Simple static sites with TLS, CSP and sensible headers. No 3D gimmicks sold as security.</p></div>
+          <div class="service"><h3>Learning-in-public talks</h3><p>Short sessions for teams and schools on how to learn IT and security with a real, honest curriculum.</p></div>
         </div>
+        <div class="boundary">
+          <h3>Not sold here, yet</h3>
+          <ul>
+            <li>24/7 SOC or managed detection — no such operation exists.</li>
+            <li>Accredited penetration testing or incident response retainer — in training, or delivered with a named partner and disclosed as such.</li>
+            <li>Certifications I have not earned. When they exist, they get a verifiable ID and 500 XP.</li>
+          </ul>
+        </div>
+        <p style="margin-top:2rem"><a class="btn btn-primary" href="contact.html">Book a scoped briefing ↗</a></p>
       </div>
     </section>
 
-    <!-- ============================ PROOF ============================ -->
-    <section class="section proof" id="proof">
+    <section class="section alt" id="rules">
       <div class="container">
-        <div class="section-head" data-reveal>
-          <div class="section-index"><span>05</span><i></i><small>Selected work</small></div>
+        <div class="section-head">
+          <div class="section-no">04 / THE RULES</div>
           <div>
-            <h2 class="section-title">Outcomes, not <span class="accent-text">slideware.</span></h2>
-            <p class="section-lede">Representative engagements across the sectors that keep Uganda moving.</p>
+            <h2>Why the points mean something.</h2>
+            <p>The scoreboard is generated from committed files, not typed into a page. That's the whole trick.</p>
           </div>
         </div>
-
-        <div class="proof-grid" data-reveal-group>
-          <article class="proof-card magnetic" data-reveal>
-            <div class="proof-top"><span class="proof-sector">Banking</span><span class="proof-tag">NISF · BoU</span></div>
-            <h3>NISF 2026 &amp; payment gateway VAPT</h3>
-            <p>Full 14-domain gap analysis and authenticated testing of a core mobile banking API estate.</p>
-            <div class="proof-result"><strong>100%</strong><span>NITA-U clearance in 90 days · 4 critical API token flaws closed</span></div>
-            <a href="services.html#nisf-2026" class="text-link">Read the approach <span aria-hidden="true">↗</span></a>
-          </article>
-
-          <article class="proof-card magnetic" data-reveal data-delay="90">
-            <div class="proof-top"><span class="proof-sector">Health NGO</span><span class="proof-tag">DPPA · PDPO</span></div>
-            <h3>Data protection impact assessment</h3>
-            <p>Mapped patient-data flows across 12 districts and built the statutory filing under DPPA 2019.</p>
-            <div class="proof-result"><strong>12</strong><span>districts mapped · PDPO registration and grant renewal secured</span></div>
-            <a href="services.html#dppa" class="text-link">Read the approach <span aria-hidden="true">↗</span></a>
-          </article>
-
-          <article class="proof-card magnetic" data-reveal data-delay="180">
-            <div class="proof-top"><span class="proof-sector">Telecom</span><span class="proof-tag">UCC Directives</span></div>
-            <h3>Infrastructure security audit</h3>
-            <p>Third-party testing of subscriber portals, database clusters and DNS resolvers for a licensed ISP.</p>
-            <div class="proof-result"><strong>Zero</strong><span>flags at UCC licensing review · DDoS and route-poisoning paths hardened</span></div>
-            <a href="services.html#vapt" class="text-link">Read the approach <span aria-hidden="true">↗</span></a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================ FAQ ============================ -->
-    <section class="section faq-section" id="faq">
-      <div class="container faq-grid">
-        <div class="faq-intro" data-reveal>
-          <div class="section-index"><span>06</span><i></i><small>Good questions</small></div>
-          <h2 class="section-title">The things people ask <span class="accent-text">before signing.</span></h2>
-          <p class="section-lede">Still unsure? A ten-minute WhatsApp call is usually faster than another form.</p>
-          <a href="contact.html" class="btn-ghost magnetic">Ask us directly ↗</a>
-        </div>
-
-        <div class="faq-container" data-reveal data-delay="100">
-          <div class="faq-item active">
-            <button class="faq-question-btn" type="button"><span>Does NISF 2026 apply to a private company?</span><svg class="faq-icon-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M12 4v16m8-8H4"/></svg></button>
-            <div class="faq-answer-content">It is mandatory for Government Ministries, Departments and Agencies — and for any private vendor that handles, transmits or interfaces with public records. We assess applicability during scoping and produce the evidence either way.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question-btn" type="button"><span>Are prices really fixed in Ugandan Shillings?</span><svg class="faq-icon-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M12 4v16m8-8H4"/></svg></button>
-            <div class="faq-answer-content">Yes. Starter is UGX 1,000,000, Professional is UGX 3.5M–5.0M, and enterprise retainers are quoted before testing begins. No hourly billing, no exchange-rate surprises.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question-btn" type="button"><span>Is the Instant Scan a real scan of my domain?</span><svg class="faq-icon-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M12 4v16m8-8H4"/></svg></button>
-            <div class="faq-answer-content">The on-page tool is a demonstration simulator. The official UGX 1,000,000 scan runs against your authorised target with non-destructive checks, CVE validation and a regulator-ready PDF within 24 hours.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question-btn" type="button"><span>Can you help register with the PDPO?</span><svg class="faq-icon-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M12 4v16m8-8H4"/></svg></button>
-            <div class="faq-answer-content">Yes. We prepare data inventories, draft the compliant privacy notice, structure the DPO mandate and guide the formal submission to Uganda's Personal Data Protection Office.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question-btn" type="button"><span>What is Scammer Payback Africa?</span><svg class="faq-icon-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M12 4v16m8-8H4"/></svg></button>
-            <div class="faq-answer-content">Our threat-intelligence initiative tracking mobile-money fraud, SIM-swap campaigns and impersonation domains across East Africa, with intelligence shared to law enforcement and fraud units.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================ NEWSLETTER ============================ -->
-    <section class="newsletter">
-      <div class="container newsletter-inner" data-reveal>
-        <div>
-          <span class="eyebrow"><span class="eyebrow-line"></span> Monthly briefing</span>
-          <h2 class="section-title">One email. Every regulatory change that matters.</h2>
-          <p class="section-lede">NITA-U, BoU and UCC updates plus live threat telemetry — condensed for people who have jobs to do.</p>
-        </div>
-        <form class="newsletter-form" id="newsletter-form">
-          <label class="sr-only" for="newsletter-email">Corporate email</label>
-          <input type="email" id="newsletter-email" class="form-control" placeholder="ciso@yourfirm.co.ug" required>
-          <button type="submit" class="btn-primary magnetic">Subscribe free →</button>
-        </form>
-      </div>
-    </section>
-
-    <!-- ============================ CTA ============================ -->
-    <section class="cta" id="cta">
-      <div class="container cta-inner" data-reveal>
-        <span class="cta-kicker">Your move</span>
-        <h2>Be the hardest target in the room.</h2>
-        <p>Tell us what keeps you up at night. We'll tell you exactly what we'd test first — no pitch deck required.</p>
-        <div class="cta-actions">
-          <a href="https://wa.me/256764625700?text=Hi%20dotyoujee%2C%20I%20want%20a%20security%20briefing." target="_blank" rel="noopener noreferrer" class="btn-primary btn-lg magnetic">Start on WhatsApp ↗</a>
-          <a href="contact.html?source=home" class="btn-ghost btn-lg magnetic">Send a formal request</a>
+        <div class="service-grid">
+          <div class="service"><h3>No receipt, no XP</h3><p>A lab, CTF, writeup or certification post must carry a working evidence URL. Otherwise it logs as zero, publicly.</p></div>
+          <div class="service"><h3>Modules pay once</h3><p>Each curriculum module pays out to the earliest post that claims it. You cannot farm the same lesson twice.</p></div>
+          <div class="service"><h3>Commits are counted</h3><p>The build script queries the GitHub API for real commits on the configured learning repos, capped at 40 XP per week.</p></div>
+          <div class="service"><h3>Ranks aren't credentials</h3><p>Recruit → Architect are game levels. They never appear as job titles or proof of competence.</p></div>
+          <div class="service"><h3>Gaps stay visible</h3><p>Streaks show breaks honestly. An empty dashboard says nothing has been proven yet, which is the truth.</p></div>
+          <div class="service"><h3>You can audit it</h3><p>Everything comes from <span class="mono">journal/*.md</span>, <span class="mono">data/tracks.json</span> and <span class="mono">scripts/build.py</span> in this repo.</p></div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ============================ FOOTER ============================ -->
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="index.html" class="brand-logo">
-            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
-            dot<span class="accent">youjee</span>
-          </a>
-          <p>Cybersecurity and regulatory assurance for Ugandan enterprise. Built in Kampala, aligned globally.</p>
-          <span class="footer-live"><i></i> SOC operational 24/7</span>
-        </div>
-        <div class="footer-col"><h4>Services</h4><a href="services.html#nisf-2026">NISF 2026 audit</a><a href="services.html#dppa">DPPA &amp; DPIA</a><a href="services.html#vapt">VAPT pentesting</a><a href="services.html#bou">BoU cyber risk</a><a href="services.html#dfir">DFIR &amp; response</a></div>
-        <div class="footer-col"><h4>Resources</h4><a href="resources.html">Compliance checklists</a><a href="compliance-checklists/nisf-2026-sme-readiness.md">NISF SME readiness</a><a href="compliance-checklists/bou-cyber-risk-self-assessment.md">BoU self-assessment</a><a href="compliance-checklists/dpo-starter-kit.md">DPO starter kit</a><a href="dashboard.html">Threat intelligence</a></div>
-        <div class="footer-col"><h4>Engage</h4><a href="pricing.html">UGX rate cards</a><a href="contact.html">Request a quote</a><a href="about.html">About the founder</a><a href="https://wa.me/256764625700" target="_blank" rel="noopener noreferrer">+256 764 625 700</a></div>
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand"><span class="brand-mark">dj</span> dotyoujee <span class="light">/ ops log</span></a>
+        <p>IT consultancy in Kampala. Cybersecurity apprenticeship in public. Progress needs receipts, not vibes.</p>
       </div>
-      <div class="footer-bottom">
-        <span>© 2026 dotyoujee. All rights reserved.</span>
-        <div><a href="privacy.html">Privacy (DPPA)</a><a href="terms.html">Terms</a><a href="contact.html">PGP disclosure</a></div>
-      </div>
-      <div class="footer-wordmark" aria-hidden="true">dotyoujee</div>
+      <div class="footer-col"><h4>Learning</h4><a href="learn.html">Skill tree</a><a href="blog.html">Journal</a><a href="journal/_template.md">Post template</a><a href="data/tracks.json">Curriculum source</a></div>
+      <div class="footer-col"><h4>Practice</h4><a href="#consultancy">What I deliver</a><a href="contact.html">Book a briefing</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
     </div>
+    <div class="container footer-bottom"><span>© 2026 dotyoujee · Mugagga Moses · Kampala</span><span>Progress data generated from committed files.</span></div>
   </footer>
 
-  <!-- Floating action + back to top -->
-  <div class="floating-whatsapp">
-    <a href="https://wa.me/256764625700?text=Hi%20dotyoujee%2C%20I%20need%20cybersecurity%20assistance." target="_blank" rel="noopener noreferrer" class="whatsapp-pill-btn" aria-label="Chat with dotyoujee on WhatsApp">
-      <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.203c.043.071.043.418-.101.823z"/></svg>
-    </a>
-  </div>
-  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
-
-  <script src="script.js"></script>
-  <script type="module" src="assets/three-scene.js"></script>
-  <script type="module" src="assets/effects.js"></script>
+  <script src="assets/app.js"></script>
 </body>
 </html>
