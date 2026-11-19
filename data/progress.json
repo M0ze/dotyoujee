@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-19T22:27:07Z",
+  "generated_at": "2026-11-19T22:28:11Z",
   "operator": "Mugagga Moses",
   "tagline": "IT consultancy in Kampala. Cybersecurity apprenticeship in public.",
   "totals": {
-    "xp": 46,
+    "xp": 48,
     "posts": 1,
     "verified_posts": 0,
     "hours": 1.0,
@@ -18,11 +18,11 @@
     "min": 0,
     "next": "Initiate",
     "next_min": 300,
-    "to_next": 254
+    "to_next": 252
   },
   "commit_xp": {
-    "xp": 46,
-    "commits": 23,
+    "xp": 48,
+    "commits": 24,
     "repos": [
       "M0ze/dotyoujee"
     ]
