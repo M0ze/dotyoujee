@@ -114,7 +114,7 @@ dotyoujee/
 ├── style.css                # 3D glassmorphic design system with dark‑mode toggle
 ├── script.js                # Interactions: WhatsApp form, parallax orbs, card tilt, theme persistence
 ├── assets/
-│   └── og-image.png         # 1200×630 Open Graph / Twitter preview card
+├── og-image.svg         # 1200×630 editable Open Graph / Twitter preview card
 ├── scanner/
 │   ├── scan.py              # Automated external scanner (nmap‑based) with JSON/HTML/PDF output
 │   ├── requirements.txt
@@ -195,7 +195,7 @@ The site is automatically built and deployed by the GitHub Actions workflow defi
 3. Publish the `./` directory to the `gh-pages` branch.
 4. Make the site live at `https://<username>.github.io/dotyoujee/`.
 
-All assets (including `assets/og-image.png`) are version‑controlled, ensuring social preview cards stay up‑to‑date.
+All assets (including `assets/og-image.svg`) are version‑controlled, ensuring social preview cards stay up‑to‑date.
 
 ---
 

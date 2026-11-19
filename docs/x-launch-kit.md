@@ -169,7 +169,7 @@ Happy to do a free 15-min scoping call on WhatsApp: +256 764 625 700
 
 | Asset | Location |
 |-------|----------|
-| Link preview card (1200×630) | `assets/og-image.png` |
+| Link preview card (1200×630) | `assets/og-image.svg` |
 | Sample scan report screenshot | `scanner/reports/*.pdf` — export a page as PNG |
 | Site hero screenshot | Capture from live GitHub Pages URL |
 
