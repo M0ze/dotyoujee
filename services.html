@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2305070a'/%3E%3Cpath d='M16 27s8-4 8-11V6l-8-3-8 3v10c0 7 8 11 8 11z' fill='none' stroke='%2300f5d4' stroke-width='2'/%3E%3C/svg%3E">
   <title>Service Packs &amp; Solutions | dotyoujee Uganda</title>
   <meta name="description" content="Explore productized cybersecurity and compliance services for Ugandan enterprises. NISF 2026 audits, DPPA compliance, VAPT penetration testing, BoU cyber risk reviews, and digital forensics.">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/shell.css">
 </head>
-<body>
+<body class="shell">
   <canvas id="cyber-canvas" aria-hidden="true"></canvas>
 
   <div class="main-content">
-    <header class="site-header">
+    <header class="site-header" id="site-header">
       <div class="container nav-wrapper">
         <a href="index.html" class="brand-logo">
           <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -25,19 +27,16 @@
         </a>
 
         <ul class="nav-menu" id="nav-menu">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="services.html" class="nav-link active">Services</a></li>
-          <li><a href="index.html#instant-scan" class="nav-link">Instant Scan</a></li>
-          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-          <li><a href="dashboard.html" class="nav-link">Threat Intel</a></li>
+          <li><a href="index.html#services" class="nav-link">Services</a></li>
+          <li><a href="pricing.html" class="nav-link">Packages</a></li>
+          <li><a href="index.html#lab" class="nav-link">Live Lab</a></li>
           <li><a href="resources.html" class="nav-link">Resources</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
 
         <div class="nav-actions">
           <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">🌙</button>
-          <a href="contact.html" class="btn-primary">Get a Quote</a>
+          <a href="contact.html" class="btn-primary">Book a briefing ↗</a>
           <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu">
             <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -341,5 +340,6 @@
   </div>
 
   <script src="script.js"></script>
+  <script src="assets/shell.js"></script>
 </body>
 </html>

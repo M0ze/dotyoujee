@@ -3,217 +3,178 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About dotyoujee | Uganda's Premier Cyber Advisory &amp; Leadership</title>
-  <meta name="description" content="Learn about dotyoujee and founder Mugagga Moses. Our mission, certifications, ethical hacking creed, and vision for resilient Ugandan digital infrastructure.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2305070a'/%3E%3Cpath d='M16 27s8-4 8-11V6l-8-3-8 3v10c0 7 8 11 8 11z' fill='none' stroke='%2300f5d4' stroke-width='2'/%3E%3C/svg%3E">
+  <title>About dotyoujee | Kampala Cyber Assurance</title>
+  <meta name="description" content="Meet Mugagga Moses and the dotyoujee practice: Kampala-born cybersecurity, regulatory fluency and a refusal to sell theatre.">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/home.css">
+  <link rel="stylesheet" href="assets/commerce.css">
 </head>
-<body>
-  <canvas id="cyber-canvas" aria-hidden="true"></canvas>
+<body class="home about-page">
 
-  <div class="main-content">
-    <header class="site-header">
-      <div class="container nav-wrapper">
-        <a href="index.html" class="brand-logo">
-          <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
-          </svg>
-          dot<span class="accent">youjee</span>
-          <span class="soc-status-badge">
-            <span class="pulse-dot"></span> Kampala SOC Active
-          </span>
-        </a>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="services.html" class="nav-link">Services</a></li>
-          <li><a href="index.html#instant-scan" class="nav-link">Instant Scan</a></li>
-          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-          <li><a href="dashboard.html" class="nav-link">Threat Intel</a></li>
-          <li><a href="resources.html" class="nav-link">Resources</a></li>
-          <li><a href="about.html" class="nav-link active">About</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo" aria-label="dotyoujee home">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
+        dot<span class="accent">youjee</span>
+      </a>
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary navigation">
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="pricing.html" class="nav-link">Packages</a>
+        <a href="index.html#lab" class="nav-link">Live Lab</a>
+        <a href="resources.html" class="nav-link">Resources</a>
+        <a href="about.html" class="nav-link active">About</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+        <a href="contact.html" class="btn-primary btn-sm magnetic">Book a briefing ↗</a>
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-        <div class="nav-actions">
-          <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">🌙</button>
-          <a href="contact.html" class="btn-primary">Get a Quote</a>
-          <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu">
-            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-          </button>
+  <main>
+    <section class="book-hero">
+      <div class="container book-hero-inner">
+        <div class="section-index"><span>//</span><i></i><small>Leadership &amp; vision</small></div>
+        <h1>Built in Kampala. <span class="accent-text">Built for scrutiny.</span></h1>
+        <p>dotyoujee started from a stubborn conviction: Ugandan organisations deserve the same technical rigour as global enterprises — with regulators, pricing and response times that actually make sense here.</p>
+        <div class="book-promise">
+          <span><i></i> Self-taught, locally grounded</span>
+          <span><i></i> Direct access, no account managers</span>
+          <span><i></i> Fixed scope, fixed UGX price</span>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main class="container" style="padding-top: 3.5rem; padding-bottom: 5rem;">
-      <div class="section-header">
-        <span class="section-tag">Leadership &amp; Vision</span>
-        <h1 class="section-title">Defending Uganda’s Digital Sovereign Infrastructure</h1>
-        <p class="section-description">
-          Founded in Kampala by self-taught cybersecurity expert Mugagga Moses, dotyoujee was born from a fundamental conviction: African organizations deserve tier-1 technical defense and regulatory clarity without predatory foreign consulting overhead.
-        </p>
-      </div>
-
-      <!-- Founder & Mission Card -->
-      <div style="display: grid; grid-template-columns: 1fr 1.3fr; gap: 3rem; align-items: center; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 3rem; margin-bottom: 4rem;">
-        <div>
-          <div style="background: linear-gradient(135deg, rgba(0, 240, 255, 0.1), rgba(59, 130, 246, 0.15)); border: 1px solid rgba(0, 240, 255, 0.25); border-radius: var(--radius-lg); padding: 2.5rem; text-align: center;">
-            <div style="width: 100px; height: 100px; border-radius: 50%; background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue)); color: #030712; display: inline-flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 900; margin-bottom: 1.25rem;">
-              MM
-            </div>
-            <h2 style="font-size: 1.5rem; color: var(--text-main); font-weight: 800; margin-bottom: 0.25rem;">Mugagga Moses</h2>
-            <p style="font-size: 0.88rem; color: var(--accent-cyan); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">Founder &amp; Principal Security Consultant</p>
-            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
-              Self-taught ethical hacker, regulatory framework specialist, and threat researcher dedicated to protecting Uganda's financial and public sectors.
-            </p>
-            <div style="display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap;">
-              <span class="card-tag">OSCP Candidate</span>
-              <span class="card-tag">CEH Aligned</span>
-              <span class="card-tag">ISO 27001</span>
-            </div>
-          </div>
+    <section class="container about-grid">
+      <div class="founder-card">
+        <div class="monogram" aria-hidden="true">MM</div>
+        <h2>Mugagga Moses</h2>
+        <span class="founder-role">Founder · Principal Security Consultant</span>
+        <p>Self-taught ethical hacker, regulatory framework specialist and threat researcher. Works directly with the people who own the risk — from SACCO boards to MDA procurement teams.</p>
+        <div class="tag-row">
+          <span>Security practice</span><span>Offensive testing</span><span>GRC advisory</span><span>Kampala, UG</span>
         </div>
-
-        <div>
-          <span class="section-tag">Our Founding Purpose</span>
-          <h3 style="font-size: 1.85rem; color: var(--text-main); font-weight: 800; margin-bottom: 1rem; line-height: 1.25;">
-            "We transform compliance from an anxious audit obstacle into an enduring operational moat."
-          </h3>
-          <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.25rem;">
-            As East Africa’s commerce moves decisively to mobile money, API banking, cloud ERPs, and digital citizen services, threat actors have escalated attacks against local targets. Meanwhile, Ugandan regulators — NITA-U, Bank of Uganda (BoU), PDPO, and UCC — have rightly introduced strict, mandatory statutory frameworks.
-          </p>
-          <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
-            Organizations often find themselves trapped between opaque legal guidelines and technical security tools that don't satisfy local inspectors. dotyoujee solves this permanently. We speak the exact language of technical security operations and statutory regulatory compliance.
-          </p>
-          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <a href="https://wa.me/256764625700?text=Hi%20Moses%2C%20I%20would%20like%20to%20connect%20with%20you%20directly." target="_blank" rel="noopener noreferrer" class="btn-primary btn-whatsapp">
-              Connect on WhatsApp Direct
-            </a>
-            <a href="contact.html" class="btn-secondary">
-              Book Executive Briefing
-            </a>
-          </div>
+        <div class="about-actions" style="justify-content:center;">
+          <a href="https://wa.me/256764625700?text=Hi%20Moses%2C%20I%27d%20like%20to%20connect%20directly." target="_blank" rel="noopener noreferrer" class="btn-ghost magnetic">Connect on WhatsApp ↗</a>
         </div>
       </div>
 
-      <!-- Vision, Mission & Strategic Pillars -->
-      <div class="cards-grid" style="margin-bottom: 4rem;">
-        <div class="cyber-card">
-          <div class="card-icon-wrapper">
-            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-          </div>
-          <h3 class="card-title">Our Mission</h3>
-          <p class="card-text">
-            To democratize access to enterprise-grade cybersecurity and regulatory compliance across Uganda, empowering businesses of all scales to operate without fear of breach or punitive statutory penalties.
-          </p>
-        </div>
-
-        <div class="cyber-card">
-          <div class="card-icon-wrapper">
-            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-          </div>
-          <h3 class="card-title">Our Vision</h3>
-          <p class="card-text">
-            A resilient, hardened, and trustworthy Ugandan digital ecosystem where financial institutions, public bodies, and SMEs deploy digital services with sovereign confidence.
-          </p>
-        </div>
-
-        <div class="cyber-card">
-          <div class="card-icon-wrapper">
-            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-          </div>
-          <h3 class="card-title">Ethical Hacking Creed</h3>
-          <p class="card-text">
-            We adhere strictly to authorized testing, non-destructive methodologies, zero data retention without consent, and responsible disclosure protocols. We defend with honor.
-          </p>
+      <div class="about-copy">
+        <div class="section-index"><span>01</span><i></i><small>Why this practice exists</small></div>
+        <h2 class="section-title">We turn compliance from an anxious audit obstacle into an <span class="accent-text">operational moat.</span></h2>
+        <p>As commerce moves to mobile money, API banking, cloud ERPs and digital citizen services, attackers have escalated against local targets. At the same time, NITA-U, Bank of Uganda, PDPO and UCC have introduced mandatory statutory frameworks.</p>
+        <p>Organisations end up stuck between opaque guidelines and technical tools that don't satisfy a local inspector. dotyoujee closes that gap. We speak the language of packet captures and policy schedules in the same conversation — and we leave behind evidence both audiences accept.</p>
+        <p>That means no borrowed playbooks from markets with different regulators, no hourly billing that punishes efficiency, and no junior team hidden behind a senior name.</p>
+        <div class="about-actions">
+          <a href="contact.html?source=about" class="btn-primary magnetic">Book an executive briefing ↗</a>
+          <a href="pricing.html" class="btn-ghost magnetic">See the six tiers ↗</a>
         </div>
       </div>
+    </section>
 
-      <!-- Credentials & Standards Roadmap -->
-      <section style="background: var(--bg-surface); padding: 3rem; border-radius: var(--radius-lg); border: 1px solid var(--border-subtle);">
-        <div style="text-align: center; max-width: 680px; margin: 0 auto 2.5rem;">
-          <span class="section-tag">Professional Rigor</span>
-          <h2 class="section-title">Certifications &amp; Accreditations Alignment</h2>
-          <p class="section-description">Our methodologies incorporate international gold standards combined with Ugandan statutory certifications.</p>
-        </div>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
-          <div style="background: var(--bg-surface-elevated); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent-cyan);">
-            <h4 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.35rem;">ISO/IEC 27001</h4>
-            <p style="font-size: 0.85rem; color: var(--text-secondary);">Information Security Management Systems (ISMS) implementation, Annex A controls, and Lead Auditor methodologies.</p>
-          </div>
-          <div style="background: var(--bg-surface-elevated); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent-blue);">
-            <h4 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.35rem;">OSCP &amp; CEH</h4>
-            <p style="font-size: 0.85rem; color: var(--text-secondary);">Offensive Security Certified Professional hands-on exploitation, privilege escalation, and Certified Ethical Hacker frameworks.</p>
-          </div>
-          <div style="background: var(--bg-surface-elevated); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent-emerald);">
-            <h4 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.35rem;">NITA-U Authorization Track</h4>
-            <p style="font-size: 0.85rem; color: var(--text-secondary);">Direct alignment with the National Information Technology Authority Uganda procurement standards for government IT audits.</p>
-          </div>
-          <div style="background: var(--bg-surface-elevated); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent-purple);">
-            <h4 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.35rem;">NIST CSF 2.0 &amp; CIS</h4>
-            <p style="font-size: 0.85rem; color: var(--text-secondary);">National Institute of Standards and Technology Cybersecurity Framework (Govern, Identify, Protect, Detect, Respond, Recover).</p>
+    <section class="about-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-index"><span>02</span><i></i><small>What we stand on</small></div>
+          <div>
+            <h2 class="section-title">Three commitments, <span class="accent-text">no slogan.</span></h2>
+            <p class="section-lede">The practice is small on purpose. These are the things we refuse to trade away as it grows.</p>
           </div>
         </div>
-      </section>
-    </main>
+        <div class="value-grid">
+          <div class="value-card"><div class="role-icon">↗</div><h3>Mission</h3><p>Democratise access to enterprise-grade security and regulatory compliance for Ugandan businesses of every size — without fear of breach or punitive penalties.</p></div>
+          <div class="value-card"><div class="role-icon">◎</div><h3>Vision</h3><p>A resilient Ugandan digital ecosystem where banks, public bodies and SMEs deploy services with sovereign confidence.</p></div>
+          <div class="value-card"><div class="role-icon">✓</div><h3>Ethical creed</h3><p>Authorised testing only. Non-destructive methods. Zero data retention without consent. Responsible disclosure, every time.</p></div>
+        </div>
+      </div>
+    </section>
 
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <a href="index.html" class="brand-logo" style="margin-bottom: 0.75rem;">
-            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
-            </svg>
+    <section class="about-section alt">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-index"><span>03</span><i></i><small>Professional rigour</small></div>
+          <div>
+            <h2 class="section-title">Standards we work to, <span class="accent-text">plainly stated.</span></h2>
+            <p class="section-lede">Certification tracks and methodology alignment — not borrowed titles. Clients may request proof during scoping.</p>
+          </div>
+        </div>
+        <div class="cred-grid">
+          <div class="cred-card"><h4>Offensive security</h4><p>CEH and OSCP-aligned methodology for penetration testing, exploitation and privilege escalation. Certification work is ongoing and disclosed honestly.</p></div>
+          <div class="cred-card"><h4>ISMS &amp; audit</h4><p>ISO/IEC 27001 Lead Auditor alignment and CISA study. ITGC reviews, Annex A control mapping and evidence packs for NISF.</p></div>
+          <div class="cred-card"><h4>Local regulatory fluency</h4><p>NISF 2026, DPPA 2019, BoU technology-risk guidelines and UCC directives. The NITA-U authorisation track is an active milestone.</p></div>
+          <div class="cred-card"><h4>Foundations</h4><p>CompTIA Security+ foundation for security operations, risk management and incident handling.</p></div>
+          <div class="cred-card"><h4>Frameworks</h4><p>NIST CSF 2.0 and CIS Benchmarks for prioritisation and hardening, mapped onto local statutory requirements.</p></div>
+          <div class="cred-card"><h4>Continuous learning</h4><p>NITA-U circulars, UCC notices and BoU guidance are tracked as part of normal delivery — not read when an audit lands.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-index"><span>04</span><i></i><small>Why local</small></div>
+          <div>
+            <h2 class="section-title">The case for a <span class="accent-text">self-taught local team.</span></h2>
+            <p class="section-lede">Four practical differences you notice from the first conversation.</p>
+          </div>
+        </div>
+        <div class="principle-list">
+          <div class="principle"><span>01</span><div><strong>We speak your context</strong><p>Regulatory deadlines, procurement constraints and WhatsApp-first communication are normal for us, not afterthoughts.</p></div></div>
+          <div class="principle"><span>02</span><div><strong>We move fast</strong><p>No layers of account managers. You work directly with the people doing the assessment and writing the report.</p></div></div>
+          <div class="principle"><span>03</span><div><strong>We productise outcomes</strong><p>You know what you are buying, what you will receive and when — before any invoice is raised.</p></div></div>
+          <div class="principle"><span>04</span><div><strong>We keep learning</strong><p>Uganda's digital policy landscape moves quickly. Tracking it is part of the job, not a separate research project.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="cta">
+      <div class="container cta-inner">
+        <span class="cta-kicker">Work with us</span>
+        <h2>Start with the person who does the work.</h2>
+        <p>Twenty minutes, no pitch deck. Tell us what you're protecting and we'll tell you exactly where we'd start.</p>
+        <div class="cta-actions">
+          <a href="contact.html?source=about" class="btn-primary btn-lg magnetic">Book a briefing ↗</a>
+          <a href="resources.html" class="btn-ghost btn-lg magnetic">Read the free guides</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
             dot<span class="accent">youjee</span>
           </a>
-          <p class="footer-brand-desc">Uganda's premier cybersecurity &amp; regulatory compliance advisory firm. Protecting digital enterprise across East Africa.</p>
+          <p>Cybersecurity and regulatory assurance for Ugandan enterprise. Built in Kampala, aligned globally.</p>
+          <span class="footer-live"><i></i> SOC operational 24/7</span>
         </div>
-        <div>
-          <h4 class="footer-column-title">Service Packs</h4>
-          <ul class="footer-links-list">
-            <li class="footer-link-item"><a href="services.html#nisf-2026">NISF 2026 Audit</a></li>
-            <li class="footer-link-item"><a href="services.html#dppa">DPPA &amp; PDPO Registration</a></li>
-            <li class="footer-link-item"><a href="services.html#vapt">Offensive VAPT Pentesting</a></li>
-            <li class="footer-link-item"><a href="services.html#bou">Bank of Uganda Guidelines</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-column-title">Compliance Hub</h4>
-          <ul class="footer-links-list">
-            <li class="footer-link-item"><a href="resources.html">Free Checklists</a></li>
-            <li class="footer-link-item"><a href="dashboard.html">Threat Intel Radar</a></li>
-            <li class="footer-link-item"><a href="pricing.html">Rate Cards</a></li>
-            <li class="footer-link-item"><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-column-title">Direct Engagement</h4>
-          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;">WhatsApp scoping call available within 2 hours:</p>
-          <a href="https://wa.me/256764625700?text=Hi%20dotyoujee%2C%20I%20am%20reviewing%20your%20about%20page." target="_blank" rel="noopener noreferrer" class="btn-primary btn-whatsapp" style="width: 100%; justify-content: center;">WhatsApp +256 764 625 700</a>
-        </div>
+        <div class="footer-col"><h4>Packages</h4><a href="pricing.html#tiers">Six engagement tiers</a><a href="pricing.html#roles">Specialist roles</a><a href="pricing.html#rates">À la carte rates</a><a href="pricing.html#terms">Commercial terms</a></div>
+        <div class="footer-col"><h4>Explore</h4><a href="index.html#services">Capabilities</a><a href="index.html#lab">Live lab</a><a href="resources.html">Free checklists</a><a href="certifications.md">Credentials detail</a></div>
+        <div class="footer-col"><h4>Engage</h4><a href="contact.html">Book a briefing</a><a href="https://wa.me/256764625700" target="_blank" rel="noopener noreferrer">+256 764 625 700</a><a href="privacy.html">Privacy notice</a></div>
       </div>
-      <div class="container footer-bottom-bar">
-        <div>&copy; 2026 dotyoujee. All rights reserved.</div>
-        <div class="footer-legal-links">
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
-          <a href="contact.html">Contact</a>
-        </div>
+      <div class="footer-bottom">
+        <span>© 2026 dotyoujee. All rights reserved.</span>
+        <div><a href="privacy.html">Privacy (DPPA)</a><a href="terms.html">Terms</a></div>
       </div>
-    </footer>
-
-    <div class="floating-whatsapp">
-      <span class="whatsapp-tooltip">Chat with Lead Auditor</span>
-      <a href="https://wa.me/256764625700" target="_blank" rel="noopener noreferrer" class="whatsapp-pill-btn" aria-label="WhatsApp dotyoujee">
-        <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.203c.043.071.043.418-.101.823z"/></svg>
-      </a>
+      <div class="footer-wordmark" aria-hidden="true">dotyoujee</div>
     </div>
+  </footer>
+
+  <div class="floating-whatsapp">
+    <a href="https://wa.me/256764625700?text=Hi%20dotyoujee%2C%20I%20just%20read%20your%20about%20page." target="_blank" rel="noopener noreferrer" class="whatsapp-pill-btn" aria-label="Chat with dotyoujee on WhatsApp">
+      <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.203c.043.071.043.418-.101.823z"/></svg>
+    </a>
   </div>
 
-  <script src="script.js"></script>
+  <script src="assets/booking.js"></script>
 </body>
 </html>

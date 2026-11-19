@@ -23,6 +23,31 @@ function formatUSD(num) {
 }
 
 /* ==========================================================================
+   Handoff banner — replaces window.open popups and surprise redirects.
+   The visitor sees the prepared message and chooses to send it themselves.
+   ========================================================================== */
+function showHandoff(text, label) {
+  document.querySelectorAll('.dj-handoff').forEach(n => n.remove());
+  const bar = document.createElement('div');
+  bar.className = 'dj-handoff';
+  bar.setAttribute('role', 'status');
+  const msg = document.createElement('span');
+  msg.textContent = 'Request ready — nothing sent automatically.';
+  const link = document.createElement('a');
+  link.href = 'https://wa.me/' + WHATSAPP_PHONE + '?text=' + encodeURIComponent(text);
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  link.textContent = label + ' ↗';
+  const dismiss = document.createElement('button');
+  dismiss.type = 'button';
+  dismiss.setAttribute('aria-label', 'Dismiss');
+  dismiss.textContent = '×';
+  dismiss.addEventListener('click', () => bar.remove());
+  bar.append(msg, link, dismiss);
+  document.body.appendChild(bar);
+}
+
+/* ==========================================================================
    1. Cyber Canvas: High-Tech Interactive Network Constellation
    ========================================================================== */
 function initCyberCanvas() {
@@ -457,9 +482,8 @@ function initThreatDashboard() {
       const details = document.getElementById('scam-details')?.value;
 
       const text = `🚨 *SCAMMER PAYBACK AFRICA INCIDENT REPORT*\n- Vector: ${type}\n- Suspect Entity/Phone/URL: ${target}\n- Observations: ${details}\n\nPlease analyze and add to the regional threat intelligence feed.`;
-      window.open(`https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+      showHandoff(text, 'Send incident report on WhatsApp');
       reportForm.reset();
-      alert('Report dispatched to dotyoujee threat triage desk on WhatsApp.');
     });
   }
 }
@@ -496,7 +520,7 @@ function initContactForms() {
       const message = document.getElementById('contact-message')?.value.trim();
 
       const text = `*dotyoujee Official Engagement Request*\n- Name: ${name}\n- Organization: ${company}\n- Email: ${email}\n- Requested Service: ${service}\n- Delivery Timeline: ${timeline}\n\n*Brief:*\n${message}`;
-      window.open(`https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+      showHandoff(text, 'Send engagement brief on WhatsApp');
       contactForm.reset();
     });
   }
@@ -509,9 +533,8 @@ function initContactForms() {
       const emailInput = newsletterForm.querySelector('input[type="email"]');
       if (emailInput && emailInput.value) {
         const text = `Hi dotyoujee, please subscribe ${emailInput.value.trim()} to your Monthly Ugandan Cyber & Compliance Brief.`;
-        window.open(`https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+        showHandoff(text, 'Subscribe via WhatsApp');
         emailInput.value = '';
-        alert('Thank you! WhatsApp confirmation opened.');
       }
     });
   }

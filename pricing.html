@@ -3,295 +3,311 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Transparent UGX / USD Pricing | dotyoujee Uganda</title>
-  <meta name="description" content="Predictable, fixed-scope cybersecurity pricing in Ugandan Shillings (UGX). Starter, Professional, and Enterprise packages for NISF 2026, VAPT, and DPPA audits.">
+  <title>Engagement Packages &amp; Rates | dotyoujee Uganda</title>
+  <meta name="description" content="Six fixed-scope cybersecurity packages from a free recon call to an enterprise red team and vCISO retainer. Transparent UGX pricing, clear deliverables, defined specialists.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2305070a'/%3E%3Cpath d='M16 27s8-4 8-11V6l-8-3-8 3v10c0 7 8 11 8 11z' fill='none' stroke='%2300f5d4' stroke-width='2'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/home.css">
+  <link rel="stylesheet" href="assets/commerce.css">
 </head>
-<body>
-  <canvas id="cyber-canvas" aria-hidden="true"></canvas>
+<body class="home packages-page">
 
-  <div class="main-content">
-    <header class="site-header">
-      <div class="container nav-wrapper">
-        <a href="index.html" class="brand-logo">
-          <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
-          </svg>
-          dot<span class="accent">youjee</span>
-          <span class="soc-status-badge">
-            <span class="pulse-dot"></span> Kampala SOC Active
-          </span>
-        </a>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="services.html" class="nav-link">Services</a></li>
-          <li><a href="index.html#instant-scan" class="nav-link">Instant Scan</a></li>
-          <li><a href="pricing.html" class="nav-link active">Pricing</a></li>
-          <li><a href="dashboard.html" class="nav-link">Threat Intel</a></li>
-          <li><a href="resources.html" class="nav-link">Resources</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo" aria-label="dotyoujee home">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
+        dot<span class="accent">youjee</span>
+      </a>
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary navigation">
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="pricing.html" class="nav-link active">Packages</a>
+        <a href="index.html#lab" class="nav-link">Live Lab</a>
+        <a href="resources.html" class="nav-link">Resources</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+        <a href="contact.html" class="btn-primary btn-sm magnetic">Book a briefing ↗</a>
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-        <div class="nav-actions">
-          <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">🌙</button>
-          <a href="contact.html" class="btn-primary">Get a Quote</a>
-          <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu">
-            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-          </button>
+  <main>
+    <section class="packages-hero">
+      <div class="container">
+        <div class="section-index"><span>//</span><i></i><small>Engagement packages</small></div>
+        <h1>Six levels of assurance. <span class="accent-text">One clear price.</span></h1>
+        <p>Every tier adds a real capability, not just another badge. Start with a free scoping call, buy a single scan, hand over the whole security function — or build a programme in between. All rates are fixed in Ugandan Shillings, with USD shown as a guide.</p>
+        <div class="book-promise">
+          <span><i></i> Fixed scope, fixed price</span>
+          <span><i></i> Named specialist, not a call centre</span>
+          <span><i></i> 30-day free retest on assessments</span>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main class="container" style="padding-top: 3.5rem; padding-bottom: 5rem;">
-      <div class="section-header">
-        <span class="section-tag">Predictable Economics</span>
-        <h1 class="section-title">Transparent, Productized Engagement Rates</h1>
-        <p class="section-description">
-          All rates published in Ugandan Shillings (UGX) with USD equivalents. No hidden retainer overages, no variable billable hours. What you see is what you pay.
-        </p>
-
-        <!-- Interactive Currency Switcher -->
-        <div class="pricing-controls">
-          <div class="currency-toggle-wrapper">
-            <button class="currency-btn active" data-currency="UGX">UGX (Shillings)</button>
-            <button class="currency-btn" data-currency="USD">USD ($)</button>
+    <section class="packages-section" id="tiers">
+      <div class="container">
+        <div class="currency-bar">
+          <span>Display prices in</span>
+          <div class="currency-switch" role="group" aria-label="Currency">
+            <button type="button" class="active" data-currency="UGX">UGX</button>
+            <button type="button" data-currency="USD">USD (guide)</button>
           </div>
+          <span style="text-transform:none;letter-spacing:0;">Indicative USD at UGX 3,700/$. Final quote is issued in UGX.</span>
+        </div>
+
+        <div class="tier-grid">
+
+          <!-- Tier 0 -->
+          <article class="tier-card">
+            <div class="tier-head"><span class="tier-kicker">Tier 0 · Entry</span><span class="tier-no">00</span></div>
+            <h3>Recon Call</h3>
+            <p class="tier-who">First-time buyers, students, founders validating an idea, or anyone who wants a second opinion before spending.</p>
+            <div class="tier-price"><span data-ugx="Free" data-usd="Free">Free</span><small>30 minutes · no obligation</small></div>
+            <div class="tier-divider"></div>
+            <ul class="tier-list">
+              <li>20–30 minute call with a lead auditor</li>
+              <li>NISF SME readiness + DPO starter checklists</li>
+              <li>Plain-English read of what applies to you</li>
+              <li>Point to the right tier — or tell you to wait</li>
+              <li>No sales sequence and no card required</li>
+            </ul>
+            <div class="tier-meta"><strong>Delivery:</strong> within 2 business days &nbsp;·&nbsp; <strong>Not included:</strong> any technical testing</div>
+            <a href="contact.html?pack=recon&amp;source=pricing" class="btn-ghost magnetic">Book the free call ↗</a>
+          </article>
+
+          <!-- Tier 1 -->
+          <article class="tier-card">
+            <div class="tier-head"><span class="tier-kicker">Tier 1 · Low</span><span class="tier-no">01</span></div>
+            <h3>Essential Scan</h3>
+            <p class="tier-who">SMEs, startups and NGOs that need a defensible snapshot of their external perimeter before a tender, donor review or renewal.</p>
+            <div class="tier-price"><span data-ugx="UGX 1,000,000" data-usd="$270">UGX 1,000,000</span><small>one-off · fixed</small></div>
+            <div class="tier-divider"></div>
+            <ul class="tier-list">
+              <li>External scan: top 1,000 TCP ports, TLS and cipher review</li>
+              <li>Security-header and common misconfiguration checks</li>
+              <li>CVE cross-reference with severity rating</li>
+              <li>DPPA 2019 quick-check and quick-fix guide</li>
+              <li>Executive PDF + machine-readable JSON</li>
+              <li>1-hour remediation debrief on WhatsApp</li>
+            </ul>
+            <div class="tier-meta"><strong>Delivery:</strong> 24 hours &nbsp;·&nbsp; <strong>Not included:</strong> authenticated/app testing, regulator filing</div>
+            <a href="contact.html?pack=essential&amp;source=pricing" class="btn-ghost magnetic">Order Essential Scan ↗</a>
+          </article>
+
+          <!-- Tier 2 -->
+          <article class="tier-card featured">
+            <span class="tier-badge">Steady favourite</span>
+            <div class="tier-head"><span class="tier-kicker">Tier 2 · Ongoing baseline</span><span class="tier-no">02</span></div>
+            <h3>Guard Retainer</h3>
+            <p class="tier-who">Organisations with no in-house security lead that want continuous visibility and someone to call when something looks wrong.</p>
+            <div class="tier-price"><span data-ugx="From UGX 1.8M / mo" data-usd="From $490 / mo">From UGX 1.8M / mo</span><small>month-to-month · cancel with 30 days' notice</small></div>
+            <div class="tier-divider"></div>
+            <ul class="tier-list">
+              <li>Monthly external attack-surface and vulnerability scanning</li>
+              <li>Prioritised remediation queue — fixed first, not noisy first</li>
+              <li>Microsoft 365 / Google Workspace baseline review (MFA, mail, sharing)</li>
+              <li>Quarterly phishing simulation with click-report results</li>
+              <li>Monthly one-page board-ready posture report</li>
+              <li>WhatsApp advisory during Kampala business hours</li>
+            </ul>
+            <div class="tier-meta"><strong>Cadence:</strong> monthly &nbsp;·&nbsp; <strong>Not included:</strong> deep pentest, 24/7 IR retainer</div>
+            <a href="contact.html?pack=guard&amp;source=pricing" class="btn-primary magnetic">Start Guard retainer ↗</a>
+          </article>
+
+          <!-- Tier 3 -->
+          <article class="tier-card featured">
+            <span class="tier-badge">Most requested</span>
+            <div class="tier-head"><span class="tier-kicker">Tier 3 · Mid</span><span class="tier-no">03</span></div>
+            <h3>Assurance Audit</h3>
+            <p class="tier-who">Banks, fintechs, MDAs and contractors facing a statutory audit or a customer security questionnaire in the next quarter.</p>
+            <div class="tier-price"><span data-ugx="UGX 3.5M – 5M" data-usd="$950 – $1,350">UGX 3.5M – 5M</span><small>one-off · fixed scope</small></div>
+            <div class="tier-divider"></div>
+            <ul class="tier-list">
+              <li>Full IT general controls audit, ISO/IEC 27001 aligned</li>
+              <li>Web application + network VAPT with reproducible PoCs</li>
+              <li>NISF 2026 gap analysis across all 14 control domains</li>
+              <li>Standalone DPIA and PDPO registration filing support</li>
+              <li>Remediation workshop for your technical team</li>
+              <li>Complimentary verification retest within 30 days</li>
+            </ul>
+            <div class="tier-meta"><strong>Delivery:</strong> 3–4 weeks &nbsp;·&nbsp; <strong>Not included:</strong> continuous monitoring, red team</div>
+            <a href="contact.html?pack=assurance&amp;source=pricing" class="btn-primary magnetic">Scope an Assurance Audit ↗</a>
+          </article>
+
+          <!-- Tier 4 -->
+          <article class="tier-card">
+            <div class="tier-head"><span class="tier-kicker">Tier 4 · High</span><span class="tier-no">04</span></div>
+            <h3>Compliance Programme</h3>
+            <p class="tier-who">Regulated institutions with several frameworks at once, or anyone who needs the controls implemented — not just listed.</p>
+            <div class="tier-price"><span data-ugx="UGX 6M – 9M" data-usd="$1,620 – $2,430">UGX 6M – 9M</span><small>programme · fixed milestones</small></div>
+            <div class="tier-divider"></div>
+            <ul class="tier-list">
+              <li>Everything in Assurance Audit</li>
+              <li>Multi-framework mapping: BoU, UCC, NITA-U and ISO 27001</li>
+              <li>AWS/Azure cloud posture and IAM review</li>
+              <li>Social-engineering campaign and phishing drill</li>
+              <li>Incident response plan plus a tabletop exercise</li>
+              <li>Policy suite, risk register and evidence vault</li>
+              <li>Advisory vCISO: monthly review and board reporting</li>
+            </ul>
+            <div class="tier-meta"><strong>Delivery:</strong> 6–8 weeks &nbsp;·&nbsp; <strong>Not included:</strong> 24/7 managed detection</div>
+            <a href="contact.html?pack=programme&amp;source=pricing" class="btn-ghost magnetic">Build a programme ↗</a>
+          </article>
+
+          <!-- Tier 5 -->
+          <article class="tier-card">
+            <div class="tier-head"><span class="tier-kicker">Tier 5 · Enterprise</span><span class="tier-no">05</span></div>
+            <h3>Enterprise Domain</h3>
+            <p class="tier-who">Commercial banks, licensed telcos and large parastatals that need adversarial testing, continuous detection and leadership cover.</p>
+            <div class="tier-price"><span data-ugx="Custom · from UGX 12M" data-usd="Custom · from $3,250">Custom · from UGX 12M</span><small>annual programme · scoped in writing</small></div>
+            <div class="tier-divider"></div>
+            <ul class="tier-list">
+              <li>Red-team adversary simulation, physical and social vectors</li>
+              <li>24/7 co-managed detection and response (MDR/SOC)</li>
+              <li>Embedded vCISO with weekly leadership cadence</li>
+              <li>DFIR retainer with contractual response SLA</li>
+              <li>Local threat intelligence via Scammer Payback Africa</li>
+              <li>Board, regulator and customer security briefings</li>
+              <li>Dedicated senior lead and quarterly roadmap reviews</li>
+            </ul>
+            <div class="tier-meta"><strong>Delivery:</strong> initial 8–12 weeks, then continuous &nbsp;·&nbsp; <strong>Scope:</strong> tailored</div>
+            <a href="contact.html?pack=enterprise&amp;source=pricing" class="btn-ghost magnetic">Request enterprise scope ↗</a>
+          </article>
+
         </div>
       </div>
+    </section>
 
-      <!-- Pricing Cards Grid -->
-      <div class="pricing-grid">
-        <!-- Starter Tier -->
-        <div class="price-tier-card">
-          <h2 class="price-tier-name">Starter Pack</h2>
-          <p class="price-tier-desc">Early-stage startups, micro-enterprises, and fast-growing local SMEs seeking baseline security assurance.</p>
-          <div class="price-display-wrapper">
-            <div class="price-amount" data-price-tier="starter">UGX 1.0M</div>
-            <span class="price-period currency-period-label">/ fixed engagement</span>
+    <!-- Roles: who actually does the work -->
+    <section class="roles-section" id="roles">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-index"><span>//</span><i></i><small>Specialists</small></div>
+          <div>
+            <h2 class="section-title">You're hiring a <span class="accent-text">role</span>, not a logo.</h2>
+            <p class="section-lede">Each package is staffed by the specialist the work actually needs. Here's who does what — useful if you're used to buying freelance IT and security services.</p>
           </div>
-          <ul class="price-features-list">
-            <li class="price-feature-item">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>Instant external vulnerability scan (Top-1000 TCP ports)</span>
-            </li>
-            <li class="price-feature-item">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>DPPA 2019 checklist gap review &amp; quick-fix guide</span>
-            </li>
-            <li class="price-feature-item">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>Executive vulnerability report (PDF &amp; JSON)</span>
-            </li>
-            <li class="price-feature-item">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>1-hour remediation debrief call with lead consultant</span>
-            </li>
-            <li class="price-feature-item">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>7 days direct WhatsApp follow-up support</span>
-            </li>
-          </ul>
-          <a href="https://wa.me/256764625700?text=Hi%20dotyoujee%2C%20I%20want%20to%20order%20the%20Starter%20Pack%20(UGX%201M)." class="btn-secondary" style="width: 100%; justify-content: center;">Choose Starter</a>
         </div>
 
-        <!-- Professional Tier (Featured) -->
-        <div class="price-tier-card featured">
-          <span class="price-featured-badge">Most Popular in Uganda</span>
-          <h2 class="price-tier-name">Professional Pack</h2>
-          <p class="price-tier-desc">Mid-sized enterprises, NGOs, fintechs, and government contractors preparing for mandatory statutory audits.</p>
-          <div class="price-display-wrapper">
-            <div class="price-amount" data-price-tier="professional">UGX 3.5M – 5.0M</div>
-            <span class="price-period currency-period-label">/ fixed engagement</span>
-          </div>
-          <ul class="price-features-list">
-            <li class="price-feature-item">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>Full ITGC General Controls Audit (ISO 27001 aligned)</span>
-            </li>
-            <li class="price-feature-item">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>Offensive Web Application &amp; Network VAPT with PoCs</span>
-            </li>
-            <li class="price-feature-item">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>Statutory DPIA Report &amp; PDPO Registration Filing</span>
-            </li>
-            <li class="price-feature-item">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>NISF 2026 Gap Analysis &amp; Prioritized Remediation Roadmap</span>
-            </li>
-            <li class="price-feature-item">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>Complimentary verification retest within 30 days</span>
-            </li>
-            <li class="price-feature-item">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>30 days dedicated advisory support</span>
-            </li>
-          </ul>
-          <a href="https://wa.me/256764625700?text=Hi%20dotyoujee%2C%20I%20want%20to%20engage%20the%20Professional%20Pack%20(UGX%203.5M-5M)." class="btn-primary" style="width: 100%; justify-content: center;">Choose Professional</a>
-        </div>
-
-        <!-- Enterprise Tier -->
-        <div class="price-tier-card">
-          <h2 class="price-tier-name">Enterprise Pack</h2>
-          <p class="price-tier-desc">Commercial banks, licensed telecom operators, parastatals, and multi-branch financial institutions.</p>
-          <div class="price-display-wrapper">
-            <div class="price-amount" data-price-tier="enterprise">Custom (&gt; 10M)</div>
-            <span class="price-period currency-period-label">/ custom scope</span>
-          </div>
-          <ul class="price-features-list">
-            <li class="price-feature-item">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>Full regulatory compliance program (BoU, UCC, NITA-U)</span>
-            </li>
-            <li class="price-feature-item">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>Red Team adversary simulation &amp; phishing drill</span>
-            </li>
-            <li class="price-feature-item">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>Continuous 24/7 DFIR on-call breach response retainer</span>
-            </li>
-            <li class="price-feature-item">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>Board of Directors audit presentation &amp; defence</span>
-            </li>
-            <li class="price-feature-item">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>Dedicated Senior Cyber Advisor (SLA &lt; 30 mins)</span>
-            </li>
-          </ul>
-          <a href="https://wa.me/256764625700?text=Hi%20dotyoujee%2C%20we%20want%20an%20Enterprise%20Audit%20Scope%20and%20Retainer." class="btn-secondary" style="width: 100%; justify-content: center;">Contact Sales</a>
+        <div class="role-grid">
+          <div class="role-card"><div class="role-icon">01</div><h4>vCISO / Fractional leader</h4><p>Owns the security programme: risk register, roadmap, policy, vendor risk, board reporting and audit defence. Advisory, managed or embedded depending on how much you need owned.</p><small>Advisory from UGX 2M / mo</small></div>
+          <div class="role-card"><div class="role-icon">02</div><h4>Penetration tester</h4><p>Breaks web apps, APIs, networks and cloud configs under signed rules of engagement, then hands your engineers reproducible proof and a fix order.</p><small>Fixed-scope project</small></div>
+          <div class="role-card"><div class="role-icon">03</div><h4>GRC / compliance consultant</h4><p>Translates NISF 2026, DPPA 2019, BoU and UCC obligations into controls, evidence and regulator-ready filings.</p><small>Audit &amp; readiness projects</small></div>
+          <div class="role-card"><div class="role-icon">04</div><h4>Cloud security engineer</h4><p>Hardens AWS and Azure: IAM, logging, network exposure, secrets and posture drift. Reviews IaC and the secure SDLC where relevant.</p><small>Review or project</small></div>
+          <div class="role-card"><div class="role-icon">05</div><h4>SOC / detection analyst</h4><p>Watches identity, endpoint and network telemetry, triages alerts around the clock and escalates on agreed runbooks rather than dumping noise on you.</p><small>Monthly MDR retainer</small></div>
+          <div class="role-card"><div class="role-icon">06</div><h4>DFIR responder</h4><p>Contains active compromise, preserves evidence, reconstructs the timeline and produces a report that survives lawyers, insurers and regulators.</p><small>Retainer or emergency call-out</small></div>
+          <div class="role-card"><div class="role-icon">07</div><h4>DPO / privacy officer</h4><p>Runs data inventories, DPIAs, consent design, breach workflow and the formal PDPO registration under Uganda's Data Protection Act.</p><small>Project or fractional</small></div>
+          <div class="role-card"><div class="role-icon">08</div><h4>Secure web engineer</h4><p>Ships hardened sites and portals with TLS, CSP, HSTS and lead capture that doesn't leak your customers' data.</p><small>Fixed-price build</small></div>
         </div>
       </div>
+    </section>
 
-      <!-- Add-On Services Rate Card -->
-      <section style="margin-top: 4.5rem;">
-        <h3 style="font-size: 1.6rem; color: var(--text-main); margin-bottom: 1.5rem;">Modular Add-On Services</h3>
-        <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); overflow-x: auto;">
-          <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem;">
-            <thead>
-              <tr style="border-bottom: 1px solid var(--border-medium); background: var(--bg-surface-elevated);">
-                <th style="padding: 1rem 1.5rem; color: var(--text-main);">Add-On Service</th>
-                <th style="padding: 1rem 1.5rem; color: var(--text-main);">Reference Rate (UGX)</th>
-                <th style="padding: 1rem 1.5rem; color: var(--text-main);">Reference Rate (USD)</th>
-                <th style="padding: 1rem 1.5rem; color: var(--text-main);">Deliverable Timeline</th>
-                <th style="padding: 1rem 1.5rem; color: var(--text-main);">Action</th>
-              </tr>
-            </thead>
+    <!-- À la carte rate card -->
+    <section class="rates-section" id="rates">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-index"><span>//</span><i></i><small>À la carte</small></div>
+          <div>
+            <h2 class="section-title">Need one thing, not a <span class="accent-text">whole package?</span></h2>
+            <p class="section-lede">Buy a single deliverable. Every rate is a guide — your written scope fixes the final figure before work starts.</p>
+          </div>
+        </div>
+
+        <div class="rate-table-wrap">
+          <table class="rate-table">
+            <thead><tr><th>Service / role</th><th>UGX guide</th><th>USD guide</th><th>Typical turnaround</th><th>Action</th></tr></thead>
             <tbody>
-              <tr style="border-bottom: 1px solid var(--border-subtle);">
-                <td style="padding: 1rem 1.5rem; font-weight: 600; color: var(--text-main);">Instant Security Scan &amp; PDF Report</td>
-                <td style="padding: 1rem 1.5rem; font-family: var(--font-mono); color: var(--accent-cyan);">UGX 1,000,000</td>
-                <td style="padding: 1rem 1.5rem; font-family: var(--font-mono); color: var(--text-secondary);">$270</td>
-                <td style="padding: 1rem 1.5rem; color: var(--text-secondary);">24 Hours</td>
-                <td style="padding: 1rem 1.5rem;"><a href="https://wa.me/256764625700?text=I%20want%20to%20order%20the%20UGX%201M%20Instant%20Scan." class="btn-secondary" style="padding: 0.35rem 0.8rem; font-size: 0.82rem;">Book</a></td>
-              </tr>
-              <tr style="border-bottom: 1px solid var(--border-subtle);">
-                <td style="padding: 1rem 1.5rem; font-weight: 600; color: var(--text-main);">Standalone Data Protection Impact Assessment (DPIA)</td>
-                <td style="padding: 1rem 1.5rem; font-family: var(--font-mono); color: var(--accent-cyan);">UGX 1,500,000 – 2,500,000</td>
-                <td style="padding: 1rem 1.5rem; font-family: var(--font-mono); color: var(--text-secondary);">$400 – $675</td>
-                <td style="padding: 1rem 1.5rem; color: var(--text-secondary);">5 Business Days</td>
-                <td style="padding: 1rem 1.5rem;"><a href="https://wa.me/256764625700?text=I%20want%20a%20standalone%20DPIA." class="btn-secondary" style="padding: 0.35rem 0.8rem; font-size: 0.82rem;">Book</a></td>
-              </tr>
-              <tr style="border-bottom: 1px solid var(--border-subtle);">
-                <td style="padding: 1rem 1.5rem; font-weight: 600; color: var(--text-main);">PDPO Registration &amp; Data Inventory Support</td>
-                <td style="padding: 1rem 1.5rem; font-family: var(--font-mono); color: var(--accent-cyan);">UGX 800,000 – 1,200,000</td>
-                <td style="padding: 1rem 1.5rem; font-family: var(--font-mono); color: var(--text-secondary);">$215 – $325</td>
-                <td style="padding: 1rem 1.5rem; color: var(--text-secondary);">3 Business Days</td>
-                <td style="padding: 1rem 1.5rem;"><a href="https://wa.me/256764625700?text=I%20need%20PDPO%20Registration%20support." class="btn-secondary" style="padding: 0.35rem 0.8rem; font-size: 0.82rem;">Book</a></td>
-              </tr>
-              <tr style="border-bottom: 1px solid var(--border-subtle);">
-                <td style="padding: 1rem 1.5rem; font-weight: 600; color: var(--text-main);">Hardened Web Landing Page (SSL, CSP, WhatsApp)</td>
-                <td style="padding: 1rem 1.5rem; font-family: var(--font-mono); color: var(--accent-cyan);">UGX 750,000 – 1,500,000</td>
-                <td style="padding: 1rem 1.5rem; font-family: var(--font-mono); color: var(--text-secondary);">$200 – $400</td>
-                <td style="padding: 1rem 1.5rem; color: var(--text-secondary);">5 Business Days</td>
-                <td style="padding: 1rem 1.5rem;"><a href="https://wa.me/256764625700?text=I%20want%20a%20Hardened%20Landing%20Page." class="btn-secondary" style="padding: 0.35rem 0.8rem; font-size: 0.82rem;">Book</a></td>
-              </tr>
-              <tr>
-                <td style="padding: 1rem 1.5rem; font-weight: 600; color: var(--text-main);">Monthly Virtual CISO &amp; Incident Retainer</td>
-                <td style="padding: 1rem 1.5rem; font-family: var(--font-mono); color: var(--accent-cyan);">From UGX 2,000,000 / mo</td>
-                <td style="padding: 1rem 1.5rem; font-family: var(--font-mono); color: var(--text-secondary);">From $540 / mo</td>
-                <td style="padding: 1rem 1.5rem; color: var(--text-secondary);">Continuous</td>
-                <td style="padding: 1rem 1.5rem;"><a href="https://wa.me/256764625700?text=I%20am%20interested%20in%20a%20Monthly%20Security%20Retainer." class="btn-secondary" style="padding: 0.35rem 0.8rem; font-size: 0.82rem;">Book</a></td>
-              </tr>
+              <tr><td>Compliance starter checklists</td><td>Free</td><td>Free</td><td>Instant</td><td><a href="resources.html">Get free ↗</a></td></tr>
+              <tr><td>Security awareness workshop (half day)</td><td>UGX 500,000 – 900,000</td><td>$135 – $245</td><td>1 day</td><td><a href="contact.html?pack=addon&amp;source=pricing">Book ↗</a></td></tr>
+              <tr><td>Phishing simulation campaign</td><td>UGX 600,000 – 1,200,000</td><td>$160 – $325</td><td>3–5 days</td><td><a href="contact.html?pack=addon&amp;source=pricing">Book ↗</a></td></tr>
+              <tr><td>Hardened landing page / secure portal</td><td>UGX 750,000 – 1,500,000</td><td>$200 – $405</td><td>5 days</td><td><a href="contact.html?pack=addon&amp;source=pricing">Book ↗</a></td></tr>
+              <tr><td>PDPO registration &amp; data inventory</td><td>UGX 800,000 – 1,200,000</td><td>$215 – $325</td><td>3 days</td><td><a href="contact.html?pack=addon&amp;source=pricing">Book ↗</a></td></tr>
+              <tr><td>Instant external security scan + PDF</td><td>UGX 1,000,000</td><td>$270</td><td>24 hours</td><td><a href="index.html#lab">Try simulator ↗</a></td></tr>
+              <tr><td>Standalone DPIA</td><td>UGX 1,500,000 – 2,500,000</td><td>$405 – $675</td><td>5 days</td><td><a href="contact.html?pack=addon&amp;source=pricing">Book ↗</a></td></tr>
+              <tr><td>Cloud posture review (AWS / Azure)</td><td>UGX 1,800,000 – 3,000,000</td><td>$485 – $810</td><td>5 days</td><td><a href="contact.html?pack=addon&amp;source=pricing">Book ↗</a></td></tr>
+              <tr><td>Web application pentest (one app)</td><td>UGX 2,500,000 – 4,000,000</td><td>$675 – $1,080</td><td>5–7 days</td><td><a href="contact.html?pack=addon&amp;source=pricing">Book ↗</a></td></tr>
+              <tr><td>Internal network VAPT</td><td>UGX 3,000,000 – 5,000,000</td><td>$810 – $1,350</td><td>5–10 days</td><td><a href="contact.html?pack=addon&amp;source=pricing">Book ↗</a></td></tr>
+              <tr><td>Advisory vCISO retainer</td><td>From UGX 2,000,000 / mo</td><td>From $540 / mo</td><td>Ongoing</td><td><a href="contact.html?pack=addon&amp;source=pricing">Book ↗</a></td></tr>
+              <tr><td>Incident response retainer</td><td>From UGX 1,500,000 / mo</td><td>From $405 / mo</td><td>Ongoing</td><td><a href="contact.html?pack=addon&amp;source=pricing">Book ↗</a></td></tr>
+              <tr><td>Managed vCISO retainer</td><td>From UGX 5,000,000 / mo</td><td>From $1,350 / mo</td><td>Ongoing</td><td><a href="contact.html?pack=addon&amp;source=pricing">Book ↗</a></td></tr>
+              <tr><td>Emergency DFIR call-out</td><td>From UGX 3,000,000</td><td>From $810</td><td>Same day</td><td><a href="https://wa.me/256764625700?text=Active%20incident%20%E2%80%94%20I%20need%20DFIR%20now." target="_blank" rel="noopener noreferrer">Urgent ↗</a></td></tr>
             </tbody>
           </table>
         </div>
-      </section>
+        <p class="rate-note">Rates are indicative and exclude third-party registrar, cloud or auditor fees. Scope, asset count and deadlines determine the final fixed quote, always confirmed in writing before invoicing.</p>
+      </div>
+    </section>
 
-      <!-- Payment & Milestone Terms -->
-      <section style="margin-top: 4rem; padding: 2rem; background: var(--bg-surface-elevated); border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
-        <h3 style="font-size: 1.25rem; color: var(--text-main); margin-bottom: 0.75rem;">Payment Terms &amp; Commercial Assurance</h3>
-        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
-          We accept local bank wire transfers and official Mobile Money merchant payments (MTN MoMo &amp; Airtel Money). Standard engagements are structured 50% upfront at Statement of Work (SoW) signing, and 50% on final deliverable acceptance. Enterprise projects follow formal milestone invoicing.
-        </p>
-        <p style="font-size: 0.88rem; color: var(--accent-cyan); font-weight: 700;">
-          All deliverables backed by our 30-Day Free Retest Guarantee.
-        </p>
-      </section>
-    </main>
+    <!-- Commercial terms -->
+    <section class="terms-section" id="terms">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-index"><span>//</span><i></i><small>The fine print, plainly</small></div>
+          <div>
+            <h2 class="section-title">How buying actually <span class="accent-text">works.</span></h2>
+            <p class="section-lede">No hourly surprises, no auto-renewing mystery retainers, no "we'll get back to you" limbo.</p>
+          </div>
+        </div>
+        <div class="terms-grid">
+          <div class="term-card"><h4>Payment</h4><p>50% at Statement of Work signing, 50% on acceptance. Bank transfer or Mobile Money merchant payment (MTN MoMo, Airtel Money). Retainers are billed monthly and cancel with 30 days' notice.</p></div>
+          <div class="term-card"><h4>Guarantee</h4><p>Every assessment tier includes a <span class="accent-text">30-day free retest</span> of remediated findings. If a finding doesn't close, we retest at no extra cost and tell you exactly why.</p></div>
+          <div class="term-card"><h4>Boundaries</h4><p>Testing happens only under signed written authorisation. We do not scan targets we are not authorised for, and active incidents move to the DFIR hotline rather than the standard queue.</p></div>
+          <div class="term-card"><h4>Scope changes</h4><p>If you add assets mid-engagement, we stop, re-scope in writing and agree any price change before continuing. No silent overages.</p></div>
+          <div class="term-card"><h4>What you own</h4><p>Reports, evidence packs, scripts written for your environment and remediation roadmaps are yours. We don't hold your evidence hostage.</p></div>
+          <div class="term-card"><h4>Data handling</h4><p>Briefs and findings are handled under our <a href="privacy.html" class="accent-text">DPPA-aligned privacy notice</a>. Encrypted disclosure is available on request for sensitive material.</p></div>
+        </div>
+      </div>
+    </section>
 
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <a href="index.html" class="brand-logo" style="margin-bottom: 0.75rem;">
-            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
-            </svg>
+    <section class="cta" id="cta">
+      <div class="container cta-inner">
+        <span class="cta-kicker">Still deciding?</span>
+        <h2>Start with a free 20-minute call.</h2>
+        <p>Describe your setup and we'll tell you which tier fits — including when the honest answer is "you don't need us yet".</p>
+        <div class="cta-actions">
+          <a href="contact.html?pack=recon&amp;source=pricing" class="btn-primary btn-lg magnetic">Book the recon call ↗</a>
+          <a href="index.html#lab" class="btn-ghost btn-lg magnetic">Try the live lab</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
             dot<span class="accent">youjee</span>
           </a>
-          <p class="footer-brand-desc">Uganda's premier cybersecurity &amp; regulatory compliance advisory firm. Protecting digital enterprise across East Africa.</p>
+          <p>Cybersecurity and regulatory assurance for Ugandan enterprise. Built in Kampala, aligned globally.</p>
+          <span class="footer-live"><i></i> SOC operational 24/7</span>
         </div>
-        <div>
-          <h4 class="footer-column-title">Service Packs</h4>
-          <ul class="footer-links-list">
-            <li class="footer-link-item"><a href="services.html#nisf-2026">NISF 2026 Audit</a></li>
-            <li class="footer-link-item"><a href="services.html#dppa">DPPA &amp; PDPO Registration</a></li>
-            <li class="footer-link-item"><a href="services.html#vapt">Offensive VAPT Pentesting</a></li>
-            <li class="footer-link-item"><a href="services.html#bou">Bank of Uganda (BoU) Guidelines</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-column-title">Compliance Hub</h4>
-          <ul class="footer-links-list">
-            <li class="footer-link-item"><a href="resources.html">Free Checklists</a></li>
-            <li class="footer-link-item"><a href="dashboard.html">Threat Intel Radar</a></li>
-            <li class="footer-link-item"><a href="about.html">About Founder</a></li>
-            <li class="footer-link-item"><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-column-title">Direct Engagement</h4>
-          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;">WhatsApp scoping call available within 2 hours:</p>
-          <a href="https://wa.me/256764625700?text=Hi%20dotyoujee%2C%20I%20am%20reviewing%20your%20pricing%20page." target="_blank" rel="noopener noreferrer" class="btn-primary btn-whatsapp" style="width: 100%; justify-content: center;">WhatsApp +256 764 625 700</a>
-        </div>
+        <div class="footer-col"><h4>Packages</h4><a href="pricing.html#tiers">Six engagement tiers</a><a href="pricing.html#roles">Specialist roles</a><a href="pricing.html#rates">À la carte rates</a><a href="pricing.html#terms">Commercial terms</a></div>
+        <div class="footer-col"><h4>Explore</h4><a href="index.html#services">Capabilities</a><a href="index.html#lab">Live lab</a><a href="resources.html">Free checklists</a><a href="about.html">About the founder</a></div>
+        <div class="footer-col"><h4>Engage</h4><a href="contact.html">Book a briefing</a><a href="https://wa.me/256764625700" target="_blank" rel="noopener noreferrer">+256 764 625 700</a><a href="privacy.html">Privacy notice</a></div>
       </div>
-      <div class="container footer-bottom-bar">
-        <div>&copy; 2026 dotyoujee. All rights reserved.</div>
-        <div class="footer-legal-links">
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
-          <a href="contact.html">Contact</a>
-        </div>
+      <div class="footer-bottom">
+        <span>© 2026 dotyoujee. All rights reserved. Indicative USD shown at UGX 3,700/$.</span>
+        <div><a href="privacy.html">Privacy (DPPA)</a><a href="terms.html">Terms</a></div>
       </div>
-    </footer>
-
-    <div class="floating-whatsapp">
-      <span class="whatsapp-tooltip">Chat with Lead Auditor</span>
-      <a href="https://wa.me/256764625700" target="_blank" rel="noopener noreferrer" class="whatsapp-pill-btn" aria-label="WhatsApp dotyoujee">
-        <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.203c.043.071.043.418-.101.823z"/></svg>
-      </a>
+      <div class="footer-wordmark" aria-hidden="true">dotyoujee</div>
     </div>
+  </footer>
+
+  <div class="floating-whatsapp">
+    <a href="https://wa.me/256764625700?text=Hi%20dotyoujee%2C%20I%20have%20a%20question%20about%20your%20packages." target="_blank" rel="noopener noreferrer" class="whatsapp-pill-btn" aria-label="Chat with dotyoujee on WhatsApp">
+      <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.203c.043.071.043.418-.101.823z"/></svg>
+    </a>
   </div>
 
-  <script src="script.js"></script>
+  <script src="assets/booking.js"></script>
 </body>
 </html>
