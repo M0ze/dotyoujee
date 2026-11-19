@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-19T22:28:11Z",
+  "generated_at": "2026-11-19T22:39:26Z",
   "operator": "Mugagga Moses",
   "tagline": "IT consultancy in Kampala. Cybersecurity apprenticeship in public.",
   "totals": {
-    "xp": 48,
+    "xp": 52,
     "posts": 1,
     "verified_posts": 0,
     "hours": 1.0,
     "modules_done": 0,
-    "modules_total": 31,
+    "modules_total": 40,
     "by_type": {
       "meta": 1
     }
@@ -18,11 +18,11 @@
     "min": 0,
     "next": "Initiate",
     "next_min": 300,
-    "to_next": 252
+    "to_next": 248
   },
   "commit_xp": {
-    "xp": 48,
-    "commits": 24,
+    "xp": 52,
+    "commits": 26,
     "repos": [
       "M0ze/dotyoujee"
     ]
@@ -259,7 +259,7 @@
       "short": "Authorised breaking, scoped properly, reported clearly.",
       "status": "planned",
       "color": "amber",
-      "total": 5,
+      "total": 9,
       "completed": 0,
       "percent": 0,
       "xp": 0,
@@ -270,81 +270,196 @@
           "xp": 100,
           "prereqs": [],
           "objectives": [
-            "Write a scope document",
-            "Explain authorisation and stop conditions"
+            "Explain the difference between authorisation, consent and permission to test",
+            "Write a scope document that names in-scope assets, out-of-scope assets and test windows",
+            "Define stop conditions, emergency contacts and a data-handling plan",
+            "Describe the legal consequences of testing without written authorisation in Uganda and abroad"
           ],
-          "lab": "Draft a RoE for a fictional engagement.",
+          "lab": "Using a template in a text editor, draft a one-page RoE for a fictional Kampala SACCO web app: name the asset list, permitted techniques, exclusions, test window, stop conditions and named contacts. Save it as a Markdown file in a git repo and publish the commit link as evidence.",
           "resources": [
-            "PTES standard"
+            "PTES Technical Guidelines (pentest-standard.org, free)",
+            "OWASP Web Security Testing Guide v4 - pre-engagement interactions (free)",
+            "NIST SP 800-115 - Information Security Testing and Assessment (free)"
           ],
           "done": false
         },
         {
           "id": "pt-02",
-          "title": "Reconnaissance with Nmap",
+          "title": "Host discovery and scanning with Nmap",
           "xp": 120,
           "prereqs": [
             "pt-01",
             "nl-03"
           ],
           "objectives": [
-            "Choose scan types",
-            "Interpret service and version detection"
+            "Explain what -sS, -sT, -sV, -sC, -O and -Pn change about a scan and when each is appropriate",
+            "Interpret service versions, OS guesses and script output without trusting them blindly",
+            "Keep scan traffic inside an authorised scope and respect rate and timing limits",
+            "Turn a raw port list into a short target-priority note"
           ],
-          "lab": "Scan your own lab and annotate results.",
+          "lab": "Against a VM you own in an isolated lab, run `nmap -sS -sV -sC -O -oA pt02-scan <target-ip>` and a targeted `nmap -p 80,443 --script http-title -oN pt02-web.nmap <target-ip>`. Write a short writeup that explains three open ports and one false positive, and link the saved .nmap/.gnmap artefacts as evidence.",
           "resources": [
-            "Nmap reference guide"
+            "Nmap Reference Guide (nmap.org, free)",
+            "Nmap Network Scanning book - online chapters (free)",
+            "RFC 793 and RFC 9293 for the TCP handshake behaviour"
           ],
           "done": false
         },
         {
           "id": "pt-03",
-          "title": "Web fundamentals and OWASP Top 10",
-          "xp": 180,
+          "title": "Web fundamentals and the OWASP Top 10",
+          "xp": 150,
           "prereqs": [
-            "pt-02"
+            "pt-02",
+            "nl-03"
           ],
           "objectives": [
-            "Map findings to OWASP categories",
-            "Prove impact without destroying data"
+            "Trace how a browser request becomes a server response, including cookies, sessions and same-origin policy",
+            "Map at least five findings to the current OWASP Top 10 categories with a concrete example each",
+            "Demonstrate impact safely: read or modify only your own test data, never real user records",
+            "Distinguish a confirmed vulnerability from a theoretical one and record what evidence proves it"
           ],
-          "lab": "DVWA or Juice Shop walkthrough with writeup.",
+          "lab": "Stand up OWASP Juice Shop locally (`docker run --rm -p 3000:3000 bkimminich/juice-shop`) and use only the browser plus DevTools to confirm one broken-access-control and one injection finding. Save screenshots of the request/response and write a short writeup mapping each to an OWASP Top 10 category; commit the evidence to a repo.",
           "resources": [
-            "OWASP Top 10",
-            "PortSwigger Web Security Academy"
+            "OWASP Top 10 (owasp.org, free)",
+            "OWASP Web Security Testing Guide v4 (free)",
+            "MDN Web Docs: HTTP, cookies and same-origin policy (free)"
           ],
           "done": false
         },
         {
           "id": "pt-04",
-          "title": "Vulnerability validation and reporting",
-          "xp": 150,
+          "title": "Burp Suite and authenticated testing",
+          "xp": 140,
           "prereqs": [
             "pt-03"
           ],
           "objectives": [
-            "Reproduce findings",
-            "Write CVSS-informed severity with business context"
+            "Configure Burp Suite Community Edition as a browser proxy and install its CA certificate in a lab browser",
+            "Use Proxy, Target and Repeater to capture, inspect and replay a request",
+            "Maintain an authenticated session in a tool without sharing or leaking real credentials",
+            "Test access control by swapping identifiers between two test accounts you control"
           ],
-          "lab": "Produce a client-ready report from your lab findings.",
+          "lab": "Proxy a local Juice Shop or DVWA session through `burpsuite` Community Edition, add the lab host to scope, log in as two throwaway accounts, and use Repeater to swap the user/ID parameter between them. Save the request/response screenshots plus a note on the broken access control as an evidence writeup in a repo.",
           "resources": [
-            "FIRST CVSS calculator"
+            "PortSwigger Web Security Academy - Burp Suite basics (free)",
+            "Burp Suite Community Edition documentation (free)",
+            "OWASP Testing Guide - authentication and authorization testing (free)"
           ],
           "done": false
         },
         {
           "id": "pt-05",
-          "title": "Boss fight: full web app assessment",
-          "xp": 300,
+          "title": "API testing basics",
+          "xp": 130,
           "prereqs": [
             "pt-04"
           ],
           "objectives": [
-            "Scope, test, report, retest"
+            "Describe the common REST request methods, status codes and JSON payload shapes",
+            "Read an OpenAPI/Swagger definition to enumerate endpoints and parameters",
+            "Test object-level and function-level authorization by changing IDs and roles in your own lab",
+            "Explain why APIs need separate tests from the browser front end"
           ],
-          "lab": "Complete assessment with RoE, evidence and retest log.",
+          "lab": "Against a local API you control (e.g. `docker run -p 80:80 vulnapi/crapi` in an isolated VM), fetch `/openapi.json` or the Swagger UI, replay a few endpoints with `curl -i -X <method>` and use Burp Repeater to change an object ID between two test users. Save the OpenAPI file, the curl output and a short findings writeup as repo evidence.",
           "resources": [
-            "Your notes"
+            "OWASP API Security Top 10 (free)",
+            "OWASP Web Security Testing Guide - web service testing (free)",
+            "OpenAPI Specification (spec.openapis.org, free)"
+          ],
+          "done": false
+        },
+        {
+          "id": "pt-06",
+          "title": "Vulnerability validation and CVSS",
+          "xp": 120,
+          "prereqs": [
+            "pt-05"
+          ],
+          "objectives": [
+            "Reproduce a finding with a minimal, repeatable sequence of steps",
+            "Calculate a CVSS v3.1 base score and explain what the metrics mean",
+            "Adjust severity for business context rather than quoting a score blindly",
+            "Write a finding with evidence, impact, affected asset and a realistic remediation"
+          ],
+          "lab": "Take three findings from your pt-03 to pt-05 labs and, using the FIRST CVSS v3.1 calculator, record a base score and vector for each plus one business-context note. Produce a Markdown findings register with steps-to-reproduce and screenshots, and commit it as evidence.",
+          "resources": [
+            "FIRST CVSS v3.1 specification and calculator (first.org, free)",
+            "MITRE CWE (cwe.mitre.org, free)",
+            "OWASP risk rating methodology (free)"
+          ],
+          "done": false
+        },
+        {
+          "id": "pt-07",
+          "title": "Linux privilege escalation basics",
+          "xp": 150,
+          "prereqs": [
+            "nl-04",
+            "nl-05",
+            "pt-01"
+          ],
+          "objectives": [
+            "Explain the difference between vertical and horizontal privilege escalation",
+            "Find misconfigured file permissions, SUID binaries and scheduled jobs in a lab VM",
+            "Read a sudoers file and understand why overly broad rules are dangerous",
+            "Tie each finding back to a concrete hardening action"
+          ],
+          "lab": "In a disposable Linux VM you own, run `find / -perm -4000 -type f 2>/dev/null` and `sudo -l` as a low-privilege user, inspect `/etc/crontab` and world-writable files, then document how one misconfigurable permission could be abused. Save the exact commands, their output and a remediation note as a writeup with linked screenshots.",
+          "resources": [
+            "Linux Journey - permissions and users (free)",
+            "HackTricks Linux privilege escalation checklist (free)",
+            "MITRE ATT&CK - Privilege Escalation tactics (free)"
+          ],
+          "done": false
+        },
+        {
+          "id": "pt-08",
+          "title": "Active Directory attack path fundamentals (defensive framing)",
+          "xp": 160,
+          "prereqs": [
+            "nl-08",
+            "pt-07"
+          ],
+          "objectives": [
+            "Describe domains, forests, trusts, OUs and the role of a domain controller",
+            "Explain in defensive terms how Kerberos authentication and ticket requests work",
+            "Read an ACL or group membership chain and spot why excessive privilege is risky",
+            "Map a common attack path to a specific detection and a hardening control"
+          ],
+          "lab": "Using a Windows evaluation VM with a local AD domain you set up, or a prebuilt lab VM, draw a topology with Domain Admins, a service account and a workstation, then use `net user /domain`, `net group \"Domain Admins\" /domain` and a Group Policy report to document one over-privileged path. Write a defensive review that names the risk, a detection source (e.g. event ID 4768/4769) and the fix; save the diagram and notes as evidence.",
+          "resources": [
+            "Microsoft AD fundamentals documentation (free)",
+            "Mandiant/Microsoft AD attack map - defensive reading (free)",
+            "MITRE ATT&CK for Enterprise - Active Directory techniques (free)"
+          ],
+          "done": false
+        },
+        {
+          "id": "pt-09",
+          "title": "Boss fight: full scoped web app assessment",
+          "xp": 300,
+          "prereqs": [
+            "pt-01",
+            "pt-02",
+            "pt-03",
+            "pt-04",
+            "pt-05",
+            "pt-06",
+            "pt-07",
+            "pt-08"
+          ],
+          "objectives": [
+            "Produce a signed RoE and scope before touching a target",
+            "Run a complete assessment from reconnaissance through authenticated and API testing",
+            "Write a client-ready report with validated findings, CVSS scores and remediation",
+            "Perform a retest after fixes and record which findings are resolved"
+          ],
+          "lab": "Take an authorised lab web app end to end: write the RoE, scan with `nmap -sV -sC -oA pt09-<app>`, test via Burp and curl, validate findings with CVSS, and deliver a report plus a retest log. Publish the RoE, redacted evidence, report and retest results as a linked writeup/repo so the whole engagement is verifiable.",
+          "resources": [
+            "Your own notes from pt-01 through pt-08",
+            "OWASP Web Security Testing Guide v4 (free)",
+            "PTES Technical Guidelines - reporting template (free)"
           ],
           "done": false
         }
@@ -356,76 +471,189 @@
       "short": "Binaries, assembly and how software really behaves.",
       "status": "planned",
       "color": "violet",
-      "total": 4,
+      "total": 9,
       "completed": 0,
       "percent": 0,
       "xp": 0,
       "modules": [
         {
           "id": "re-01",
-          "title": "x86-64 basics and calling conventions",
-          "xp": 140,
+          "title": "CPU registers and the stack",
+          "xp": 100,
           "prereqs": [
             "nl-04"
           ],
           "objectives": [
-            "Read registers and stack frames",
-            "Follow a function call"
+            "Name the x86-64 general-purpose registers and explain the roles of RSP, RBP, RIP and RFLAGS",
+            "Draw the stack layout for a function call showing the saved return address and local variables",
+            "Explain little-endian byte order when reading a hex dump of a 64-bit value"
           ],
-          "lab": "Disassemble a tiny C program and annotate it.",
+          "lab": "In a 64-bit Linux VM compile a 10-line C program with gcc -g -O0 and inspect it with objdump -d -M intel and readelf -a; save an annotated screenshot of the stack pointer changes and frame layout as re01-stack-notes.md.",
           "resources": [
-            "Intel SDM volumes 1-2"
+            "Intel 64 and IA-32 Architectures Software Developer's Manual Vol. 1",
+            "objdump and readelf man pages",
+            "Linux Journey: the shell and processes"
           ],
           "done": false
         },
         {
           "id": "re-02",
-          "title": "Ghidra and static analysis",
-          "xp": 160,
+          "title": "Reading assembly with objdump",
+          "xp": 110,
           "prereqs": [
             "re-01"
           ],
           "objectives": [
-            "Identify functions and data flow",
-            "Rename and comment a decompiled binary"
+            "Translate common x86-64 instructions (mov, lea, push/pop, call/ret, cmp/test and jcc) into plain English",
+            "Switch objdump between Intel and AT&T syntax with -M intel and explain the difference",
+            "Locate main and a helper function in an objdump listing from their prologue and epilogue"
           ],
-          "lab": "Reverse a crackme and write the solution.",
+          "lab": "Run objdump -d -M intel ./target | less on a self-compiled binary and produce a line-by-line annotated disassembly of two functions; save it as re02-objdump-annotations.md.",
           "resources": [
-            "Ghidra docs"
+            "GNU binutils objdump documentation",
+            "Intel SDM Vol. 2 instruction set reference",
+            "x86-64 Assembly Language Programming with Ubuntu (free PDF)"
           ],
           "done": false
         },
         {
           "id": "re-03",
-          "title": "Dynamic analysis and debugging",
-          "xp": 160,
+          "title": "C compilation and calling conventions",
+          "xp": 120,
           "prereqs": [
             "re-02"
           ],
           "objectives": [
-            "Set breakpoints and inspect memory",
-            "Trace a key check"
+            "Describe the System V AMD64 calling convention: argument registers, return value and caller-versus-callee-saved registers",
+            "Predict which register holds each of the first six integer arguments at a call site",
+            "Explain what -O0 versus -O2 changes in a disassembly and why optimisation level matters when reversing"
           ],
-          "lab": "Document a debugger session step by step.",
+          "lab": "Compile the same C file with gcc -O0 and gcc -O2, diff the objdump -d -M intel output with diff -u, and write a one-page explanation saved as re03-calling-convention.md.",
           "resources": [
-            "gdb docs"
+            "System V AMD64 ABI (psABI) specification",
+            "gcc man page",
+            "Compiler Explorer (godbolt.org)"
           ],
           "done": false
         },
         {
           "id": "re-04",
-          "title": "Boss fight: unpack and explain a sample",
-          "xp": 320,
+          "title": "Ghidra static analysis",
+          "xp": 140,
           "prereqs": [
             "re-03"
           ],
           "objectives": [
-            "Safely unpack in an isolated VM",
-            "Produce an IOC and behaviour report"
+            "Import a binary into Ghidra and run Auto Analysis",
+            "Rename functions and variables and add comments so the decompiled C matches your objdump reading",
+            "Follow cross-references from a string in the data section to the code that uses it"
           ],
-          "lab": "Write a malware analysis style report.",
+          "lab": "Import a self-written key-check program into Ghidra, decompile main, rename and comment the key logic, and export annotated screenshots as re04-ghidra-annotations.md.",
           "resources": [
-            "Your isolated lab"
+            "Ghidra official documentation and cheat sheet",
+            "NSA Ghidra introductory course (free)",
+            "Ghidra headless analyzer (analyzeHeadless) docs"
+          ],
+          "done": false
+        },
+        {
+          "id": "re-05",
+          "title": "Dynamic analysis with gdb",
+          "xp": 140,
+          "prereqs": [
+            "re-04"
+          ],
+          "objectives": [
+            "Set breakpoints and step with si and ni while inspecting registers and memory in gdb",
+            "Compare what Ghidra predicted statically with the values observed at runtime",
+            "Use the gdb x/ command to examine stack and heap bytes and explain what they represent"
+          ],
+          "lab": "Debug a self-compiled key-check program with gdb -q ./crackme, break at the comparison instruction, run info registers and x/s $rsp, and save the full transcript as re05-gdb-session.txt.",
+          "resources": [
+            "GDB official documentation",
+            "gdb cheat sheets (free, e.g. EEEE's)",
+            "freeCodeCamp GDB tutorial (free)"
+          ],
+          "done": false
+        },
+        {
+          "id": "re-06",
+          "title": "Crackmes and key checks",
+          "xp": 150,
+          "prereqs": [
+            "re-05"
+          ],
+          "objectives": [
+            "Recognise common key-check patterns: strcmp chains, arithmetic checks and length checks",
+            "Patch a conditional jump and explain the behavioural difference it causes",
+            "Recover the valid serial and document the check logic without publishing a working keygen"
+          ],
+          "lab": "Solve one beginner crackme from crackmes.one inside the isolated no-network VM, document the check logic and the patched bytes with xxd output, and save it as re06-crackme-writeup.md.",
+          "resources": [
+            "crackmes.one beginner section",
+            "Lena's reverse-engineering tutorials (free)",
+            "Ghidra plus gdb combined workflow notes"
+          ],
+          "done": false
+        },
+        {
+          "id": "re-07",
+          "title": "Packing and unpacking in an isolated VM",
+          "xp": 150,
+          "prereqs": [
+            "re-06"
+          ],
+          "objectives": [
+            "Explain what a packer does and why malware uses it, purely in a defensive analysis context",
+            "Identify a packed binary through section names, high entropy and a thin import table",
+            "Dump an unpacked sample from memory safely and hash both the packed and unpacked stages"
+          ],
+          "lab": "In a no-network snapshot VM inspect a harmless packed test binary with Detect It Easy (DIE), file, strings and sha256sum, record both stage hashes and save the findings as re07-unpack-notes.md.",
+          "resources": [
+            "Detect It Easy (DIE) documentation",
+            "REMnux and Flare VM lab documentation",
+            "Wikipedia: executable packing (defensive background)"
+          ],
+          "done": false
+        },
+        {
+          "id": "re-08",
+          "title": "Basic malware behaviour analysis and IOCs",
+          "xp": 160,
+          "prereqs": [
+            "re-07"
+          ],
+          "objectives": [
+            "Observe a safe test sample's process, file, registry and network behaviour inside a sandbox",
+            "Extract useful IOCs: hashes, IPs and domains, file paths and mutex names",
+            "Write a short behaviour report that clearly separates direct observation from inference"
+          ],
+          "lab": "Run a harmless test sample in an isolated REMnux/Flare VM, capture activity with procmon, Wireshark and Sysmon, and save an IOC table plus findings as re08-behaviour-report.md.",
+          "resources": [
+            "REMnux documentation",
+            "Sysmon configuration guide (SwiftOnSecurity)",
+            "MITRE ATT&CK (defensive reference)"
+          ],
+          "done": false
+        },
+        {
+          "id": "re-09",
+          "title": "Boss fight: full reverse-engineering writeup of a safe sample",
+          "xp": 320,
+          "prereqs": [
+            "re-08"
+          ],
+          "objectives": [
+            "Combine static and dynamic analysis into one coherent, reproducible narrative",
+            "Produce a behaviour report with a defensible IOC list",
+            "Publish a clean writeup that another apprentice can follow and learn from",
+            "Keep every step inside the isolated lab and state the safety controls used"
+          ],
+          "lab": "In a fully isolated, no-network snapshot VM reverse a self-authored or CTF-provided safe sample end to end and publish re09-full-writeup.md containing disassembly, annotated Ghidra screenshots, a gdb transcript, a behaviour report and an IOC table.",
+          "resources": [
+            "Your notes from re-01 through re-08",
+            "REMnux and Flare VM documentation",
+            "MITRE ATT&CK for mapping observed behaviour"
           ],
           "done": false
         }
